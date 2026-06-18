@@ -1,0 +1,691 @@
+{
+  "document_title": "BBAS3 1Q26 / 1T26 pre-call consensus context",
+  "language": "pt-BR",
+  "created_at": "2026-06-15",
+  "ticker": "BBAS3",
+  "company": "Banco do Brasil S.A.",
+  "quarter": "1Q26 / 1T26",
+  "document_purpose": "Contexto de consenso pré-call para ferramenta de análise de earnings calls. Usar como base externa para detectar surpresa, calibrar score e limitar inferências.",
+  "last_updated": "2026-06-15",
+  "methodology": {
+    "hierarchy": [
+      "1. Consenso formal Bloomberg/LSEG quando citado por veículos confiáveis.",
+      "2. Prévia sell-side pública de casa de research quando disponível diretamente.",
+      "3. Prévia sell-side via veículos financeiros quando relatório original é fechado.",
+      "4. Relatórios pós-resultado apenas para validar actuals, guidance e leitura de surpresa, não como contexto pré-call puro."
+    ],
+    "limitations": [
+      "Bloomberg Terminal, LSEG Workspace, FactSet, S&P Capital IQ e Visible Alpha não foram acessados diretamente; apenas referências públicas ao consenso Bloomberg/LSEG foram utilizadas.",
+      "Algumas estimativas de casas como Itaú BBA, BTG, BBI e Goldman vieram de veículos que resumiram relatórios proprietários; por isso recebem confiança média.",
+      "O campo post_result_actuals deve ser usado apenas para backtesting e avaliação de surpresa, não como informação disponível antes da call.",
+      "Métricas podem ter definições diferentes entre casas; por exemplo, despesas administrativas podem incluir ou excluir pessoal/linhas específicas.",
+      "Post-result actuals and post-result sell-side commentary are explicitly labeled and must not be treated as pre-call expectations."
+    ]
+  },
+  "sources": {
+    "S1_BB_RI_results_center": {
+      "name": "Banco do Brasil RI – Central de Resultados",
+      "type": "company_ir",
+      "url": "https://ri.bb.com.br/informacoes-financeiras/central-de-resultados/",
+      "access_notes": "Página oficial de RI; confirma central de resultados 1T26 e atualização em 13/05/2026.",
+      "confidence": "high",
+      "publication_timing": "post_result_official_repository",
+      "is_post_result_source": true,
+      "usable_as_pre_call_expectation": false,
+      "allowed_usage": "Official actuals, call materials and backtesting only. Do not use as pre-call expectation."
+    },
+    "S2_BB_RI_analyst_coverage": {
+      "name": "Banco do Brasil RI – Cobertura de Analistas",
+      "type": "company_ir",
+      "url": "https://ri.bb.com.br/o-banco-do-brasil/cobertura-de-analistas/",
+      "access_notes": "Lista oficial de casas que cobrem BBAS3: Autonomous, BofA, Bradesco, BTG, Citi, Genial, Goldman, HSBC, Itaú, JP Morgan, Morgan Stanley, Safra, Santander e XP.",
+      "confidence": "high",
+      "publication_timing": "standing_company_ir_page",
+      "is_post_result_source": false,
+      "usable_as_pre_call_expectation": true,
+      "allowed_usage": "Validate which sell-side houses officially cover BBAS3; not a source of numerical consensus."
+    },
+    "S3_Genial_preview": {
+      "name": "Genial Analisa – BBAS3 Prévia 1T26",
+      "type": "sell_side_public_preview",
+      "url": "https://analisa.genialinvestimentos.com.br/acoes/banco-do-brasil/banco-do-brasil-bbas3-previa-1t26-recuperacao-deve-vir-em-w-nao-em-u/",
+      "publication_date": "2026-05-11",
+      "confidence": "high",
+      "publication_timing": "pre_result",
+      "is_post_result_source": false,
+      "usable_as_pre_call_expectation": true,
+      "allowed_usage": "Direct sell-side pre-call estimate and narrative context."
+    },
+    "S4_InfoMoney_preview": {
+      "name": "InfoMoney – Bancões 1T26 / prévia de BBAS3",
+      "type": "media_aggregated_sell_side_preview",
+      "url": "https://www.infomoney.com.br/mercados/itau-bradesco-bb-e-santander-quais-bancoes-serao-destaque-na-temporada-do-1t26/",
+      "publication_date": "2026-04-15",
+      "confidence": "medium",
+      "publication_timing": "pre_result",
+      "is_post_result_source": false,
+      "usable_as_pre_call_expectation": true,
+      "allowed_usage": "Aggregated pre-call sell-side preview; medium confidence because underlying reports are proprietary."
+    },
+    "S5_Investing_BTG_preview": {
+      "name": "Investing.com Brasil – leitura do BTG para BBAS3 1T26",
+      "type": "media_aggregated_sell_side_preview",
+      "url": "https://br.investing.com/news/general-news/banco-do-brasil-bbas3-por-que-o-btg-esta-pessimista-com-o-balanco-do-1o-tri-1898698",
+      "publication_date": "2026-04-15",
+      "confidence": "medium",
+      "publication_timing": "pre_result",
+      "is_post_result_source": false,
+      "usable_as_pre_call_expectation": true,
+      "allowed_usage": "Aggregated BTG pre-call view; medium confidence because underlying report is proprietary."
+    },
+    "S6_Bloomberg_Linea_actual_consensus": {
+      "name": "Bloomberg Línea – resultado BBAS3 1T26 e consenso Bloomberg",
+      "type": "media_with_bloomberg_consensus_reference",
+      "url": "https://www.bloomberglinea.com.br/negocios/lucro-do-bb-cai-535-no-1-tri-com-impacto-agro-e-banco-faz-nova-revisao-de-guidance/",
+      "publication_date": "2026-05-13",
+      "confidence": "high_for_bloomberg_consensus_reference",
+      "publication_timing": "post_result_article_reporting_pre_result_consensus",
+      "is_post_result_source": true,
+      "usable_as_pre_call_expectation": true,
+      "allowed_usage": "Use only the reported pre-result Bloomberg consensus figure as pre-call expectation; other information in the article is post-result."
+    },
+    "S7_InfoMoney_actual_LSEG": {
+      "name": "InfoMoney – resultado BBAS3 1T26 com consenso LSEG",
+      "type": "media_with_lseg_consensus_reference",
+      "url": "https://www.infomoney.com.br/mercados/banco-do-brasil-bbas3-em-novo-tri-de-decepcoes-pior-noticia-veio-do-guidance-cautela-mercado-desempenho-acoes/",
+      "publication_date": "2026-05-14",
+      "confidence": "high_for_lseg_consensus_reference",
+      "publication_timing": "post_result_article_reporting_pre_result_consensus",
+      "is_post_result_source": true,
+      "usable_as_pre_call_expectation": true,
+      "allowed_usage": "Use only the reported pre-result LSEG consensus figure as pre-call expectation; other information in the article is post-result."
+    },
+    "S8_XP_post_result": {
+      "name": "XP – BBAS3 1T26 revisão de guidance por deterioração de crédito",
+      "type": "sell_side_public_post_result",
+      "url": "https://conteudos.xpi.com.br/acoes/relatorios/banco-do-brasil-bbas3-revisao-de-guidance-por-deterioracao-de-credito-visibilidade-limitada-a-frente/",
+      "publication_date": "2026-05-13",
+      "confidence": "high",
+      "publication_timing": "post_result_sell_side",
+      "is_post_result_source": true,
+      "usable_as_pre_call_expectation": false,
+      "allowed_usage": "Backtesting, actuals interpretation and post-call validation only."
+    },
+    "S9_Genial_post_result": {
+      "name": "Genial Analisa – BBAS3 Resultado 1T26",
+      "type": "sell_side_public_post_result",
+      "url": "https://analisa.genialinvestimentos.com.br/acoes/banco-do-brasil/banco-do-brasil-bbas3-resultado-1t26-guidance-revisado-para-baixo-reforca-recuperacao-em-w/",
+      "publication_date": "2026-05-14",
+      "confidence": "high",
+      "publication_timing": "post_result_sell_side",
+      "is_post_result_source": true,
+      "usable_as_pre_call_expectation": false,
+      "allowed_usage": "Backtesting, actuals interpretation and post-call validation only."
+    },
+    "S10_BB_guidance_revision_official": {
+      "name": "Banco do Brasil – Guidance 2026 Review / Material Fact",
+      "type": "company_ir_material_fact",
+      "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?CodigoInstituicao=1&Tela=ext&descTipo=IPE&numProtocolo=1521598",
+      "mirror_url": "https://www.marketscreener.com/news/banco-do-brasil-s-a-guidance-2026-review-ce7f5bdcde8ff126/",
+      "publication_date": "2026-05-13",
+      "publication_timing": "post_result_official_guidance_revision",
+      "is_post_result_source": true,
+      "usable_as_pre_call_expectation": false,
+      "allowed_usage": "Official prior-vs-current guidance comparison and post-result backtesting. Do not treat current guidance as known before the result/call.",
+      "confidence": "high"
+    },
+    "S11_Reuters_prior_guidance": {
+      "name": "Reuters – Banco do Brasil sees profits rebounding in 2026",
+      "type": "news_with_prior_company_guidance_and_lseg_reference",
+      "url": "https://www.reuters.com/business/finance/lender-banco-do-brasil-sees-profits-rebounding-2026-2026-02-11/",
+      "publication_date": "2026-02-11",
+      "publication_timing": "pre_result_prior_guidance",
+      "is_post_result_source": false,
+      "usable_as_pre_call_expectation": true,
+      "allowed_usage": "Prior formal 2026 guidance and LSEG reference before 1Q26; use as pre-call context.",
+      "confidence": "high"
+    }
+  },
+  "known_before_call": [
+    "Asset-quality pressure in agribusiness was already expected and was the central pre-call risk theme.",
+    "Adjusted net income around R$3.5bn was expected by Bloomberg/LSEG and public sell-side previews.",
+    "ROE below 10% was expected; Genial estimated 7.3% and Itaú BBA 7.5%.",
+    "High provisions/cost of credit were expected; Genial estimated R$17.9bn for 1Q26.",
+    "A risk of negative 2026 guidance revision was already known, especially in cost of credit and adjusted net income.",
+    "NII resilience was partly expected, although sequential pressure from seasonality/funding/treasury was also part of the narrative.",
+    "The first half of 2026 was expected to remain weak, with any recovery more likely concentrated in 2H26."
+  ],
+  "unknown_before_call": [
+    "Exact magnitude of the cost-of-credit guidance revision.",
+    "Whether the new cost-of-credit guidance would exceed R$60bn by a large margin.",
+    "Whether management would signal credit pressure beyond agribusiness, especially in individuals, credit card and revolving lines.",
+    "Whether capital/CET1 and dividend capacity would become a central topic rather than a secondary risk.",
+    "Whether management would provide credible visibility on normalization in 2H26 or keep visibility low.",
+    "Whether the guidance revision would be framed as conservative/final or as potentially still exposed to further downside.",
+    "Whether NII would offset credit pressure enough to support earnings quality."
+  ],
+  "potential_surprises_before_call": [
+    "Exact magnitude of the cost-of-credit guidance revision.",
+    "Whether the new cost-of-credit guidance would exceed R$60bn by a large margin.",
+    "Whether management would signal credit pressure beyond agribusiness, especially in individuals, credit card and revolving lines.",
+    "Whether capital/CET1 and dividend capacity would become a central topic rather than a secondary risk.",
+    "Whether management would provide credible visibility on normalization in 2H26 or keep visibility low.",
+    "Whether the guidance revision would be framed as conservative/final or as potentially still exposed to further downside.",
+    "Whether NII would offset credit pressure enough to support earnings quality."
+  ],
+  "materiality_weights": {
+    "guidance_revision": 0.3,
+    "credit_quality": 0.25,
+    "capital": 0.2,
+    "earnings_vs_consensus": 0.1,
+    "nii": 0.1,
+    "tone": 0.05
+  },
+  "prior_formal_guidance": {
+    "source_ids": [
+      "S10_BB_guidance_revision_official",
+      "S11_Reuters_prior_guidance"
+    ],
+    "publication_timing": "known_before_1Q26_result_and_call",
+    "adjusted_net_income_2026_brl_bn": [
+      22,
+      26
+    ],
+    "cost_of_credit_2026_brl_bn": [
+      53,
+      58
+    ],
+    "nii_growth_2026_pct": [
+      4,
+      8
+    ],
+    "loan_portfolio_growth_2026_pct": [
+      0.5,
+      4.5
+    ],
+    "individuals_loan_growth_2026_pct": [
+      6,
+      10
+    ],
+    "companies_loan_growth_2026_pct": [
+      -3,
+      1
+    ],
+    "agribusiness_loan_growth_2026_pct": [
+      -2,
+      2
+    ],
+    "fee_income_growth_2026_pct": [
+      2,
+      6
+    ],
+    "administrative_expenses_growth_2026_pct": [
+      5,
+      9
+    ],
+    "confidence": "high"
+  },
+  "new_guidance_after_result": {
+    "source_ids": [
+      "S10_BB_guidance_revision_official"
+    ],
+    "publication_timing": "announced_after_1Q26_result_on_2026-05-13",
+    "adjusted_net_income_2026_brl_bn": [
+      18,
+      22
+    ],
+    "cost_of_credit_2026_brl_bn": [
+      65,
+      70
+    ],
+    "nii_growth_2026_pct": [
+      7,
+      11
+    ],
+    "loan_portfolio_growth_2026_pct": "maintained at 0.5% to 4.5%",
+    "individuals_loan_growth_2026_pct": "maintained at 6% to 10%",
+    "companies_loan_growth_2026_pct": "maintained at -3% to 1%",
+    "agribusiness_loan_growth_2026_pct": "maintained at -2% to 2%",
+    "fee_income_growth_2026_pct": "maintained at 2% to 6%",
+    "administrative_expenses_growth_2026_pct": "maintained at 5% to 9%",
+    "confidence": "high",
+    "usage_warning": "This is a post-result fact. It must not be passed to the model as pre-call expectation; use only to compute realized surprise/backtest."
+  },
+  "consensus_by_topic": [
+    {
+      "topic": "Adjusted net income",
+      "consensus_strength": "high",
+      "dispersion": "low_to_medium",
+      "pre_call_expectation": "Around R$3.5bn, with Bloomberg/LSEG close to R$3.46-3.495bn and public sell-side mostly around R$3.5-3.8bn except BTG's lower range.",
+      "confidence": "high"
+    },
+    {
+      "topic": "Cost of credit / provisions",
+      "consensus_strength": "medium_high",
+      "dispersion": "medium",
+      "pre_call_expectation": "High provisions were expected; exact magnitude had less source coverage. Genial estimated R$17.9bn for 1Q26 and broader commentary emphasized elevated credit cost.",
+      "confidence": "medium_high"
+    },
+    {
+      "topic": "Agribusiness asset quality",
+      "consensus_strength": "high",
+      "dispersion": "low",
+      "pre_call_expectation": "Agro deterioration was already the core risk and was not, by itself, a new surprise.",
+      "confidence": "high"
+    },
+    {
+      "topic": "Contamination beyond agro: individuals / cards / revolving credit",
+      "consensus_strength": "medium",
+      "dispersion": "high",
+      "pre_call_expectation": "Some concern existed, but the degree to which non-agro credit would become central was less settled.",
+      "confidence": "medium"
+    },
+    {
+      "topic": "NII",
+      "consensus_strength": "medium",
+      "dispersion": "low",
+      "pre_call_expectation": "NII resilience was partly expected, but direct public estimates were limited; Genial estimated R$26.4bn.",
+      "confidence": "medium"
+    },
+    {
+      "topic": "2026 guidance revision",
+      "consensus_strength": "medium_high_for_direction_low_for_magnitude",
+      "dispersion": "high",
+      "pre_call_expectation": "Risk of revision was known, but magnitude and management framing were the real surprise variables.",
+      "confidence": "medium_high"
+    },
+    {
+      "topic": "Capital / CET1 / dividends",
+      "consensus_strength": "medium",
+      "dispersion": "high",
+      "pre_call_expectation": "Capital was a risk to monitor, but not as precisely quantified in public pre-call consensus as earnings and credit quality.",
+      "confidence": "medium"
+    },
+    {
+      "topic": "Management tone and visibility",
+      "consensus_strength": "medium",
+      "dispersion": "high",
+      "pre_call_expectation": "Market expected caution, but low visibility, lack of confidence in 2H26 normalization or openness to further revisions would be negative surprises.",
+      "confidence": "medium"
+    }
+  ],
+  "expected_vs_surprise_framework": [
+    {
+      "topic": "Cost of credit guidance",
+      "pre_call_expectation": "High provisions expected; risk of negative revision was known.",
+      "what_would_be_surprising": "Revision above R$60bn, management signaling pressure beyond agribusiness, or low visibility into 2H26 normalization.",
+      "materiality": "high",
+      "materiality_weight_key": "guidance_revision",
+      "direction_if_surprise": "negative",
+      "confidence": "high"
+    },
+    {
+      "topic": "Adjusted net income 2026 guidance",
+      "pre_call_expectation": "Formal prior guidance was R$22-26bn, but public pre-call views already questioned achievability after a weak 1Q26 start.",
+      "what_would_be_surprising": "Cutting the range so that the old floor becomes the new ceiling, especially if not paired with credible normalization path.",
+      "materiality": "high",
+      "materiality_weight_key": "guidance_revision",
+      "direction_if_surprise": "negative",
+      "confidence": "high"
+    },
+    {
+      "topic": "1Q26 adjusted net income vs consensus",
+      "pre_call_expectation": "Net income around R$3.5bn was expected by Bloomberg/LSEG and public sell-side previews.",
+      "what_would_be_surprising": "A deviation greater than roughly ±5% versus Bloomberg/LSEG, or evidence that earnings quality was materially weaker than headline net income suggested.",
+      "materiality": "medium",
+      "materiality_weight_key": "earnings_vs_consensus",
+      "direction_if_surprise": "positive_or_negative",
+      "confidence": "high"
+    },
+    {
+      "topic": "Agribusiness asset quality",
+      "pre_call_expectation": "Agro was already expected to be the main pressure point, with high NPLs, judicial recoveries and provisioning needs.",
+      "what_would_be_surprising": "A clear peak/normalization signal would be positive; evidence of further deterioration or weak recoveries would be negative.",
+      "materiality": "high",
+      "materiality_weight_key": "credit_quality",
+      "direction_if_surprise": "positive_or_negative",
+      "confidence": "high"
+    },
+    {
+      "topic": "Contamination beyond agribusiness",
+      "pre_call_expectation": "Some spillover risk was known, but agro remained the dominant expected pressure point before the call.",
+      "what_would_be_surprising": "Management explicitly highlighting material deterioration in individuals, credit card, revolving lines or SMEs as a second leg of credit pressure.",
+      "materiality": "high",
+      "materiality_weight_key": "credit_quality",
+      "direction_if_surprise": "negative",
+      "confidence": "medium"
+    },
+    {
+      "topic": "Capital / CET1 / payout",
+      "pre_call_expectation": "Capital was a watch item given weaker profitability and elevated provisions, but not the most quantified public consensus topic.",
+      "what_would_be_surprising": "Capital discussion becoming central, signals of constrained payout, or management prioritizing capital preservation over shareholder remuneration.",
+      "materiality": "high",
+      "materiality_weight_key": "capital",
+      "direction_if_surprise": "negative",
+      "confidence": "medium"
+    },
+    {
+      "topic": "NII / margem financeira bruta",
+      "pre_call_expectation": "Sequential pressure was expected, but NII resilience was partly expected due to repricing/funding effects.",
+      "what_would_be_surprising": "NII materially above public estimate and strong enough to partly offset credit costs, or management raising NII guidance with credible drivers.",
+      "materiality": "medium",
+      "materiality_weight_key": "nii",
+      "direction_if_surprise": "positive",
+      "confidence": "medium"
+    },
+    {
+      "topic": "Management tone / visibility",
+      "pre_call_expectation": "Cautious tone was expected; the market needed evidence on timing of normalization.",
+      "what_would_be_surprising": "Low confidence in 2H26 recovery, vague answers on peak provisions, or repeated emphasis that visibility remains limited.",
+      "materiality": "medium",
+      "materiality_weight_key": "tone",
+      "direction_if_surprise": "negative",
+      "confidence": "medium"
+    }
+  ],
+  "pre_call_consensus_summary": {
+    "formal_consensus": {
+      "bloomberg_adjusted_net_income_brl_bn": 3.46,
+      "lseg_adjusted_net_income_brl_bn": 3.495,
+      "rounded_consensus_brl_bn": 3.48,
+      "confidence": "high"
+    },
+    "public_proxy_consensus": {
+      "method": "mean/median of public datapoints: Bloomberg consensus, LSEG consensus, Genial, Itaú BBA, BTG midpoint, Bradesco BBI",
+      "mean_adjusted_net_income_brl_bn": 3.5225,
+      "median_adjusted_net_income_brl_bn": 3.5125,
+      "min_brl_bn": 3.25,
+      "max_brl_bn": 3.8,
+      "actual_brl_bn": 3.43,
+      "surprise_vs_proxy_median_pct": -2.35,
+      "interpretation": "Lucro veio praticamente em linha com consenso formal Bloomberg/LSEG, mas abaixo de estimativas sell-side mais otimistas; dentro da faixa BTG."
+    },
+    "narrative_consensus_before_call": [
+      "O BB era esperado como o destaque negativo entre os grandes bancos no 1T26.",
+      "A pressão central era qualidade de ativos, especialmente agronegócio, mas já havia preocupação com PF e PJ.",
+      "Provisões/custo de crédito deveriam seguir elevados, com risco de revisão negativa do guidance de 2026.",
+      "NII/margem financeira seria pressionada sequencialmente por sazonalidade, menor tesouraria e custo de funding, mas ainda com resiliência na comparação anual.",
+      "A recuperação seria mais provável no 2S26, com baixa visibilidade no 1S26."
+    ]
+  },
+  "pre_call_estimates_and_actuals": [
+    {
+      "metric": "adjusted_net_income_brl_bn",
+      "source": "Bloomberg consensus via Bloomberg Línea",
+      "source_id": "S6_Bloomberg_Linea_actual_consensus",
+      "estimate": 3.46,
+      "estimate_type": "consensus",
+      "publication_timing": "post_result_article_reporting_pre_result_consensus",
+      "actual": 3.43,
+      "surprise_abs": -0.03,
+      "surprise_pct": -0.87,
+      "confidence": "high"
+    },
+    {
+      "metric": "adjusted_net_income_brl_bn",
+      "source": "LSEG consensus via InfoMoney",
+      "source_id": "S7_InfoMoney_actual_LSEG",
+      "estimate": 3.495,
+      "estimate_type": "consensus",
+      "publication_timing": "post_result_article_reporting_pre_result_consensus",
+      "actual": 3.43,
+      "surprise_abs": -0.065,
+      "surprise_pct": -1.86,
+      "confidence": "high"
+    },
+    {
+      "metric": "adjusted_net_income_brl_bn",
+      "source": "Genial pre-call preview",
+      "source_id": "S3_Genial_preview",
+      "estimate": 3.53,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 3.43,
+      "surprise_abs": -0.1,
+      "surprise_pct": -2.83,
+      "confidence": "high"
+    },
+    {
+      "metric": "adjusted_net_income_brl_bn",
+      "source": "Itaú BBA via InfoMoney/Investidor10",
+      "source_id": "S4_InfoMoney_preview",
+      "estimate": 3.6,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 3.43,
+      "surprise_abs": -0.17,
+      "surprise_pct": -4.72,
+      "confidence": "medium"
+    },
+    {
+      "metric": "adjusted_net_income_brl_bn",
+      "source": "BTG Pactual range via Investing/MoneyTimes/InfoMoney",
+      "source_id": "S5_Investing_BTG_preview",
+      "estimate_range": [
+        3.0,
+        3.5
+      ],
+      "estimate_midpoint": 3.25,
+      "estimate_type": "sell_side_estimate_range",
+      "publication_timing": "pre_result",
+      "actual": 3.43,
+      "surprise_abs_vs_midpoint": 0.18,
+      "surprise_pct_vs_midpoint": 5.54,
+      "within_range": true,
+      "confidence": "medium"
+    },
+    {
+      "metric": "adjusted_net_income_brl_bn",
+      "source": "Bradesco BBI via InfoMoney",
+      "source_id": "S4_InfoMoney_preview",
+      "estimate": 3.8,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 3.43,
+      "surprise_abs": -0.37,
+      "surprise_pct": -9.74,
+      "confidence": "medium"
+    },
+    {
+      "metric": "roe_percent",
+      "source": "Genial pre-call preview",
+      "source_id": "S3_Genial_preview",
+      "estimate": 7.3,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 7.3,
+      "surprise_abs_pp": 0.0,
+      "confidence": "high"
+    },
+    {
+      "metric": "roe_percent",
+      "source": "Itaú BBA via InfoMoney",
+      "source_id": "S4_InfoMoney_preview",
+      "estimate": 7.5,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 7.3,
+      "surprise_abs_pp": -0.2,
+      "confidence": "medium"
+    },
+    {
+      "metric": "roe_percent",
+      "source": "Goldman Sachs via InfoMoney",
+      "source_id": "S4_InfoMoney_preview",
+      "estimate": 8.5,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 7.3,
+      "surprise_abs_pp": -1.2,
+      "confidence": "medium"
+    },
+    {
+      "metric": "gross_nii_brl_bn",
+      "source": "Genial pre-call preview",
+      "source_id": "S3_Genial_preview",
+      "estimate": 26.4,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 27.4,
+      "surprise_abs": 1.0,
+      "surprise_pct": 3.79,
+      "confidence": "high"
+    },
+    {
+      "metric": "credit_portfolio_expanded_brl_trn",
+      "source": "Genial pre-call preview",
+      "source_id": "S3_Genial_preview",
+      "estimate": 1.284,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 1.306,
+      "surprise_abs": 0.022,
+      "surprise_pct": 1.71,
+      "confidence": "high"
+    },
+    {
+      "metric": "cost_of_credit_brl_bn",
+      "source": "Genial pre-call preview",
+      "source_id": "S3_Genial_preview",
+      "estimate": 17.9,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 18.9,
+      "surprise_abs": 1.0,
+      "surprise_pct": 5.59,
+      "confidence": "high"
+    },
+    {
+      "metric": "npl_90_percent",
+      "source": "Genial pre-call preview",
+      "source_id": "S3_Genial_preview",
+      "estimate": 5.3,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 5.05,
+      "surprise_abs_pp": -0.25,
+      "confidence": "high"
+    },
+    {
+      "metric": "service_fees_brl_bn",
+      "source": "Genial pre-call preview",
+      "source_id": "S3_Genial_preview",
+      "estimate": 8.8,
+      "estimate_type": "sell_side_estimate",
+      "publication_timing": "pre_result",
+      "actual": 8.8,
+      "surprise_abs": 0.0,
+      "surprise_pct": 0.0,
+      "confidence": "high"
+    }
+  ],
+  "post_result_actuals_usage_note": {
+    "strict_rule": "post_result_actuals_for_backtesting is for realized surprise/backtesting only. It must not be treated as pre-call expectation or injected into prompts as prior_context.",
+    "allowed_uses": [
+      "Compute surprise after parsing the call/result.",
+      "Evaluate whether model classifications match realized actuals.",
+      "Build unit tests for expected vs surprise logic."
+    ],
+    "disallowed_uses": [
+      "Pre-call consensus context.",
+      "Evidence that analysts expected a metric before the release.",
+      "Prompt context for a model that is supposed to infer surprise from the transcript alone."
+    ]
+  },
+  "post_result_actuals_for_backtesting": {
+    "adjusted_net_income_brl_bn": 3.43,
+    "roe_percent": 7.3,
+    "gross_nii_brl_bn": 27.4,
+    "credit_portfolio_expanded_brl_trn": 1.306,
+    "cost_of_credit_brl_bn": 18.9,
+    "npl_90_percent": 5.05,
+    "service_fees_brl_bn": 8.8,
+    "cet1_percent": 11.6,
+    "guidance_2026_adjusted_net_income_brl_bn": [
+      18,
+      22
+    ],
+    "guidance_2026_cost_of_credit_brl_bn": [
+      65,
+      70
+    ],
+    "guidance_2026_nii_growth_percent": [
+      7,
+      11
+    ],
+    "new_guidance_2026_adjusted_net_income_brl_bn": [
+      18,
+      22
+    ],
+    "new_guidance_2026_cost_of_credit_brl_bn": [
+      65,
+      70
+    ],
+    "new_guidance_2026_nii_growth_percent": [
+      7,
+      11
+    ]
+  },
+  "surprise_interpretation_rules": [
+    {
+      "rule": "net_income_surprise",
+      "guidance": "Se lucro ajustado ficar dentro de ±3% do consenso formal Bloomberg/LSEG, classificar como 'in line'. Para BBAS3 1T26, o lucro de R$3,43 bi ficou em linha com Bloomberg/LSEG, apesar de fraco em termos absolutos."
+    },
+    {
+      "rule": "credit_quality_surprise",
+      "guidance": "Mesmo com lucro em linha, tratar custo de crédito, NPL, recuperações judiciais e revisão de guidance como potenciais surpresas negativas qualitativas."
+    },
+    {
+      "rule": "nii_surprise",
+      "guidance": "NII acima de estimativas deve ser classificado como surpresa positiva operacional, mas não deve compensar automaticamente deterioração de crédito."
+    },
+    {
+      "rule": "guidance_surprise",
+      "guidance": "Revisão de lucro 2026 de R$22-26 bi para R$18-22 bi e custo de crédito de R$53-58 bi para R$65-70 bi deve ser classificada como principal surpresa negativa."
+    }
+  ],
+  "expected_analyst_questions": [
+    "Qual é o pico esperado do custo de crédito e da inadimplência no agronegócio?",
+    "A revisão de guidance é suficiente ou ainda há risco de novo corte?",
+    "Quanto da pressão de crédito já está provisionada e quanto depende de recuperações no 2S26?",
+    "A deterioração começou a migrar de agro para PF/PJ? Quais linhas são mais sensíveis?",
+    "Como o BB Regulariza Agro e os efeitos residuais da MP 1.314 afetam capital, provisões e recuperação?",
+    "Qual o nível sustentável de ROE pós-normalização do agro?",
+    "O payout/dividendos continuará limitado pelo capital e pela rentabilidade deprimida?"
+  ],
+  "recommended_tool_fields": {
+    "prior_context_available": true,
+    "source_quality": "medium_high",
+    "confidence_floor": 0.65,
+    "confidence_cap": 0.9,
+    "surprise_score_cap_if_only_public_proxy": 85,
+    "avoid_overclaiming": [
+      "Não dizer que o resultado de lucro foi grande surpresa negativa; foi fraco, mas em linha com consenso formal.",
+      "Não tratar cada fala negativa sobre agro como novidade se já estava no consenso pré-call.",
+      "Dar maior peso a guidance, custo de crédito, NPL early-stage/PF e recuperações judiciais como fontes de surpresa."
+    ],
+    "post_result_actuals_are_not_pre_call_context": true,
+    "required_prompt_separation": [
+      "pre_call_context",
+      "post_result_actuals_for_backtesting",
+      "transcript_evidence"
+    ],
+    "recommended_surprise_materiality_weights": {
+      "guidance_revision": 0.3,
+      "credit_quality": 0.25,
+      "capital": 0.2,
+      "earnings_vs_consensus": 0.1,
+      "nii": 0.1,
+      "tone": 0.05
+    },
+    "required_known_unknown_split": true
+  },
+  "prompt_usage_guardrails": [
+    "Never feed post_result_actuals_for_backtesting as if they were available before the call.",
+    "Sources with is_post_result_source=true can only contribute pre-call expectations when allowed_usage explicitly says they report a pre-result consensus figure, e.g., Bloomberg/LSEG consensus cited after the fact.",
+    "Do not classify 'agro pressure' alone as a surprise; it was known before the call.",
+    "Classify the 1Q26 adjusted net income as in-line versus formal consensus unless the model has a materially different consensus source.",
+    "Classify the 2026 guidance revision as the primary negative surprise, especially cost of credit and adjusted net income ranges.",
+    "When only public proxy consensus is available, cap confidence below a paid consensus dataset unless at least three independent pre-call sources agree."
+  ]
+}

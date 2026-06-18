@@ -1,0 +1,544 @@
+{
+  "context_type": "historical_transcript_summary",
+  "ticker": "BBAS3",
+  "company": "Banco do Brasil",
+  "period_covered": "2024-2025",
+  "source_count": 8,
+  "source_files": [
+    "Transcript Earnings Videoconference 1Q24.pdf",
+    "Transcription Earnings 2Q24.pdf",
+    "Transcript - Videoconference - 3Q24.pdf",
+    "Transcript - Videoconference - 4Q24.pdf",
+    "Transcript - Videoconference - 1Q25.pdf",
+    "Transcript - Videoconference - 2Q25.pdf",
+    "Transcript - Videoconference - 3Q25.pdf",
+    "Transcript - Videoconference - 4Q25.pdf"
+  ],
+  "quarters": [
+    {
+      "source_file": "Transcript Earnings Videoconference 1Q24.pdf",
+      "quarter": "1Q24",
+      "call_date": "May 10th, 2024",
+      "management_tone_hint": "positive",
+      "dominant_topics": [
+        "portfolio_mix",
+        "nii",
+        "guidance",
+        "capital",
+        "agribusiness",
+        "profitability"
+      ],
+      "guidance_topics": [
+        "guidance",
+        "nii",
+        "portfolio_mix",
+        "provisions_cost_of_credit",
+        "agribusiness"
+      ],
+      "analyst_question_topics": [
+        "portfolio_mix",
+        "nii",
+        "guidance",
+        "capital",
+        "agribusiness"
+      ],
+      "recurring_red_flag_language": [
+        {
+          "speaker": null,
+          "quote": "So, you followed, we had some cases of clients entering the judicial or extrajudicial recovery process and, in addition, the micro and small business",
+          "quarter": "1Q24"
+        },
+        {
+          "speaker": null,
+          "quote": "Without a doubt, I think this is the most challenging line that banks, especially incumbent banks today, are facing",
+          "quarter": "1Q24"
+        }
+      ],
+      "notable_management_quotes": [
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "We have made credit lines more flexible, increased grace periods, postponed card bill payments, as well as other measures that could help alleviate this moment of pain"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [
+            "capital",
+            "portfolio_mix"
+          ],
+          "quote": "We understand that the value of our shares does not yet reflect the fact that we are among one of the most profitable banks in the country, which"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "This partnership aims to increase market share in this segment, combining BB's expertise in credit and risk and BV's distribution in vehicle financing"
+        }
+      ],
+      "segment_count": 0,
+      "qa_turn_count": 0
+    },
+    {
+      "source_file": "Transcription Earnings 2Q24.pdf",
+      "quarter": "2Q24",
+      "call_date": "August 8th, 2024",
+      "management_tone_hint": "positive",
+      "dominant_topics": [
+        "nii",
+        "portfolio_mix",
+        "agribusiness",
+        "capital",
+        "guidance",
+        "provisions_cost_of_credit"
+      ],
+      "guidance_topics": [
+        "guidance",
+        "nii",
+        "agribusiness",
+        "asset_quality",
+        "provisions_cost_of_credit"
+      ],
+      "analyst_question_topics": [
+        "nii",
+        "portfolio_mix",
+        "agribusiness",
+        "capital",
+        "guidance"
+      ],
+      "recurring_red_flag_language": [],
+      "notable_management_quotes": [
+        {
+          "speaker": null,
+          "topic_tags": [
+            "guidance"
+          ],
+          "quote": "The growth in credit was very much in line with our guidance"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [
+            "asset_quality",
+            "capital",
+            "portfolio_mix"
+          ],
+          "quote": "In terms of delinquency, under control, NPL over 90 of 3%, and our CET1 at 11.60%, we generated organic profits that were incorporated into our capital basis to"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [
+            "capital",
+            "portfolio_mix"
+          ],
+          "quote": "Our consumption of capital, it’s not only a result of the increase in the credit portfolio, but also from many treasury operations, taking advantage of opportunities in the"
+        }
+      ],
+      "segment_count": 0,
+      "qa_turn_count": 0
+    },
+    {
+      "source_file": "Transcript - Videoconference - 3Q24.pdf",
+      "quarter": "3Q24",
+      "call_date": null,
+      "management_tone_hint": "positive",
+      "dominant_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "nii",
+        "asset_quality",
+        "provisions_cost_of_credit",
+        "guidance"
+      ],
+      "guidance_topics": [
+        "guidance",
+        "provisions_cost_of_credit",
+        "profitability",
+        "portfolio_mix",
+        "agribusiness"
+      ],
+      "analyst_question_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "nii",
+        "asset_quality",
+        "provisions_cost_of_credit"
+      ],
+      "recurring_red_flag_language": [
+        {
+          "speaker": null,
+          "quote": "Regarding the disbursement of the Safra Plan in the third quarter, we actually started a more challenging first month",
+          "quarter": "3Q24"
+        },
+        {
+          "speaker": null,
+          "quote": "But even so, it remains a scenario that is difficult to predict, right?",
+          "quarter": "3Q24"
+        },
+        {
+          "speaker": null,
+          "quote": "I think most of the questions have already been asked, so I wanted to ask a question again, a bit more challenging",
+          "quarter": "3Q24"
+        }
+      ],
+      "notable_management_quotes": [
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "As you know, credit is, no doubt, an important pillar of our main business"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "We have credit in an integrated and synergistic way in the markets where we operate, in a balanced composition between risk and return"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [
+            "portfolio_mix"
+          ],
+          "quote": "We surpassed 1.2 trillion reais in the balance of our credit portfolio, an increase of 13% in one year"
+        }
+      ],
+      "segment_count": 0,
+      "qa_turn_count": 0
+    },
+    {
+      "source_file": "Transcript - Videoconference - 4Q24.pdf",
+      "quarter": "4Q24",
+      "call_date": null,
+      "management_tone_hint": "positive",
+      "dominant_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "nii",
+        "provisions_cost_of_credit",
+        "guidance",
+        "capital"
+      ],
+      "guidance_topics": [
+        "guidance",
+        "portfolio_mix",
+        "agribusiness",
+        "dividends",
+        "asset_quality"
+      ],
+      "analyst_question_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "nii",
+        "provisions_cost_of_credit",
+        "guidance"
+      ],
+      "recurring_red_flag_language": [
+        {
+          "speaker": null,
+          "quote": "The Brazilian economic scenario this year, although challenging, presents elements that allow us to maintain resilient economic activity",
+          "quarter": "4Q24"
+        },
+        {
+          "speaker": null,
+          "quote": "And these were opportunities that we foresaw in the capital market, but it's important to mention that we have a more challenging environment for",
+          "quarter": "4Q24"
+        },
+        {
+          "speaker": null,
+          "quote": "Obviously, referring back to agribusiness, if you look at the short and medium-term environment, it is still challenging",
+          "quarter": "4Q24"
+        }
+      ],
+      "notable_management_quotes": [
+        {
+          "speaker": null,
+          "topic_tags": [
+            "guidance"
+          ],
+          "quote": "In 2024, we completed two years of our management and reaffirmed our ability to honor what we set out to do, delivering for the second consecutive year on"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "We delivered our commitments to generate value, with diversified operations and responsible credit growth based on the proximity and specialization in phygital service to our customers"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "We also advanced in the specialization of wholesale customer service, expanding the segments NPS and exceeding R$ 258 billion in the credit balance for large companies"
+        }
+      ],
+      "segment_count": 0,
+      "qa_turn_count": 0
+    },
+    {
+      "source_file": "Transcript - Videoconference - 1Q25.pdf",
+      "quarter": "1Q25",
+      "call_date": null,
+      "management_tone_hint": "positive",
+      "dominant_topics": [
+        "agribusiness",
+        "portfolio_mix",
+        "provisions_cost_of_credit",
+        "nii",
+        "asset_quality",
+        "guidance"
+      ],
+      "guidance_topics": [
+        "guidance",
+        "agribusiness",
+        "portfolio_mix",
+        "provisions_cost_of_credit",
+        "dividends"
+      ],
+      "analyst_question_topics": [
+        "agribusiness",
+        "portfolio_mix",
+        "provisions_cost_of_credit",
+        "asset_quality",
+        "nii"
+      ],
+      "recurring_red_flag_language": [
+        {
+          "speaker": null,
+          "quote": "Thinking about the uncertainty that has now been inserted with the deterioration of Agribusiness and also by Resolution 4,966, which caused you to remove",
+          "quarter": "1Q25"
+        },
+        {
+          "speaker": null,
+          "quote": "I wanted to understand a bit about the uncertainty in the NII going forward",
+          "quarter": "1Q25"
+        },
+        {
+          "speaker": null,
+          "quote": "Well, the uncertainty is mainly due to the new provisions that have been formed as a result of this Central Bank resolution",
+          "quarter": "1Q25"
+        }
+      ],
+      "notable_management_quotes": [
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "A new point, a product that changes the conditions and the way the Brazilian population accesses credit"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "The “Crédito do Trabalhador” (Worker’s Credit) was a major turning point"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [],
+          "quote": "We combined our more than 20 years of expertise in payroll loans with the best in CRM, artificial intelligence, and credit analysis"
+        }
+      ],
+      "segment_count": 0,
+      "qa_turn_count": 0
+    },
+    {
+      "source_file": "Transcript - Videoconference - 2Q25.pdf",
+      "quarter": "2Q25",
+      "call_date": null,
+      "management_tone_hint": "positive",
+      "dominant_topics": [
+        "agribusiness",
+        "portfolio_mix",
+        "asset_quality",
+        "provisions_cost_of_credit",
+        "nii",
+        "guidance"
+      ],
+      "guidance_topics": [
+        "guidance",
+        "provisions_cost_of_credit",
+        "profitability",
+        "nii",
+        "portfolio_mix"
+      ],
+      "analyst_question_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "provisions_cost_of_credit",
+        "asset_quality",
+        "nii"
+      ],
+      "recurring_red_flag_language": [
+        {
+          "speaker": null,
+          "quote": "And given the heavier guidance for loan loss provisions and the starting point of the quarter, I’d like to understand how challenging you consider",
+          "quarter": "2Q25"
+        },
+        {
+          "speaker": null,
+          "quote": "The first is that shareholders’ equity growth could be more challenging",
+          "quarter": "2Q25"
+        }
+      ],
+      "notable_management_quotes": [
+        {
+          "speaker": null,
+          "topic_tags": [
+            "asset_quality",
+            "provisions_cost_of_credit",
+            "agribusiness"
+          ],
+          "quote": "Cost of Credit rose 56% over Q1, largely driven by NPL in the agribusiness and micro and small business segments"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [
+            "asset_quality"
+          ],
+          "quote": "We’ll go into more detail shortly, but this NPL exerted significant pressure on our results"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [
+            "portfolio_mix"
+          ],
+          "quote": "Our expanded loan portfolio reached R$ 1.294 trillion in June 2025, a portfolio that continues to grow, with strong performance in low-risk credit lines"
+        }
+      ],
+      "segment_count": 0,
+      "qa_turn_count": 0
+    },
+    {
+      "source_file": "Transcript - Videoconference - 3Q25.pdf",
+      "quarter": "3Q25",
+      "call_date": null,
+      "management_tone_hint": "positive",
+      "dominant_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "provisions_cost_of_credit",
+        "asset_quality",
+        "capital",
+        "tax"
+      ],
+      "guidance_topics": [
+        "guidance",
+        "provisions_cost_of_credit",
+        "agribusiness",
+        "profitability"
+      ],
+      "analyst_question_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "provisions_cost_of_credit",
+        "asset_quality",
+        "capital"
+      ],
+      "recurring_red_flag_language": [
+        {
+          "speaker": null,
+          "quote": "But help us think a bit about the fourth quarter, given all this uncertainty",
+          "quarter": "3Q25"
+        },
+        {
+          "speaker": null,
+          "quote": "This confirms Banco do Brasil’s strength in generating revenues capable of protecting us from this extremely challenging situation in the agribusiness portfolio",
+          "quarter": "3Q25"
+        },
+        {
+          "speaker": null,
+          "quote": "Because you will be extending this for 2, 3, 5, 9 years, and maybe we will not see problems now, but there will always",
+          "quarter": "3Q25"
+        }
+      ],
+      "notable_management_quotes": [
+        {
+          "speaker": null,
+          "topic_tags": [
+            "asset_quality",
+            "agribusiness"
+          ],
+          "quote": "It is important to emphasize that the resilience of our balance sheet has allowed us to absorb the impacts of increased agribusiness delinquency and regulatory changes that brought"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [
+            "nii",
+            "portfolio_mix"
+          ],
+          "quote": "Credit in this segment has promoted a relevant change in the mix, which is already positively reflected in the spread, contributing to the increase in credit revenues and,"
+        },
+        {
+          "speaker": null,
+          "topic_tags": [
+            "capital"
+          ],
+          "quote": "Another positive aspect was the resilience of our Common Equity Tier 1 Capital, which closed the quarter at 11.16%, within the level we consider appropriate for Banco do"
+        }
+      ],
+      "segment_count": 0,
+      "qa_turn_count": 0
+    },
+    {
+      "source_file": "Transcript - Videoconference - 4Q25.pdf",
+      "quarter": "4Q25",
+      "call_date": null,
+      "management_tone_hint": "cautious",
+      "dominant_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "provisions_cost_of_credit",
+        "guidance",
+        "nii",
+        "asset_quality"
+      ],
+      "guidance_topics": [
+        "portfolio_mix",
+        "agribusiness",
+        "provisions_cost_of_credit",
+        "nii",
+        "guidance"
+      ],
+      "analyst_question_topics": [
+        "capital",
+        "agribusiness",
+        "portfolio_mix",
+        "guidance",
+        "asset_quality"
+      ],
+      "recurring_red_flag_language": [
+        {
+          "speaker": "Janaína Storti",
+          "quote": "We do not know if the recovery will be V-shaped; we want it to be V-shaped, it could be W-shaped, or it could even",
+          "quarter": "4Q25"
+        }
+      ],
+      "notable_management_quotes": [
+        {
+          "speaker": "Geovanne Tobias",
+          "topic_tags": [
+            "capital"
+          ],
+          "quote": "No, what is expected to hit our capital ratio coming from the regulator in terms of operational risk"
+        }
+      ],
+      "segment_count": 34,
+      "qa_turn_count": 10
+    }
+  ],
+  "historical_patterns": {
+    "tone_trend": "1Q24: positive -> 2Q24: positive -> 3Q24: positive -> 4Q24: positive -> 1Q25: positive -> 2Q25: positive -> 3Q25: positive -> 4Q25: cautious",
+    "recurring_topics": [
+      "portfolio_mix",
+      "agribusiness",
+      "nii",
+      "guidance",
+      "provisions_cost_of_credit",
+      "asset_quality",
+      "capital",
+      "profitability"
+    ],
+    "recurring_analyst_question_topics": [
+      "portfolio_mix",
+      "agribusiness",
+      "nii",
+      "asset_quality",
+      "provisions_cost_of_credit",
+      "guidance"
+    ],
+    "use_in_current_analysis": [
+      "Treat repeated historical topics as recurring unless the current call materially changes language, guidance, or quantification.",
+      "Use history to calibrate tone shifts, recurring analyst pressure, and whether a theme appears new versus persistent.",
+      "Do not cite historical context as evidence for claims about the current call."
+    ]
+  }
+}
