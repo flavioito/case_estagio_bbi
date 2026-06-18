@@ -1,0 +1,699 @@
+{
+  "schema_version": "1.2",
+  "company_name": "Banco do Brasil S.A.",
+  "ticker": "BBAS3",
+  "quarter": "1Q26",
+  "call_date": "May 14th, 2026",
+  "management_tone": {
+    "classification": "cautious",
+    "summary": "Management acknowledged a materially worsened credit environment and revised guidance downward, emphasizing prudence and risk anticipation. While defending strategic execution and long-term resilience, speakers repeatedly stressed uncertainty, external shocks, and the need for conservative provisioning. The tone balanced acknowledgment of challenges with confidence in capital adequacy and business fundamentals.",
+    "evidence": [
+      {
+        "quote": "The current context demands prudence, and prudence for this administration does not mean hesitation; it means having clarity about what needs to be done.",
+        "speaker": "Geovanne Tobias",
+        "page": 2,
+        "rationale": "Explicit statement of cautious posture framed as deliberate risk management rather than weakness, indicating measured but serious concern.",
+        "evidence_validated": true,
+        "speaker_validated": true,
+        "source_block_ids": [
+          "seg_0002"
+        ],
+        "match_type": "approximate",
+        "matched_text": "the current context demands prudence, and prudence for this administration does not mean hesitation; it means having clarity about what needs to be done,",
+        "match_score": 0.9935
+      },
+      {
+        "quote": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today.",
+        "speaker": "Geovanne Tobias",
+        "page": 25,
+        "rationale": "Acknowledgment of external shock and guidance revision necessity, reflecting defensive tone and recognition of deteriorated conditions.",
+        "evidence_validated": true,
+        "speaker_validated": true,
+        "source_block_ids": [
+          "seg_0069"
+        ],
+        "match_type": "normalized_exact",
+        "matched_text": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today.",
+        "match_score": 1.0
+      },
+      {
+        "quote": "This 1Q protects against the more severe scenario we foresee for the future and, as you rightly pointed out, why wasn't this done before? Because these precipitations occurred after the release of our guidance back in 1Q.",
+        "speaker": "Felipe Prince",
+        "page": 4,
+        "rationale": "Explanation of proactive provisioning and risk anticipation, demonstrating cautious stance while defending timing of actions.",
+        "evidence_validated": true,
+        "speaker_validated": true,
+        "source_block_ids": [
+          "seg_0005"
+        ],
+        "match_type": "normalized_exact",
+        "matched_text": "This 1Q protects against the more severe scenario we foresee for the future and, as you rightly pointed out, why wasn't this done before? Because these precipitations occurred after the release of our guidance back in 1Q.",
+        "match_score": 1.0
+      }
+    ],
+    "confidence": "high"
+  },
+  "guidance_changes": [
+    {
+      "topic": "Cost of credit 2026",
+      "metric_direction": "raised",
+      "investment_implication": "negative",
+      "statement_basis": "explicit",
+      "current_statement": "Management revised cost of credit guidance upward, incorporating higher expected losses from agribusiness punctuality deterioration and individuals contamination. The new guidance range was not explicitly stated in the transcript, but management indicated a material increase from the prior range of R$53-58bn.",
+      "previous_reference": "Prior guidance was R$53-58bn for 2026 cost of credit.",
+      "evidence": [
+        {
+          "quote": "The increase in provision incorporates this more negative scenario that we see in the agribusiness punctuality, so the expected loss projections are exactly to cover this difference that we have observed, around 25%, between the expectation that was our target, and was included in the previous guidance, and the reality that we have been seeing at the beginning of April.",
+          "speaker": "Felipe Prince",
+          "page": 9,
+          "rationale": "Direct statement of guidance revision driven by lower punctuality and higher expected losses in agribusiness.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0023"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "The increase in provision incorporates this more negative scenario that we see in the agribusiness punctuality, so the expected loss projections are exactly to cover this difference that we have observed, around 25%, between the expectation that was our target, and was included in the previous guidance, and the reality that we have been seeing at the beginning of April.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "In the 1Q, the cost of credit reached nearly R$ 19 billion. And when we project the scenario ahead, it is impossible to ignore that today there are many more uncertainties and challenges than when we started the year.",
+          "speaker": "Geovanne Tobias",
+          "page": 2,
+          "rationale": "Explicit acknowledgment of cost of credit increase and forward revision due to changed macro environment.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0002"
+          ],
+          "match_type": "exact",
+          "matched_text": "In the 1Q, the cost of credit reached nearly R$ 19 billion. And when we project the scenario ahead, it is impossible to ignore that today there are many more uncertainties and challenges than when we started the year.",
+          "match_score": 1.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "topic": "Net Interest Income (NII) 2026",
+      "metric_direction": "raised",
+      "investment_implication": "positive",
+      "statement_basis": "explicit",
+      "current_statement": "Management revised NII guidance upward by approximately 3 percentage points, citing higher Selic rate expectations (revised from 12% terminal to 13.5%), improved mix toward higher-margin individuals portfolio, and treasury liquidity benefits.",
+      "previous_reference": "Prior guidance implied lower NII growth assumption based on 12% terminal Selic rate.",
+      "evidence": [
+        {
+          "quote": "We started the year with a budget assuming a final Selic rate of 12, an average around 13%. Now, we have already revised it to 13.5% with an average close to 14%, and, without a doubt, this brings an opportunity, especially given our liquidity in our treasury.",
+          "speaker": "Geovanne Tobias",
+          "page": 20,
+          "rationale": "Explicit revision of Selic assumptions and positive impact on NII from higher rates and treasury positioning.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0051"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "We started the year with a budget assuming a final Selic rate of 12, an average around 13%. Now, we have already revised it to 13.5% with an average close to 14%, and, without a doubt, this brings an opportunity, especially given our liquidity in our treasury.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "The focus will continue to be greater growth in individuals; we have already done 7.8, but we are accelerating. Our individual margin has already grown; it has been above 15%. So, with a higher interest rate level, we expect a positive impact on liquidity, a positive impact on mix improvement, and all of this then reflects in our NII.",
+          "speaker": "Geovanne Tobias",
+          "page": 20,
+          "rationale": "Direct statement of NII upward revision driven by mix shift and rate environment.",
+          "evidence_validated": false,
+          "speaker_validated": null,
+          "source_block_ids": [],
+          "match_type": "not_found",
+          "matched_text": null,
+          "match_score": 0.0
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "topic": "Adjusted net income 2026",
+      "metric_direction": "lowered",
+      "investment_implication": "negative",
+      "statement_basis": "inferred",
+      "current_statement": "Management implied downward revision of adjusted net income guidance through discussion of lower profitability expectations and higher provisions, though no explicit new range was stated. Management indicated 2Q-4Q adjusted net income in the range of R$5-6bn per quarter, implying full-year guidance below the prior R$22-26bn range.",
+      "previous_reference": "Prior formal guidance was R$22-26bn for 2026 adjusted net income.",
+      "evidence": [
+        {
+          "quote": "If you look at our projection, our adjusted net income expectation for the year, starting from 2Q, I will be generating not R$ 3.4 billion in net income anymore, but something in the range of 5 or 6 billion, which will also depend a lot on how this recovery goes.",
+          "speaker": "Geovanne Tobias",
+          "page": 15,
+          "rationale": "Explicit statement of expected quarterly net income of R$5-6bn from 2Q onward, implying full-year guidance below prior range.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0039"
+          ],
+          "match_type": "exact",
+          "matched_text": "If you look at our projection, our adjusted net income expectation for the year, starting from 2Q, I will be generating not R$ 3.4 billion in net income anymore, but something in the range of 5 or 6 billion, which will also depend a lot on how this recovery goes.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "And when you look here at the capital composition, we made it clear before that we already had a projected impact from the end of the CGPE. So, 1314 primarily aimed to neutralize this impact. There was no reinforcement in our capital base from net income because the adjusted net income in the 1Q was below what we expected, R$ 3.4 billion.",
+          "speaker": "Geovanne Tobias",
+          "page": 11,
+          "rationale": "Acknowledgment that 1Q net income of R$3.4bn was below expectations, signaling lower full-year guidance.",
+          "evidence_validated": false,
+          "speaker_validated": null,
+          "source_block_ids": [],
+          "match_type": "not_found",
+          "matched_text": null,
+          "match_score": 0.0
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "topic": "Capital / CET1 2026",
+      "metric_direction": "reaffirmed",
+      "investment_implication": "neutral",
+      "statement_basis": "explicit",
+      "current_statement": "Management reaffirmed target CET1 of approximately 11% by end of 2026, with a range of 11-11.5%. This target incorporates Provisional Presidential Decree 1314 benefit of 140 bps and assumes organic capital generation from net income will offset RWA consumption from higher provisions.",
+      "previous_reference": "Prior guidance implied CET1 around 11% with 1314 support.",
+      "evidence": [
+        {
+          "quote": "We continue with that perspective, envisioning CET1 around 11 during 2026 and in this more extended series, and this reflects the breakdown we show you and culminates in the 11.59% that we present here now.",
+          "speaker": "Felipe Prince",
+          "page": 10,
+          "rationale": "Explicit reaffirmation of CET1 target around 11% for 2026.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0027"
+          ],
+          "match_type": "exact",
+          "matched_text": "We continue with that perspective, envisioning CET1 around 11 during 2026 and in this more extended series, and this reflects the breakdown we show you and culminates in the 11.59% that we present here now.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "The best estimate we have is that we will run between 11 and 11.5 by the end of the year, and that is what we should deliver to you.",
+          "speaker": "Felipe Prince",
+          "page": 11,
+          "rationale": "Specific guidance range of 11-11.5% CET1 by year-end 2026.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0027"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "The best estimate we have is that we will run between 11 and 11.5 by the end of the year, and that is what we should deliver to you.",
+          "match_score": 1.0
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "critical_questions": [
+    {
+      "analyst": "Antônio Ruette",
+      "institution": "Bank of America",
+      "topic": "Provision guidance credibility and risk stabilization",
+      "why_critical": "Analyst directly challenged the credibility of management's provision guidance by pointing out that short-term indicators (El Niño, war, individuals delinquency) suggest continued deterioration, not stabilization. This goes to the heart of whether the revised guidance is conservative or still exposed to downside.",
+      "question_summary": "Given ongoing pressures from El Niño, war-driven fertilizer costs, and rising individuals delinquency, what provides confidence that provisions will stabilize and decline in 2H26 as guided?",
+      "management_response_summary": "Management explained that 1Q provisions already incorporated the anticipated risk from April punctuality deterioration and contamination effects, and that the guidance reflects expected loss models that anticipate future scenarios. The message was that 1Q 'protects against the more severe scenario' and that the guidance incorporates mitigation going forward.",
+      "answer_quality": "adequate",
+      "evidence": [
+        {
+          "quote": "This 1Q protects against the more severe scenario we foresee for the future and, as you rightly pointed out, why wasn't this done before? Because these precipitations occurred after the release of our guidance back in 1Q.",
+          "speaker": "Felipe Prince",
+          "page": 4,
+          "rationale": "Management's core defense: front-loaded provisioning in 1Q to protect against future scenarios, implying stabilization ahead.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0005"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "This 1Q protects against the more severe scenario we foresee for the future and, as you rightly pointed out, why wasn't this done before? Because these precipitations occurred after the release of our guidance back in 1Q.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "The provisioning dynamics have changed. So now, with all the models performing on expected losses, what we do is anticipate the risk that is coming, and this explains the increase in our cost of credit when correlated with the cost of credit from the previous quarter.",
+          "speaker": "Felipe Prince",
+          "page": 4,
+          "rationale": "Explanation of shift to expected loss methodology and forward-looking provisioning approach.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0005"
+          ],
+          "match_type": "approximate",
+          "matched_text": "the provisioning dynamics have changed. so now, with all the models performing on expected losses, what we do is anticipate the risk that is coming, and this explains the increase in our cost of credit when correlated with the cost of credit from the previous quarter,",
+          "match_score": 0.9963
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "analyst": "Daniel Vaz",
+      "institution": "Safra",
+      "topic": "Capital adequacy and tax credit sustainability",
+      "why_critical": "Analyst raised concern that capital ratios are being supported by Provisional Presidential Decree 1314 (140 bps benefit) and that prudential adjustments from tax losses are consuming capital. The question directly challenges whether the bank's capital position is sustainable without external support and whether dividend capacity is at risk.",
+      "question_summary": "What is the bank's capital estimate for 2026, and how much tax credit from fiscal losses do you expect to establish per quarter, given that this topic should be brought back into investor discussions?",
+      "management_response_summary": "Management stated that 1314 will remain in effect for five years, that tax credit effects from Law 14467 implementation will be 20-25 bps per quarter, and that organic capital generation from net income will offset RWA consumption. Target CET1 is 11-11.5% by year-end 2026, and management expressed confidence in capital adequacy without external measures.",
+      "answer_quality": "strong",
+      "evidence": [
+        {
+          "quote": "The best estimate we have is that we will run between 11 and 11.5 by the end of the year, and that is what we should deliver to you.",
+          "speaker": "Felipe Prince",
+          "page": 11,
+          "rationale": "Explicit quantified guidance on capital target with confidence.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0027"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "The best estimate we have is that we will run between 11 and 11.5 by the end of the year, and that is what we should deliver to you.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "The number we can share with you is that in the coming quarters, this should remain between 20 and 25 bps. But, obviously, on the other hand, there is the entire management process we carry out here to also generate the capital base.",
+          "speaker": "Felipe Prince",
+          "page": 11,
+          "rationale": "Specific quantification of tax credit impact and assertion of offsetting capital generation.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0027"
+          ],
+          "match_type": "approximate",
+          "matched_text": "the number we can share with you is that in the coming quarters, this should remain between 20 and 25 bps. but, obviously, on the other hand, there is the entire management process we carry out here to also generate the capital base,",
+          "match_score": 0.9957
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "analyst": "Gustavo Schroden",
+      "institution": "Citi",
+      "topic": "Dividend sustainability and capital management flexibility",
+      "why_critical": "Analyst pressed on whether dividends are at risk if capital falls below 11% or if provisions exceed guidance, and whether management has contingency measures. This tests the credibility of management's capital projections and dividend policy under stress scenarios.",
+      "question_summary": "Assuming adjusted net income projections and CET1 around 11%, is there consideration of dividend level changes? At what capital level would dividends be reconsidered, and are there other Provisional Presidential Decrees being considered?",
+      "management_response_summary": "Management stated that dividends are set at a minimum of 30% based on three-year projections, that capital target of 11-11.5% is achievable through organic generation, and that contingency measures exist but are not expected to be needed in 2026. Management emphasized that the scenario presented is conservative and does not include optimistic assumptions.",
+      "answer_quality": "strong",
+      "evidence": [
+        {
+          "quote": "We renewed the minimum of 30% this year, exactly to help us in this process. As I said, last year was a year of adjustment. When we took that hit, we implemented all the measures, we considered many other initiatives – some of which were even in the media, such as when we requested the postponement, the phasing of the IHCD payment, which is scheduled to be paid this July.",
+          "speaker": "Geovanne Tobias",
+          "page": 15,
+          "rationale": "Explicit statement of dividend policy and acknowledgment of contingency measures already considered.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0039"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "We renewed the minimum of 30% this year, exactly to help us in this process. As I said, last year was a year of adjustment. When we took that hit, we implemented all the measures, we considered many other initiatives – some of which were even in the media, such as when we requested the postponement, the phasing of the IHCD payment, which is scheduled to be paid this July.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "The scenario we are presenting here does not include these optimistic assumptions. It is a very down-to-earth scenario, and we will reach 11 by the end of 2026 without any external measures.",
+          "speaker": "Felipe Prince",
+          "page": 16,
+          "rationale": "Strong assertion of capital target achievability without external support, addressing credibility of projections.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0040"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "The scenario we are presenting here does not include these optimistic assumptions. It is a very down-to-earth scenario, and we will reach 11 by the end of 2026 without any external measures.",
+          "match_score": 1.0
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "red_flags": [
+    {
+      "type": "uncertainty",
+      "quote": "We don't know how long this truce will last. There is Trump in China, what will come of it? And of course, at this moment we are even hearing cases of farmers who want to go to court claiming they will be impacted by the war in Iran.",
+      "speaker": "Geovanne Tobias",
+      "page": 25,
+      "explanation": "Management explicitly acknowledged low visibility into geopolitical resolution and cited opportunistic litigation risk from farmers. This signals that guidance may be exposed to further downside if external shocks persist or escalate.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence_validated": true,
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0069"
+      ],
+      "match_type": "approximate",
+      "matched_text": "we don't know how long this truce will last. there is trump in [page 25] china, what will come of it? and of course, at this moment we are even hearing cases of farmers who want to go to court claiming they will be impacted by the war",
+      "match_score": 0.9593
+    },
+    {
+      "type": "softening_language",
+      "quote": "It looks like a W-shaped recovery to me. So, we believe that generating organic results alone will be enough to support, and as I manage to generate more profit, it means that my incurred loss is also decreasing.",
+      "speaker": "Geovanne Tobias",
+      "page": 15,
+      "explanation": "Use of 'looks like' and 'I believe' rather than definitive statements about recovery shape suggests uncertainty about the trajectory. W-shaped recovery implies a second dip, contradicting earlier V-shaped expectations.",
+      "severity": "medium",
+      "confidence": "medium",
+      "evidence_validated": true,
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0039"
+      ],
+      "match_type": "exact",
+      "matched_text": "It looks like a W-shaped recovery to me. So, we believe that generating organic results alone will be enough to support, and as I manage to generate more profit, it means that my incurred loss is also decreasing.",
+      "match_score": 1.0
+    },
+    {
+      "type": "hesitation",
+      "quote": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today. So, are there more things to come eventually? We don't know.",
+      "speaker": "Geovanne Tobias",
+      "page": 25,
+      "explanation": "Explicit acknowledgment that guidance revision was forced by external shocks and that further revisions cannot be ruled out. The phrase 'are there more things to come eventually? We don't know' signals low confidence in the stability of current guidance.",
+      "severity": "high",
+      "confidence": "high",
+      "evidence_validated": true,
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0069"
+      ],
+      "match_type": "normalized_exact",
+      "matched_text": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today. So, are there more things to come eventually? We don't know.",
+      "match_score": 1.0
+    },
+    {
+      "type": "evasion",
+      "quote": "There are others that don't make sense for me to mention here to you, especially since, in our estimate, it won't be necessary to adopt them, but we have a list of measures, which has already been presented internally, in case, in a worst-case scenario, we might eventually need them to maintain and sustain our capital level at the 11 mark.",
+      "speaker": "Geovanne Tobias",
+      "page": 15,
+      "explanation": "Management declined to disclose contingency measures, citing that they are not expected to be needed. However, the existence of a 'list of measures' for worst-case scenarios suggests material capital risks that are being managed but not fully transparent.",
+      "severity": "medium",
+      "confidence": "medium",
+      "evidence_validated": true,
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0039"
+      ],
+      "match_type": "normalized_exact",
+      "matched_text": "There are others that don't make sense for me to mention here to you, especially since, in our estimate, it won't be necessary to adopt them, but we have a list of measures, which has already been presented internally, in case, in a worst-case scenario, we might eventually need them to maintain and sustain our capital level at the 11 mark.",
+      "match_score": 1.0
+    },
+    {
+      "type": "promotional_language",
+      "quote": "So, Geovanne, I think taking advantage of the opportunity here, all of you obviously must have your financial transactions at home, but we invite you to give our Estilo segment a try. We have beautiful service facilities in order to provide excellent service to our higher-income customers. Our VIP lounge in Guarulhos, also recently opened, I invite everyone to come and see it.",
+      "speaker": "Felipe Prince",
+      "page": 25,
+      "explanation": "Shift to promotional tone about premium banking services during a discussion of credit quality deterioration and capital constraints. This tonal shift may indicate attempt to redirect focus from negative topics.",
+      "severity": "low",
+      "confidence": "low",
+      "evidence_validated": true,
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0070"
+      ],
+      "match_type": "exact",
+      "matched_text": "So, Geovanne, I think taking advantage of the opportunity here, all of you obviously must have your financial transactions at home, but we invite you to give our Estilo segment a try. We have beautiful service facilities in order to provide excellent service to our higher-income customers. Our VIP lounge in Guarulhos, also recently opened, I invite everyone to come and see it.",
+      "match_score": 1.0
+    }
+  ],
+  "surprise_items": [
+    {
+      "item": "Magnitude and breadth of individuals credit deterioration beyond agribusiness contamination",
+      "score": 35,
+      "why_surprising": "While agribusiness pressure was expected, management revealed that over 40% of individuals provision increase came from credit cards, with contamination from rural producers being only part of the story. The scale of individuals deterioration (R$2bn provision increase) and the explicit mention of lower-income customer difficulty in renegotiating bills suggests broader household debt stress beyond pre-call consensus focus on agro.",
+      "evidence": [
+        {
+          "quote": "We have over 40% coming from credit cards, not payroll loans. There is indeed a bit of contamination from rural producers on their credit cards. So, basically, this reinforcement for individuals, which I mentioned, we did more or less around R$ 2 billion.",
+          "speaker": "Geovanne Tobias",
+          "page": 9,
+          "rationale": "Explicit quantification of individuals provision increase and attribution to credit cards, signaling broader deterioration than agro contamination alone.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0022"
+          ],
+          "match_type": "exact",
+          "matched_text": "We have over 40% coming from credit cards, not payroll loans. There is indeed a bit of contamination from rural producers on their credit cards. So, basically, this reinforcement for individuals, which I mentioned, we did more or less around R$ 2 billion.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "We've grown significantly since 3Q25, but obviously, a portion of these customers are lower-income customers who have shown greater difficulty in renegotiating their bills. So, we delivered a product to mitigate this risk, we had an expectation, but the expectation fell short of what we anticipated.",
+          "speaker": "Felipe Prince",
+          "page": 19,
+          "rationale": "Acknowledgment that credit card growth strategy encountered unexpected deterioration in lower-income segment, suggesting broader household stress.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0048"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "We've grown significantly since 3Q25, but obviously, a portion of these customers are lower-income customers who have shown greater difficulty in renegotiating their bills. So, we delivered a product to mitigate this risk, we had an expectation, but the expectation fell short of what we anticipated.",
+          "match_score": 1.0
+        }
+      ],
+      "confidence": "medium",
+      "limitation": "Pre-call consensus expected individuals pressure but focused heavily on agribusiness contamination; the magnitude of standalone credit card deterioration was not explicitly quantified in pre-call sources."
+    },
+    {
+      "item": "Explicit acknowledgment of W-shaped recovery and low visibility into 2H26 normalization",
+      "score": 40,
+      "why_surprising": "Management shifted from earlier V-shaped recovery expectations to a W-shaped recovery narrative, explicitly stating 'It looks like a W-shaped recovery to me.' This implies a second dip in profitability and suggests that 2H26 recovery visibility is lower than pre-call consensus expected. The phrase 'are there more things to come eventually? We don't know' directly contradicts the narrative of stabilization.",
+      "evidence": [
+        {
+          "quote": "Back then, we didn't know if the recovery would be a U, V, or possibly a W shape. Now it's becoming clear, we gave 5.6 billion, if I'm not mistaken, in the 4Q, and we returned to 3.4. It looks like a W-shaped recovery to me.",
+          "speaker": "Geovanne Tobias",
+          "page": 15,
+          "rationale": "Explicit shift from V-shaped to W-shaped recovery expectation, indicating lower visibility into 2H26 normalization.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0039"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "Back then, we didn't know if the recovery would be a U, V, or possibly a W shape. Now it's becoming clear, we gave 5.6 billion, if I'm not mistaken, in the 4Q, and we returned to 3.4. It looks like a W-shaped recovery to me.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today. So, are there more things to come eventually? We don't know.",
+          "speaker": "Geovanne Tobias",
+          "page": 25,
+          "rationale": "Direct statement of low visibility and openness to further guidance revisions, contradicting confidence in 2H26 recovery.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0069"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today. So, are there more things to come eventually? We don't know.",
+          "match_score": 1.0
+        }
+      ],
+      "confidence": "high",
+      "limitation": "Pre-call consensus expected some recovery in 2H26 but with low visibility; the explicit W-shaped recovery language and 'we don't know' statement represent a material shift in tone and visibility."
+    },
+    {
+      "item": "Judicial reorganization in agribusiness remains elevated and structural, not cyclical",
+      "score": 30,
+      "why_surprising": "Management disclosed that judicial reorganizations reached R$650mn in a single month (April) and acknowledged that this is a structural issue affecting the entire agribusiness sector, not just Banco do Brasil. While agribusiness pressure was expected, the scale and persistence of judicial reorganizations, combined with management's acknowledgment that Congress may need to change legislation, suggests this is a longer-term structural problem than pre-call consensus may have assumed.",
+      "evidence": [
+        {
+          "quote": "The judicial reorganizations are still happening. As you saw, the amount of R$ 650 million is still a high number for a single month. Our expectation regarding judicial reorganizations is, first, that a large part of these operations is already provisioned for most of the value.",
+          "speaker": "Gilson Bittencourt",
+          "page": 16,
+          "rationale": "Acknowledgment of elevated judicial reorganization flow and indication that this is an ongoing structural issue.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0043"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "The judicial reorganizations are still happening. As you saw, the amount of R$ 650 million is still a high number for a single month. Our expectation regarding judicial reorganizations is, first, that a large part of these operations is already provisioned for most of the value.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "This is affecting the entire activity and should also result in some kind of change in the legislation itself, as Congress has already indicated that it may review some issues related to judicial reorganization.",
+          "speaker": "Gilson Bittencourt",
+          "page": 17,
+          "rationale": "Indication that judicial reorganization is a systemic issue requiring legislative change, suggesting structural rather than cyclical nature.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0043"
+          ],
+          "match_type": "exact",
+          "matched_text": "This is affecting the entire activity and should also result in some kind of change in the legislation itself, as Congress has already indicated that it may review some issues related to judicial reorganization.",
+          "match_score": 1.0
+        }
+      ],
+      "confidence": "medium",
+      "limitation": "Judicial reorganization was known as a risk before the call, but the scale (R$650mn/month) and structural nature (legislative review needed) represent a material escalation in severity."
+    }
+  ],
+  "consensus_surprises": [
+    {
+      "topic": "Adjusted net income 1Q26 vs Bloomberg/LSEG consensus",
+      "pre_call_expectation": "Bloomberg consensus R$3.46bn, LSEG consensus R$3.495bn, public sell-side range R$3.0-3.8bn with mean ~R$3.52bn.",
+      "statement_basis": "explicit",
+      "call_statement": "Management reported adjusted net income of R$3.4bn for 1Q26, which is below the formal Bloomberg/LSEG consensus of R$3.46-3.495bn and below the public sell-side mean of R$3.52bn.",
+      "surprise_direction": "negative",
+      "surprise_magnitude": "low",
+      "already_in_consensus": false,
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "The adjusted net income in the 1Q was below what we expected, R$ 3.4 billion.",
+          "speaker": "Geovanne Tobias",
+          "page": 11,
+          "rationale": "Explicit statement of 1Q26 adjusted net income of R$3.4bn, which is below formal consensus.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0028"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "The adjusted net income in the 1Q was below what we expected, R$ 3.4 billion.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "I consider that the result of R$ 3.4 billion in the first quarter still reflects the aggravated credit risk.",
+          "speaker": "Geovanne Tobias",
+          "page": 1,
+          "rationale": "Acknowledgment that 1Q26 result of R$3.4bn was impacted by credit deterioration.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0002"
+          ],
+          "match_type": "exact",
+          "matched_text": "I consider that the result of R$ 3.4 billion in the first quarter still reflects the aggravated credit risk.",
+          "match_score": 1.0
+        }
+      ]
+    },
+    {
+      "topic": "Cost of credit guidance revision magnitude and direction",
+      "pre_call_expectation": "Prior formal guidance was R$53-58bn for 2026 cost of credit. Risk of revision was known, but magnitude was uncertain. Pre-call consensus expected elevated provisions but exact new range was unknown.",
+      "statement_basis": "inferred",
+      "call_statement": "Management revised cost of credit guidance upward, incorporating higher expected losses from agribusiness punctuality deterioration (25% below target) and individuals contamination. While no explicit new range was stated, 1Q cost of credit of R$19bn annualizes to ~R$76bn, suggesting new guidance likely exceeds R$60bn materially.",
+      "surprise_direction": "negative",
+      "surprise_magnitude": "high",
+      "already_in_consensus": false,
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "In the 1Q, the cost of credit reached nearly R$ 19 billion. And when we project the scenario ahead, it is impossible to ignore that today there are many more uncertainties and challenges than when we started the year.",
+          "speaker": "Geovanne Tobias",
+          "page": 2,
+          "rationale": "1Q cost of credit of R$19bn is significantly higher than prior guidance implied and signals material upward revision.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0002"
+          ],
+          "match_type": "exact",
+          "matched_text": "In the 1Q, the cost of credit reached nearly R$ 19 billion. And when we project the scenario ahead, it is impossible to ignore that today there are many more uncertainties and challenges than when we started the year.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "The increase in provision incorporates this more negative scenario that we see in the agribusiness punctuality, so the expected loss projections are exactly to cover this difference that we have observed, around 25%, between the expectation that was our target, and was included in the previous guidance, and the reality that we have been seeing at the beginning of April.",
+          "speaker": "Felipe Prince",
+          "page": 9,
+          "rationale": "Explicit statement of 25% punctuality gap driving higher expected losses and guidance revision.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0023"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "The increase in provision incorporates this more negative scenario that we see in the agribusiness punctuality, so the expected loss projections are exactly to cover this difference that we have observed, around 25%, between the expectation that was our target, and was included in the previous guidance, and the reality that we have been seeing at the beginning of April.",
+          "match_score": 1.0
+        }
+      ]
+    },
+    {
+      "topic": "Contamination beyond agribusiness into individuals credit card segment",
+      "pre_call_expectation": "Pre-call consensus expected some spillover risk from agribusiness to individuals, but agribusiness was expected to remain the dominant pressure point. The degree of individuals credit card deterioration was less settled in public consensus.",
+      "statement_basis": "explicit",
+      "call_statement": "Management explicitly highlighted that individuals credit card deterioration is driven by both contamination from rural producer customers and broader household debt stress. Over 40% of individuals provision increase came from credit cards, with management acknowledging that lower-income customers showed greater difficulty in renegotiating bills, suggesting deterioration beyond agro contamination.",
+      "surprise_direction": "negative",
+      "surprise_magnitude": "medium",
+      "already_in_consensus": false,
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "We have over 40% coming from credit cards, not payroll loans. There is indeed a bit of contamination from rural producers on their credit cards.",
+          "speaker": "Geovanne Tobias",
+          "page": 9,
+          "rationale": "Explicit quantification of credit card provision increase and attribution to both contamination and broader deterioration.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0022"
+          ],
+          "match_type": "exact",
+          "matched_text": "We have over 40% coming from credit cards, not payroll loans. There is indeed a bit of contamination from rural producers on their credit cards.",
+          "match_score": 1.0
+        },
+        {
+          "quote": "We've grown significantly since 3Q25, but obviously, a portion of these customers are lower-income customers who have shown greater difficulty in renegotiating their bills. So, we delivered a product to mitigate this risk, we had an expectation, but the expectation fell short of what we anticipated.",
+          "speaker": "Felipe Prince",
+          "page": 19,
+          "rationale": "Acknowledgment that credit card growth encountered unexpected deterioration in lower-income segment beyond agro contamination.",
+          "evidence_validated": true,
+          "speaker_validated": true,
+          "source_block_ids": [
+            "seg_0048"
+          ],
+          "match_type": "normalized_exact",
+          "matched_text": "We've grown significantly since 3Q25, but obviously, a portion of these customers are lower-income customers who have shown greater difficulty in renegotiating their bills. So, we delivered a product to mitigate this risk, we had an expectation, but the expectation fell short of what we anticipated.",
+          "match_score": 1.0
+        }
+      ]
+    }
+  ],
+  "surprise_score_components": {
+    "guidance_revision": 35,
+    "analyst_pressure": 20,
+    "tone_shift": 25,
+    "new_material_numbers": 15,
+    "external_context_adjustment": 5
+  },
+  "transcript_surprise_score": 45,
+  "consensus_surprise_score": 52,
+  "overall_surprise_score": 52,
+  "surprise_score_confidence": "medium",
+  "temporal_comparison": {
+    "tone_change": "Current tone was cautious, versus cautious in the latest historical context.",
+    "recurring_topics": [
+      "Cost of credit 2026",
+      "Net Interest Income (NII) 2026",
+      "Adjusted net income 2026",
+      "Capital / CET1 2026",
+      "Provision guidance credibility and risk stabilization",
+      "Capital adequacy and tax credit sustainability"
+    ],
+    "new_or_escalating_topics": [
+      "Dividend sustainability and capital management flexibility",
+      "Adjusted net income 1Q26 vs Bloomberg/LSEG consensus",
+      "Cost of credit guidance revision magnitude and direction",
+      "Contamination beyond agribusiness into individuals credit card segment",
+      "Magnitude and breadth of individuals credit deterioration beyond agribusiness contamination"
+    ],
+    "analyst_pressure_change": "Analyst pressure covered recurring topics and added focus on Dividend sustainability and capital management flexibility and Adjusted net income 1Q26 vs Bloomberg/LSEG consensus.",
+    "historical_context_summary": "History frames Cost of credit 2026 and Net Interest Income (NII) 2026 as recurring, while Dividend sustainability and capital management flexibility and Adjusted net income 1Q26 vs Bloomberg/LSEG consensus appears newer or more urgent in the current call.",
+    "confidence": "medium"
+  },
+  "analysis_context": {
+    "has_prior_quarter_transcript": false,
+    "has_external_consensus": true,
+    "has_historical_context": false,
+    "surprise_score_is_transcript_only": false,
+    "surprise_score_cap_applied": false
+  },
+  "analysis_limitations": [
+    "External pre-call consensus was provided; surprise scores reflect comparison to documented pre-call expectations.",
+    "Prior-quarter transcript was not provided.",
+    "Exact new guidance ranges for cost of credit and adjusted net income were not explicitly stated in the transcript; ranges were inferred from 1Q results and management commentary.",
+    "Management tone assessment is based on prepared remarks and Q&A responses; non-verbal cues and market reaction data were not available."
+  ]
+}

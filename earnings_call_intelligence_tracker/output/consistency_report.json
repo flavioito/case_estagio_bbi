@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "passed": false,
+    "issues_count": 7,
+    "high": 1,
+    "medium": 4,
+    "low": 2
+  },
+  "issues": [
+    {
+      "path": "evidence_report.summary.invalid_quotes",
+      "severity": "high",
+      "issue_type": "invalid_evidence",
+      "message": "2 quote(s) were not found in the transcript.",
+      "suggestion": "Review invalid_quotes before relying on the analysis or executive report."
+    },
+    {
+      "path": "guidance_changes[0].current_statement",
+      "severity": "medium",
+      "issue_type": "unsupported_explicit_numeric_claim",
+      "message": "current_statement contains numeric token(s) not present in its evidence quotes: 53-58bn.",
+      "suggestion": "Either add transcript evidence containing these numbers or mark the statement as inferred/external_context."
+    },
+    {
+      "path": "guidance_changes[1].current_statement",
+      "severity": "medium",
+      "issue_type": "unsupported_explicit_numeric_claim",
+      "message": "current_statement contains numeric token(s) not present in its evidence quotes: 12%, 3.",
+      "suggestion": "Either add transcript evidence containing these numbers or mark the statement as inferred/external_context."
+    },
+    {
+      "path": "guidance_changes[2].current_statement",
+      "severity": "low",
+      "issue_type": "unsupported_inferred_numeric_claim",
+      "message": "current_statement contains inferred numeric token(s) not present in its evidence quotes: 22-26bn, 5-6bn.",
+      "suggestion": "Keep numeric inferences conservative and explain them in limitations when material."
+    },
+    {
+      "path": "guidance_changes[3].current_statement",
+      "severity": "medium",
+      "issue_type": "unsupported_explicit_numeric_claim",
+      "message": "current_statement contains numeric token(s) not present in its evidence quotes: 11%, 11-11.5%, 1314, 140bps.",
+      "suggestion": "Either add transcript evidence containing these numbers or mark the statement as inferred/external_context."
+    },
+    {
+      "path": "consensus_surprises[0].call_statement",
+      "severity": "medium",
+      "issue_type": "unsupported_explicit_numeric_claim",
+      "message": "call_statement contains numeric token(s) not present in its evidence quotes: 3.46-3.495bn, 3.4bn, 3.52bn.",
+      "suggestion": "Either add transcript evidence containing these numbers or mark the statement as inferred/external_context."
+    },
+    {
+      "path": "consensus_surprises[1].call_statement",
+      "severity": "low",
+      "issue_type": "unsupported_inferred_numeric_claim",
+      "message": "call_statement contains inferred numeric token(s) not present in its evidence quotes: 19bn, 60bn, 76bn.",
+      "suggestion": "Keep numeric inferences conservative and explain them in limitations when material."
+    }
+  ]
+}

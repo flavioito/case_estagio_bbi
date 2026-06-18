@@ -1,0 +1,52 @@
+{
+  "source_pdf": "C:\\Users\\flavi\\AppData\\Local\\Temp\\earnings_call_streamlit_innv1yg0\\Transcript - Videoconference - 1Q26 (BBAS3).pdf",
+  "output_dir": "C:\\Users\\flavi\\projects\\case_estagio_bbi\\earnings_call_intelligence_tracker\\output\\run_20260618_153522",
+  "page_count": 25,
+  "segment_count": 71,
+  "qa_turn_count": 13,
+  "analysis_model": "claude-haiku-4-5",
+  "review_model": "claude-sonnet-4-6",
+  "review_used": true,
+  "self_critique_used": true,
+  "self_critique_model": "claude-sonnet-4-6",
+  "self_critique_triggers": [
+    "routine_haiku_self_critique",
+    "consistency_medium"
+  ],
+  "temperature": 0.1,
+  "max_output_tokens": 12000,
+  "repair_attempts": 1,
+  "previous_transcript_provided": false,
+  "prior_context_provided": true,
+  "prior_context_path": "C:\\Users\\flavi\\projects\\case_estagio_bbi\\earnings_call_intelligence_tracker\\data\\BBAS3_1Q26_pre_call_consensus.json",
+  "history_context_provided": true,
+  "history_context_path": "C:\\Users\\flavi\\projects\\case_estagio_bbi\\earnings_call_intelligence_tracker\\context\\BBAS3_history_context.json",
+  "surprise_score_cap_applied": false,
+  "transcript_surprise_score": 38,
+  "consensus_surprise_score": 35,
+  "overall_surprise_score": 35,
+  "schema_version": "1.2",
+  "evidence_summary": {
+    "total_quotes": 33,
+    "valid_quotes": 33,
+    "invalid_quotes": 0,
+    "valid_quote_rate": 1.0,
+    "speaker_checked_quotes": 33,
+    "speaker_valid_quotes": 33,
+    "speaker_invalid_quotes": 0,
+    "speaker_valid_quote_rate": 1.0,
+    "match_type_counts": {
+      "exact": 7,
+      "normalized_exact": 16,
+      "approximate": 10,
+      "not_found": 0
+    }
+  },
+  "consistency_summary": {
+    "passed": true,
+    "issues_count": 5,
+    "high": 0,
+    "medium": 4,
+    "low": 1
+  }
+}

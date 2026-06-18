@@ -1,0 +1,483 @@
+{
+  "summary": {
+    "total_quotes": 34,
+    "valid_quotes": 32,
+    "invalid_quotes": 2,
+    "valid_quote_rate": 0.9412,
+    "speaker_checked_quotes": 32,
+    "speaker_valid_quotes": 32,
+    "speaker_invalid_quotes": 0,
+    "speaker_valid_quote_rate": 1.0,
+    "match_type_counts": {
+      "normalized_exact": 18,
+      "approximate": 4,
+      "exact": 10,
+      "not_found": 2
+    }
+  },
+  "invalid_quotes": [
+    {
+      "path": "guidance_changes[1].evidence[1]",
+      "quote": "The focus will continue to be greater growth in individuals; we have already done 7.8, but we are accelerating. Our individual margin has already grown; it has been above 15%. So, with a higher interest rate level, we expect a positive impact on liquidity, a positive impact on mix improvement, and all of this then reflects in our NII.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": null,
+      "source_block_ids": [],
+      "evidence_validated": false,
+      "match_type": "not_found",
+      "matched_text": null,
+      "match_score": 0.0
+    },
+    {
+      "path": "guidance_changes[2].evidence[1]",
+      "quote": "And when you look here at the capital composition, we made it clear before that we already had a projected impact from the end of the CGPE. So, 1314 primarily aimed to neutralize this impact. There was no reinforcement in our capital base from net income because the adjusted net income in the 1Q was below what we expected, R$ 3.4 billion.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": null,
+      "source_block_ids": [],
+      "evidence_validated": false,
+      "match_type": "not_found",
+      "matched_text": null,
+      "match_score": 0.0
+    }
+  ],
+  "all_quotes": [
+    {
+      "path": "management_tone.evidence[0]",
+      "quote": "The current context demands prudence, and prudence for this administration does not mean hesitation; it means having clarity about what needs to be done.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0002"
+      ],
+      "evidence_validated": true,
+      "match_type": "approximate",
+      "matched_text": "the current context demands prudence, and prudence for this administration does not mean hesitation; it means having clarity about what needs to be done,",
+      "match_score": 0.9935
+    },
+    {
+      "path": "management_tone.evidence[1]",
+      "quote": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0069"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today.",
+      "match_score": 1.0
+    },
+    {
+      "path": "management_tone.evidence[2]",
+      "quote": "This 1Q protects against the more severe scenario we foresee for the future and, as you rightly pointed out, why wasn't this done before? Because these precipitations occurred after the release of our guidance back in 1Q.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0005"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "This 1Q protects against the more severe scenario we foresee for the future and, as you rightly pointed out, why wasn't this done before? Because these precipitations occurred after the release of our guidance back in 1Q.",
+      "match_score": 1.0
+    },
+    {
+      "path": "guidance_changes[0].evidence[0]",
+      "quote": "The increase in provision incorporates this more negative scenario that we see in the agribusiness punctuality, so the expected loss projections are exactly to cover this difference that we have observed, around 25%, between the expectation that was our target, and was included in the previous guidance, and the reality that we have been seeing at the beginning of April.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0023"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "The increase in provision incorporates this more negative scenario that we see in the agribusiness punctuality, so the expected loss projections are exactly to cover this difference that we have observed, around 25%, between the expectation that was our target, and was included in the previous guidance, and the reality that we have been seeing at the beginning of April.",
+      "match_score": 1.0
+    },
+    {
+      "path": "guidance_changes[0].evidence[1]",
+      "quote": "In the 1Q, the cost of credit reached nearly R$ 19 billion. And when we project the scenario ahead, it is impossible to ignore that today there are many more uncertainties and challenges than when we started the year.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0002"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "In the 1Q, the cost of credit reached nearly R$ 19 billion. And when we project the scenario ahead, it is impossible to ignore that today there are many more uncertainties and challenges than when we started the year.",
+      "match_score": 1.0
+    },
+    {
+      "path": "guidance_changes[1].evidence[0]",
+      "quote": "We started the year with a budget assuming a final Selic rate of 12, an average around 13%. Now, we have already revised it to 13.5% with an average close to 14%, and, without a doubt, this brings an opportunity, especially given our liquidity in our treasury.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0051"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "We started the year with a budget assuming a final Selic rate of 12, an average around 13%. Now, we have already revised it to 13.5% with an average close to 14%, and, without a doubt, this brings an opportunity, especially given our liquidity in our treasury.",
+      "match_score": 1.0
+    },
+    {
+      "path": "guidance_changes[1].evidence[1]",
+      "quote": "The focus will continue to be greater growth in individuals; we have already done 7.8, but we are accelerating. Our individual margin has already grown; it has been above 15%. So, with a higher interest rate level, we expect a positive impact on liquidity, a positive impact on mix improvement, and all of this then reflects in our NII.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": null,
+      "source_block_ids": [],
+      "evidence_validated": false,
+      "match_type": "not_found",
+      "matched_text": null,
+      "match_score": 0.0
+    },
+    {
+      "path": "guidance_changes[2].evidence[0]",
+      "quote": "If you look at our projection, our adjusted net income expectation for the year, starting from 2Q, I will be generating not R$ 3.4 billion in net income anymore, but something in the range of 5 or 6 billion, which will also depend a lot on how this recovery goes.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0039"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "If you look at our projection, our adjusted net income expectation for the year, starting from 2Q, I will be generating not R$ 3.4 billion in net income anymore, but something in the range of 5 or 6 billion, which will also depend a lot on how this recovery goes.",
+      "match_score": 1.0
+    },
+    {
+      "path": "guidance_changes[2].evidence[1]",
+      "quote": "And when you look here at the capital composition, we made it clear before that we already had a projected impact from the end of the CGPE. So, 1314 primarily aimed to neutralize this impact. There was no reinforcement in our capital base from net income because the adjusted net income in the 1Q was below what we expected, R$ 3.4 billion.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": null,
+      "source_block_ids": [],
+      "evidence_validated": false,
+      "match_type": "not_found",
+      "matched_text": null,
+      "match_score": 0.0
+    },
+    {
+      "path": "guidance_changes[3].evidence[0]",
+      "quote": "We continue with that perspective, envisioning CET1 around 11 during 2026 and in this more extended series, and this reflects the breakdown we show you and culminates in the 11.59% that we present here now.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0027"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "We continue with that perspective, envisioning CET1 around 11 during 2026 and in this more extended series, and this reflects the breakdown we show you and culminates in the 11.59% that we present here now.",
+      "match_score": 1.0
+    },
+    {
+      "path": "guidance_changes[3].evidence[1]",
+      "quote": "The best estimate we have is that we will run between 11 and 11.5 by the end of the year, and that is what we should deliver to you.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0027"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "The best estimate we have is that we will run between 11 and 11.5 by the end of the year, and that is what we should deliver to you.",
+      "match_score": 1.0
+    },
+    {
+      "path": "critical_questions[0].evidence[0]",
+      "quote": "This 1Q protects against the more severe scenario we foresee for the future and, as you rightly pointed out, why wasn't this done before? Because these precipitations occurred after the release of our guidance back in 1Q.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0005"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "This 1Q protects against the more severe scenario we foresee for the future and, as you rightly pointed out, why wasn't this done before? Because these precipitations occurred after the release of our guidance back in 1Q.",
+      "match_score": 1.0
+    },
+    {
+      "path": "critical_questions[0].evidence[1]",
+      "quote": "The provisioning dynamics have changed. So now, with all the models performing on expected losses, what we do is anticipate the risk that is coming, and this explains the increase in our cost of credit when correlated with the cost of credit from the previous quarter.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0005"
+      ],
+      "evidence_validated": true,
+      "match_type": "approximate",
+      "matched_text": "the provisioning dynamics have changed. so now, with all the models performing on expected losses, what we do is anticipate the risk that is coming, and this explains the increase in our cost of credit when correlated with the cost of credit from the previous quarter,",
+      "match_score": 0.9963
+    },
+    {
+      "path": "critical_questions[1].evidence[0]",
+      "quote": "The best estimate we have is that we will run between 11 and 11.5 by the end of the year, and that is what we should deliver to you.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0027"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "The best estimate we have is that we will run between 11 and 11.5 by the end of the year, and that is what we should deliver to you.",
+      "match_score": 1.0
+    },
+    {
+      "path": "critical_questions[1].evidence[1]",
+      "quote": "The number we can share with you is that in the coming quarters, this should remain between 20 and 25 bps. But, obviously, on the other hand, there is the entire management process we carry out here to also generate the capital base.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0027"
+      ],
+      "evidence_validated": true,
+      "match_type": "approximate",
+      "matched_text": "the number we can share with you is that in the coming quarters, this should remain between 20 and 25 bps. but, obviously, on the other hand, there is the entire management process we carry out here to also generate the capital base,",
+      "match_score": 0.9957
+    },
+    {
+      "path": "critical_questions[2].evidence[0]",
+      "quote": "We renewed the minimum of 30% this year, exactly to help us in this process. As I said, last year was a year of adjustment. When we took that hit, we implemented all the measures, we considered many other initiatives – some of which were even in the media, such as when we requested the postponement, the phasing of the IHCD payment, which is scheduled to be paid this July.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0039"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "We renewed the minimum of 30% this year, exactly to help us in this process. As I said, last year was a year of adjustment. When we took that hit, we implemented all the measures, we considered many other initiatives – some of which were even in the media, such as when we requested the postponement, the phasing of the IHCD payment, which is scheduled to be paid this July.",
+      "match_score": 1.0
+    },
+    {
+      "path": "critical_questions[2].evidence[1]",
+      "quote": "The scenario we are presenting here does not include these optimistic assumptions. It is a very down-to-earth scenario, and we will reach 11 by the end of 2026 without any external measures.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0040"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "The scenario we are presenting here does not include these optimistic assumptions. It is a very down-to-earth scenario, and we will reach 11 by the end of 2026 without any external measures.",
+      "match_score": 1.0
+    },
+    {
+      "path": "surprise_items[0].evidence[0]",
+      "quote": "We have over 40% coming from credit cards, not payroll loans. There is indeed a bit of contamination from rural producers on their credit cards. So, basically, this reinforcement for individuals, which I mentioned, we did more or less around R$ 2 billion.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0022"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "We have over 40% coming from credit cards, not payroll loans. There is indeed a bit of contamination from rural producers on their credit cards. So, basically, this reinforcement for individuals, which I mentioned, we did more or less around R$ 2 billion.",
+      "match_score": 1.0
+    },
+    {
+      "path": "surprise_items[0].evidence[1]",
+      "quote": "We've grown significantly since 3Q25, but obviously, a portion of these customers are lower-income customers who have shown greater difficulty in renegotiating their bills. So, we delivered a product to mitigate this risk, we had an expectation, but the expectation fell short of what we anticipated.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0048"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "We've grown significantly since 3Q25, but obviously, a portion of these customers are lower-income customers who have shown greater difficulty in renegotiating their bills. So, we delivered a product to mitigate this risk, we had an expectation, but the expectation fell short of what we anticipated.",
+      "match_score": 1.0
+    },
+    {
+      "path": "surprise_items[1].evidence[0]",
+      "quote": "Back then, we didn't know if the recovery would be a U, V, or possibly a W shape. Now it's becoming clear, we gave 5.6 billion, if I'm not mistaken, in the 4Q, and we returned to 3.4. It looks like a W-shaped recovery to me.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0039"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "Back then, we didn't know if the recovery would be a U, V, or possibly a W shape. Now it's becoming clear, we gave 5.6 billion, if I'm not mistaken, in the 4Q, and we returned to 3.4. It looks like a W-shaped recovery to me.",
+      "match_score": 1.0
+    },
+    {
+      "path": "surprise_items[1].evidence[1]",
+      "quote": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today. So, are there more things to come eventually? We don't know.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0069"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today. So, are there more things to come eventually? We don't know.",
+      "match_score": 1.0
+    },
+    {
+      "path": "surprise_items[2].evidence[0]",
+      "quote": "The judicial reorganizations are still happening. As you saw, the amount of R$ 650 million is still a high number for a single month. Our expectation regarding judicial reorganizations is, first, that a large part of these operations is already provisioned for most of the value.",
+      "speaker": "Gilson Bittencourt",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0043"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "The judicial reorganizations are still happening. As you saw, the amount of R$ 650 million is still a high number for a single month. Our expectation regarding judicial reorganizations is, first, that a large part of these operations is already provisioned for most of the value.",
+      "match_score": 1.0
+    },
+    {
+      "path": "surprise_items[2].evidence[1]",
+      "quote": "This is affecting the entire activity and should also result in some kind of change in the legislation itself, as Congress has already indicated that it may review some issues related to judicial reorganization.",
+      "speaker": "Gilson Bittencourt",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0043"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "This is affecting the entire activity and should also result in some kind of change in the legislation itself, as Congress has already indicated that it may review some issues related to judicial reorganization.",
+      "match_score": 1.0
+    },
+    {
+      "path": "consensus_surprises[0].evidence[0]",
+      "quote": "The adjusted net income in the 1Q was below what we expected, R$ 3.4 billion.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0028"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "The adjusted net income in the 1Q was below what we expected, R$ 3.4 billion.",
+      "match_score": 1.0
+    },
+    {
+      "path": "consensus_surprises[0].evidence[1]",
+      "quote": "I consider that the result of R$ 3.4 billion in the first quarter still reflects the aggravated credit risk.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0002"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "I consider that the result of R$ 3.4 billion in the first quarter still reflects the aggravated credit risk.",
+      "match_score": 1.0
+    },
+    {
+      "path": "consensus_surprises[1].evidence[0]",
+      "quote": "In the 1Q, the cost of credit reached nearly R$ 19 billion. And when we project the scenario ahead, it is impossible to ignore that today there are many more uncertainties and challenges than when we started the year.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0002"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "In the 1Q, the cost of credit reached nearly R$ 19 billion. And when we project the scenario ahead, it is impossible to ignore that today there are many more uncertainties and challenges than when we started the year.",
+      "match_score": 1.0
+    },
+    {
+      "path": "consensus_surprises[1].evidence[1]",
+      "quote": "The increase in provision incorporates this more negative scenario that we see in the agribusiness punctuality, so the expected loss projections are exactly to cover this difference that we have observed, around 25%, between the expectation that was our target, and was included in the previous guidance, and the reality that we have been seeing at the beginning of April.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0023"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "The increase in provision incorporates this more negative scenario that we see in the agribusiness punctuality, so the expected loss projections are exactly to cover this difference that we have observed, around 25%, between the expectation that was our target, and was included in the previous guidance, and the reality that we have been seeing at the beginning of April.",
+      "match_score": 1.0
+    },
+    {
+      "path": "consensus_surprises[2].evidence[0]",
+      "quote": "We have over 40% coming from credit cards, not payroll loans. There is indeed a bit of contamination from rural producers on their credit cards.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0022"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "We have over 40% coming from credit cards, not payroll loans. There is indeed a bit of contamination from rural producers on their credit cards.",
+      "match_score": 1.0
+    },
+    {
+      "path": "consensus_surprises[2].evidence[1]",
+      "quote": "We've grown significantly since 3Q25, but obviously, a portion of these customers are lower-income customers who have shown greater difficulty in renegotiating their bills. So, we delivered a product to mitigate this risk, we had an expectation, but the expectation fell short of what we anticipated.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0048"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "We've grown significantly since 3Q25, but obviously, a portion of these customers are lower-income customers who have shown greater difficulty in renegotiating their bills. So, we delivered a product to mitigate this risk, we had an expectation, but the expectation fell short of what we anticipated.",
+      "match_score": 1.0
+    },
+    {
+      "path": "red_flags[0]",
+      "quote": "We don't know how long this truce will last. There is Trump in China, what will come of it? And of course, at this moment we are even hearing cases of farmers who want to go to court claiming they will be impacted by the war in Iran.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0069"
+      ],
+      "evidence_validated": true,
+      "match_type": "approximate",
+      "matched_text": "we don't know how long this truce will last. there is trump in [page 25] china, what will come of it? and of course, at this moment we are even hearing cases of farmers who want to go to court claiming they will be impacted by the war",
+      "match_score": 0.9593
+    },
+    {
+      "path": "red_flags[1]",
+      "quote": "It looks like a W-shaped recovery to me. So, we believe that generating organic results alone will be enough to support, and as I manage to generate more profit, it means that my incurred loss is also decreasing.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0039"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "It looks like a W-shaped recovery to me. So, we believe that generating organic results alone will be enough to support, and as I manage to generate more profit, it means that my incurred loss is also decreasing.",
+      "match_score": 1.0
+    },
+    {
+      "path": "red_flags[2]",
+      "quote": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today. So, are there more things to come eventually? We don't know.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0069"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "We wouldn't want to be having to review the guidance right now, but the world in which we approved this guidance and set up this budget outlook was completely different from the world we have today. So, are there more things to come eventually? We don't know.",
+      "match_score": 1.0
+    },
+    {
+      "path": "red_flags[3]",
+      "quote": "There are others that don't make sense for me to mention here to you, especially since, in our estimate, it won't be necessary to adopt them, but we have a list of measures, which has already been presented internally, in case, in a worst-case scenario, we might eventually need them to maintain and sustain our capital level at the 11 mark.",
+      "speaker": "Geovanne Tobias",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0039"
+      ],
+      "evidence_validated": true,
+      "match_type": "normalized_exact",
+      "matched_text": "There are others that don't make sense for me to mention here to you, especially since, in our estimate, it won't be necessary to adopt them, but we have a list of measures, which has already been presented internally, in case, in a worst-case scenario, we might eventually need them to maintain and sustain our capital level at the 11 mark.",
+      "match_score": 1.0
+    },
+    {
+      "path": "red_flags[4]",
+      "quote": "So, Geovanne, I think taking advantage of the opportunity here, all of you obviously must have your financial transactions at home, but we invite you to give our Estilo segment a try. We have beautiful service facilities in order to provide excellent service to our higher-income customers. Our VIP lounge in Guarulhos, also recently opened, I invite everyone to come and see it.",
+      "speaker": "Felipe Prince",
+      "speaker_validated": true,
+      "source_block_ids": [
+        "seg_0070"
+      ],
+      "evidence_validated": true,
+      "match_type": "exact",
+      "matched_text": "So, Geovanne, I think taking advantage of the opportunity here, all of you obviously must have your financial transactions at home, but we invite you to give our Estilo segment a try. We have beautiful service facilities in order to provide excellent service to our higher-income customers. Our VIP lounge in Guarulhos, also recently opened, I invite everyone to come and see it.",
+      "match_score": 1.0
+    }
+  ],
+  "warnings": []
+}
