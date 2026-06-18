@@ -1,0 +1,92 @@
+macro_factors:
+  rates:
+    selic_up:
+      label: Selic em alta
+      description: Aumento da taxa básica de juros ou manutenção de juros altos.
+    selic_down:
+      label: Selic em queda
+      description: Queda da taxa básica de juros ou ciclo de afrouxamento monetário.
+    long_rates_up:
+      label: Juros longos em alta
+      description: Abertura da curva de juros ou alta das taxas longas.
+    long_rates_down:
+      label: Juros longos em queda
+      description: Fechamento da curva de juros ou queda das taxas longas.
+
+  inflation:
+    inflation_up:
+      label: Inflação em alta
+      description: Inflação pressionada, persistente ou reacelerando.
+    inflation_down:
+      label: Inflação em queda
+      description: Inflação controlada, cedendo ou convergindo para a meta.
+
+  fx:
+    brl_appreciation:
+      label: Real apreciado
+      description: Real mais forte ou dólar mais fraco frente ao real.
+    brl_depreciation:
+      label: Real depreciado
+      description: Real mais fraco ou dólar mais forte frente ao real.
+
+  activity:
+    domestic_growth_up:
+      label: Atividade doméstica em melhora
+      description: Crescimento, demanda ou PIB doméstico acelerando.
+    domestic_growth_down:
+      label: Atividade doméstica em desaceleração
+      description: Crescimento, demanda ou PIB doméstico perdendo tração.
+    unemployment_up:
+      label: Desemprego em alta
+      description: Mercado de trabalho piorando.
+    unemployment_down:
+      label: Desemprego em queda
+      description: Mercado de trabalho forte ou emprego em melhora.
+    credit_growth_up:
+      label: Crédito em expansão
+      description: Retomada ou aceleração do crédito.
+    credit_growth_down:
+      label: Crédito em contração
+      description: Crédito restrito, fraco ou contraindo.
+
+  commodities:
+    oil_price_up:
+      label: Petróleo em alta
+      description: Alta do Brent ou do preço internacional do petróleo.
+    oil_price_down:
+      label: Petróleo em queda
+      description: Queda do Brent ou do preço internacional do petróleo.
+    iron_ore_up:
+      label: Minério de ferro em alta
+      description: Alta do minério de ferro.
+    iron_ore_down:
+      label: Minério de ferro em queda
+      description: Queda do minério de ferro.
+
+  external:
+    china_growth_up:
+      label: China em aceleração
+      description: Crescimento, demanda ou estímulos chineses mais fortes.
+    china_growth_down:
+      label: China em desaceleração
+      description: Crescimento ou demanda chinesa mais fracos.
+    global_risk_on:
+      label: Apetite global por risco
+      description: Ambiente externo favorável para ativos de risco e emergentes.
+    global_risk_off:
+      label: Aversão global a risco
+      description: Ambiente externo adverso, dólar global forte ou saída de emergentes.
+
+  fiscal_political:
+    fiscal_risk_up:
+      label: Risco fiscal em alta
+      description: Piora fiscal, incerteza sobre dívida ou prêmio de risco Brasil maior.
+    fiscal_risk_down:
+      label: Risco fiscal em queda
+      description: Melhora fiscal, ancoragem de expectativas ou prêmio de risco menor.
+    regulatory_risk_up:
+      label: Risco regulatório em alta
+      description: Maior risco de intervenção, mudanças regulatórias ou insegurança jurídica.
+    regulatory_risk_down:
+      label: Risco regulatório em queda
+      description: Ambiente regulatório mais previsível ou favorável.

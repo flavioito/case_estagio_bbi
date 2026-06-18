@@ -1,0 +1,626 @@
+{
+  "scenario": "Selic em queda, inflação controlada, crédito voltando a crescer e atividade doméstica acelerando.",
+  "scenario_summary": "O cenário indica Selic em queda, Inflação em queda, Atividade doméstica em melhora e Crédito em expansão, com impactos diferenciados entre setores domésticos, exportadores e regulados.",
+  "macro_factors": [
+    "selic_down",
+    "inflation_down",
+    "domestic_growth_up",
+    "credit_growth_up"
+  ],
+  "benefited_sectors": [
+    {
+      "sector_id": "real_estate",
+      "sector_name": "Construção e incorporação",
+      "score": 4.7,
+      "raw_score": 10.5,
+      "relative_score": 4.7,
+      "short_term_score": 13.97,
+      "medium_term_score": 12.43,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Construção e incorporação tem exposição agregada positiva ao cenário porque Selic em queda, Crédito em expansão e Atividade doméstica em melhora favorecem os principais tickers do setor na base curada. Incorporadoras residenciais altamente sensíveis a Selic, juros longos, crédito imobiliário, emprego e renda.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "education",
+      "sector_name": "Educação",
+      "score": 4.2,
+      "raw_score": 10.0,
+      "relative_score": 4.2,
+      "short_term_score": 13.1,
+      "medium_term_score": 11.8,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Educação tem exposição agregada positiva ao cenário porque Selic em queda, Atividade doméstica em melhora e Inflação em queda favorecem os principais tickers do setor na base curada. Educação privada e plataformas educacionais sensíveis a emprego, renda, crédito, inadimplência, juros e regulação do MEC.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "discretionary_retail",
+      "sector_name": "Varejo discricionário",
+      "score": 3.37,
+      "raw_score": 9.17,
+      "relative_score": 3.37,
+      "short_term_score": 11.93,
+      "medium_term_score": 10.87,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Varejo discricionário tem exposição agregada positiva ao cenário porque Atividade doméstica em melhora, Selic em queda e Crédito em expansão favorecem os principais tickers do setor na base curada. Varejistas e marcas de consumo sensíveis a renda, crédito, desemprego, inflação, juros e confiança do consumidor.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "technology",
+      "sector_name": "Tecnologia",
+      "score": 3.2,
+      "raw_score": 9.0,
+      "relative_score": 3.2,
+      "short_term_score": 12.4,
+      "medium_term_score": 10.5,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Tecnologia tem exposição agregada positiva ao cenário porque Selic em queda, Atividade doméstica em melhora e Crédito em expansão favorecem os principais tickers do setor na base curada. Software e plataformas digitais com exposição a crescimento doméstico, investimento corporativo, juros longos e apetite a risco.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "shopping_malls",
+      "sector_name": "Shoppings",
+      "score": 3.2,
+      "raw_score": 9.0,
+      "relative_score": 3.2,
+      "short_term_score": 12.4,
+      "medium_term_score": 10.5,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Shoppings tem exposição agregada positiva ao cenário porque Selic em queda, Atividade doméstica em melhora e Crédito em expansão favorecem os principais tickers do setor na base curada. Administradoras de shopping centers expostas a consumo discricionário, fluxo de lojistas, juros e atividade doméstica.",
+      "confidence": "medium"
+    }
+  ],
+  "harmed_sectors": [
+    {
+      "sector_id": "insurance",
+      "sector_name": "Seguradoras",
+      "score": -4.3,
+      "raw_score": 1.5,
+      "relative_score": -4.3,
+      "short_term_score": -0.6,
+      "medium_term_score": 2.55,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Seguradoras tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda, Inflação em queda e Atividade doméstica em melhora favorecem menos os principais tickers do setor na base curada. Seguradoras e holdings de seguros sensíveis a juros, resultado financeiro, sinistralidade, emprego formal e risco regulatório.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "industrials",
+      "sector_name": "Industriais exportadoras",
+      "score": -3.8,
+      "raw_score": 2.0,
+      "relative_score": -3.8,
+      "short_term_score": 3.1,
+      "medium_term_score": 2.2,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "domestic_growth_up"
+      ],
+      "rationale": "Industriais exportadoras tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda e Atividade doméstica em melhora favorecem menos os principais tickers do setor na base curada. Empresas industriais com receita global ou dolarizada, expostas a câmbio, ciclo externo, investimento em bens de capital e custos industriais.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "mining",
+      "sector_name": "Mineração",
+      "score": -3.8,
+      "raw_score": 2.0,
+      "relative_score": -3.8,
+      "short_term_score": 3.2,
+      "medium_term_score": 2.1,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down"
+      ],
+      "rationale": "Mineração tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda e Inflação em queda favorecem menos os principais tickers do setor na base curada. Mineradoras exportadoras com exposição a minério de ferro, China, dólar, frete e risco ambiental/regulatório.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "oil_gas",
+      "sector_name": "Óleo e gás",
+      "score": -3.05,
+      "raw_score": 2.75,
+      "relative_score": -3.05,
+      "short_term_score": 4.58,
+      "medium_term_score": 2.88,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up"
+      ],
+      "rationale": "Óleo e gás tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda, Inflação em queda e Atividade doméstica em melhora favorecem menos os principais tickers do setor na base curada. Produtoras e empresas integradas de petróleo, expostas a Brent, câmbio, custo de capital, regulação e risco político.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "food_proteins",
+      "sector_name": "Proteínas e alimentos exportadores",
+      "score": -2.8,
+      "raw_score": 3.0,
+      "relative_score": -2.8,
+      "short_term_score": 3.8,
+      "medium_term_score": 3.5,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up"
+      ],
+      "rationale": "Proteínas e alimentos exportadores tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda, Inflação em queda e Atividade doméstica em melhora favorecem menos os principais tickers do setor na base curada. Empresas de proteína animal e alimentos processados com exposição a câmbio, commodities agrícolas, demanda global, China e custos de grãos.",
+      "confidence": "medium"
+    }
+  ],
+  "short_term_benefited_sectors": [
+    {
+      "sector_id": "real_estate",
+      "sector_name": "Construção e incorporação",
+      "score": 4.7,
+      "raw_score": 10.5,
+      "relative_score": 4.7,
+      "short_term_score": 13.97,
+      "medium_term_score": 12.43,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Construção e incorporação tem exposição agregada positiva ao cenário porque Selic em queda, Crédito em expansão e Atividade doméstica em melhora favorecem os principais tickers do setor na base curada. Incorporadoras residenciais altamente sensíveis a Selic, juros longos, crédito imobiliário, emprego e renda.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "education",
+      "sector_name": "Educação",
+      "score": 4.2,
+      "raw_score": 10.0,
+      "relative_score": 4.2,
+      "short_term_score": 13.1,
+      "medium_term_score": 11.8,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Educação tem exposição agregada positiva ao cenário porque Selic em queda, Atividade doméstica em melhora e Inflação em queda favorecem os principais tickers do setor na base curada. Educação privada e plataformas educacionais sensíveis a emprego, renda, crédito, inadimplência, juros e regulação do MEC.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "shopping_malls",
+      "sector_name": "Shoppings",
+      "score": 3.2,
+      "raw_score": 9.0,
+      "relative_score": 3.2,
+      "short_term_score": 12.4,
+      "medium_term_score": 10.5,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Shoppings tem exposição agregada positiva ao cenário porque Selic em queda, Atividade doméstica em melhora e Crédito em expansão favorecem os principais tickers do setor na base curada. Administradoras de shopping centers expostas a consumo discricionário, fluxo de lojistas, juros e atividade doméstica.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "technology",
+      "sector_name": "Tecnologia",
+      "score": 3.2,
+      "raw_score": 9.0,
+      "relative_score": 3.2,
+      "short_term_score": 12.4,
+      "medium_term_score": 10.5,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Tecnologia tem exposição agregada positiva ao cenário porque Selic em queda, Atividade doméstica em melhora e Crédito em expansão favorecem os principais tickers do setor na base curada. Software e plataformas digitais com exposição a crescimento doméstico, investimento corporativo, juros longos e apetite a risco.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "discretionary_retail",
+      "sector_name": "Varejo discricionário",
+      "score": 3.37,
+      "raw_score": 9.17,
+      "relative_score": 3.37,
+      "short_term_score": 11.93,
+      "medium_term_score": 10.87,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Varejo discricionário tem exposição agregada positiva ao cenário porque Atividade doméstica em melhora, Selic em queda e Crédito em expansão favorecem os principais tickers do setor na base curada. Varejistas e marcas de consumo sensíveis a renda, crédito, desemprego, inflação, juros e confiança do consumidor.",
+      "confidence": "medium"
+    }
+  ],
+  "medium_term_harmed_sectors": [
+    {
+      "sector_id": "mining",
+      "sector_name": "Mineração",
+      "score": -3.8,
+      "raw_score": 2.0,
+      "relative_score": -3.8,
+      "short_term_score": 3.2,
+      "medium_term_score": 2.1,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down"
+      ],
+      "rationale": "Mineração tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda e Inflação em queda favorecem menos os principais tickers do setor na base curada. Mineradoras exportadoras com exposição a minério de ferro, China, dólar, frete e risco ambiental/regulatório.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "industrials",
+      "sector_name": "Industriais exportadoras",
+      "score": -3.8,
+      "raw_score": 2.0,
+      "relative_score": -3.8,
+      "short_term_score": 3.1,
+      "medium_term_score": 2.2,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "domestic_growth_up"
+      ],
+      "rationale": "Industriais exportadoras tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda e Atividade doméstica em melhora favorecem menos os principais tickers do setor na base curada. Empresas industriais com receita global ou dolarizada, expostas a câmbio, ciclo externo, investimento em bens de capital e custos industriais.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "insurance",
+      "sector_name": "Seguradoras",
+      "score": -4.3,
+      "raw_score": 1.5,
+      "relative_score": -4.3,
+      "short_term_score": -0.6,
+      "medium_term_score": 2.55,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Seguradoras tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda, Inflação em queda e Atividade doméstica em melhora favorecem menos os principais tickers do setor na base curada. Seguradoras e holdings de seguros sensíveis a juros, resultado financeiro, sinistralidade, emprego formal e risco regulatório.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "oil_gas",
+      "sector_name": "Óleo e gás",
+      "score": -3.05,
+      "raw_score": 2.75,
+      "relative_score": -3.05,
+      "short_term_score": 4.58,
+      "medium_term_score": 2.88,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up"
+      ],
+      "rationale": "Óleo e gás tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda, Inflação em queda e Atividade doméstica em melhora favorecem menos os principais tickers do setor na base curada. Produtoras e empresas integradas de petróleo, expostas a Brent, câmbio, custo de capital, regulação e risco político.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "food_proteins",
+      "sector_name": "Proteínas e alimentos exportadores",
+      "score": -2.8,
+      "raw_score": 3.0,
+      "relative_score": -2.8,
+      "short_term_score": 3.8,
+      "medium_term_score": 3.5,
+      "impact_label": "menor exposição relativa",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up"
+      ],
+      "rationale": "Proteínas e alimentos exportadores tem exposição agregada positiva em termos absolutos, mas abaixo da média do universo ao cenário porque Selic em queda, Inflação em queda e Atividade doméstica em melhora favorecem menos os principais tickers do setor na base curada. Empresas de proteína animal e alimentos processados com exposição a câmbio, commodities agrícolas, demanda global, China e custos de grãos.",
+      "confidence": "medium"
+    }
+  ],
+  "net_resilient_sectors": [
+    {
+      "sector_id": "real_estate",
+      "sector_name": "Construção e incorporação",
+      "score": 4.7,
+      "raw_score": 10.5,
+      "relative_score": 4.7,
+      "short_term_score": 13.97,
+      "medium_term_score": 12.43,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Construção e incorporação tem exposição agregada positiva ao cenário porque Selic em queda, Crédito em expansão e Atividade doméstica em melhora favorecem os principais tickers do setor na base curada. Incorporadoras residenciais altamente sensíveis a Selic, juros longos, crédito imobiliário, emprego e renda.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "education",
+      "sector_name": "Educação",
+      "score": 4.2,
+      "raw_score": 10.0,
+      "relative_score": 4.2,
+      "short_term_score": 13.1,
+      "medium_term_score": 11.8,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Educação tem exposição agregada positiva ao cenário porque Selic em queda, Atividade doméstica em melhora e Inflação em queda favorecem os principais tickers do setor na base curada. Educação privada e plataformas educacionais sensíveis a emprego, renda, crédito, inadimplência, juros e regulação do MEC.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "discretionary_retail",
+      "sector_name": "Varejo discricionário",
+      "score": 3.37,
+      "raw_score": 9.17,
+      "relative_score": 3.37,
+      "short_term_score": 11.93,
+      "medium_term_score": 10.87,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Varejo discricionário tem exposição agregada positiva ao cenário porque Atividade doméstica em melhora, Selic em queda e Crédito em expansão favorecem os principais tickers do setor na base curada. Varejistas e marcas de consumo sensíveis a renda, crédito, desemprego, inflação, juros e confiança do consumidor.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "banks",
+      "sector_name": "Bancos",
+      "score": 3.2,
+      "raw_score": 9.0,
+      "relative_score": 3.2,
+      "short_term_score": 11.1,
+      "medium_term_score": 11.0,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Bancos tem exposição agregada positiva ao cenário porque Atividade doméstica em melhora, Crédito em expansão e Selic em queda favorecem os principais tickers do setor na base curada. Bancos comerciais e instituições financeiras com exposição a crédito, inadimplência, Selic, emprego e atividade doméstica.",
+      "confidence": "medium"
+    },
+    {
+      "sector_id": "technology",
+      "sector_name": "Tecnologia",
+      "score": 3.2,
+      "raw_score": 9.0,
+      "relative_score": 3.2,
+      "short_term_score": 12.4,
+      "medium_term_score": 10.5,
+      "impact_label": "impacto positivo",
+      "matched_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "rationale": "Tecnologia tem exposição agregada positiva ao cenário porque Selic em queda, Atividade doméstica em melhora e Crédito em expansão favorecem os principais tickers do setor na base curada. Software e plataformas digitais com exposição a crescimento doméstico, investimento corporativo, juros longos e apetite a risco.",
+      "confidence": "medium"
+    }
+  ],
+  "top_relative_tickers": [
+    {
+      "ticker": "MRVE3",
+      "company": "MRV ENGENHARIA E PARTICIPACOES S.A.",
+      "sector_id": "real_estate",
+      "sector_name": "Construção e incorporação",
+      "score": 4.89,
+      "raw_score": 11.0,
+      "relative_score": 4.89,
+      "short_term_score": 14.3,
+      "medium_term_score": 13.1,
+      "impact_label": "impacto positivo",
+      "matched_positive_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "matched_negative_factors": [],
+      "rationale": "MRVE3 apresenta exposição positiva ao cenário por Selic em queda, Inflação em queda e Atividade doméstica em melhora. A MRV é uma incorporadora focada em baixa e média renda, com alta exposição a financiamento habitacional, emprego, renda e programas como Minha Casa Minha Vida.",
+      "confidence": "medium"
+    },
+    {
+      "ticker": "MGLU3",
+      "company": "MAGAZINE LUIZA S.A.",
+      "sector_id": "discretionary_retail",
+      "sector_name": "Varejo discricionário",
+      "score": 4.89,
+      "raw_score": 11.0,
+      "relative_score": 4.89,
+      "short_term_score": 14.3,
+      "medium_term_score": 13.1,
+      "impact_label": "impacto positivo",
+      "matched_positive_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "matched_negative_factors": [],
+      "rationale": "MGLU3 apresenta exposição positiva ao cenário por Selic em queda, Inflação em queda e Atividade doméstica em melhora. O Magazine Luiza é um varejista omnichannel com forte exposição a bens duráveis, e-commerce, marketplace e crédito ao consumidor.",
+      "confidence": "medium"
+    },
+    {
+      "ticker": "YDUQ3",
+      "company": "YDUQS PARTICIPACOES S.A.",
+      "sector_id": "education",
+      "sector_name": "Educação",
+      "score": 3.89,
+      "raw_score": 10.0,
+      "relative_score": 3.89,
+      "short_term_score": 13.1,
+      "medium_term_score": 11.8,
+      "impact_label": "impacto positivo",
+      "matched_positive_factors": [
+        "selic_down",
+        "inflation_down",
+        "domestic_growth_up",
+        "credit_growth_up"
+      ],
+      "matched_negative_factors": [],
+      "rationale": "YDUQ3 apresenta exposição positiva ao cenário por Selic em queda, Inflação em queda e Atividade doméstica em melhora. A Yduqs é um grupo de educação superior com receita ligada a mensalidades, captação de alunos, evasão, renda e financiamento estudantil.",
+      "confidence": "medium"
+    }
+  ],
+  "negative_tickers": [
+    {
+      "ticker": "BBSE3",
+      "company": "BB Seguridade",
+      "sector_id": "insurance",
+      "sector_name": "Seguradoras",
+      "score": -5.11,
+      "raw_score": 1.0,
+      "relative_score": -5.11,
+      "short_term_score": -1.2,
+      "medium_term_score": 1.9,
+      "impact_label": "menor exposição relativa",
+      "matched_positive_factors": [
+        "inflation_down",
+        "domestic_growth_up"
+      ],
+      "matched_negative_factors": [
+        "selic_down"
+      ],
+      "rationale": "BBSE3 apresenta exposição positiva em termos absolutos, mas menor que a média do universo ao cenário por Inflação em queda e Atividade doméstica em melhora. BB Seguridade combina exposição a seguros, previdência e resultado financeiro, sendo impactada por juros, inflação,sinistralidade e renda doméstica.",
+      "confidence": "high"
+    },
+    {
+      "ticker": "BRAV3",
+      "company": "Brava Energia",
+      "sector_id": "oil_gas",
+      "sector_name": "Óleo e gás",
+      "score": -5.11,
+      "raw_score": 1.0,
+      "relative_score": -5.11,
+      "short_term_score": 2.5,
+      "medium_term_score": 0.8,
+      "impact_label": "menor exposição relativa",
+      "matched_positive_factors": [
+        "selic_down"
+      ],
+      "matched_negative_factors": [],
+      "rationale": "BRAV3 apresenta exposição positiva em termos absolutos, mas menor que a média do universo ao cenário por Selic em queda. Brava Energia possui exposição direta a preço do petróleo, câmbio e produção.",
+      "confidence": "high"
+    },
+    {
+      "ticker": "TAEE11",
+      "company": "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
+      "sector_id": "utilities",
+      "sector_name": "Utilities e infraestrutura",
+      "score": -5.11,
+      "raw_score": 1.0,
+      "relative_score": -5.11,
+      "short_term_score": 4.3,
+      "medium_term_score": 0.3,
+      "impact_label": "menor exposição relativa",
+      "matched_positive_factors": [
+        "selic_down"
+      ],
+      "matched_negative_factors": [
+        "inflation_down"
+      ],
+      "rationale": "TAEE11 apresenta exposição positiva em termos absolutos, mas menor que a média do universo ao cenário por Selic em queda. A Taesa é uma transmissora de energia com receita regulada e previsível, baseada principalmente na disponibilidade dos ativos e reajustada por índices contratuais.",
+      "confidence": "high"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Crédito não se materializa",
+      "rationale": "Mesmo com juros menores, bancos podem manter concessão seletiva se inadimplência, spreads ou apetite a risco não melhorarem. Isso reduziria o impulso esperado para varejo, construção e empresas dependentes de financiamento ao consumidor.",
+      "related_factors": [
+        "credit_growth_up",
+        "selic_down"
+      ]
+    },
+    {
+      "risk": "Reversão de inflação e juros",
+      "rationale": "Uma mudança na trajetória de inflação ou no tom do Banco Central pode alterar rapidamente o custo de capital, o crédito e a atratividade relativa dos setores sensíveis a duration.",
+      "related_factors": [
+        "selic_down",
+        "inflation_down"
+      ]
+    },
+    {
+      "risk": "Frustração do ciclo doméstico",
+      "rationale": "Se atividade e emprego não acompanharem a melhora esperada, a transmissão para renda disponível, tráfego em lojas, lançamentos imobiliários e inadimplência pode ser mais fraca que o cenário sugere.",
+      "related_factors": [
+        "domestic_growth_up"
+      ]
+    }
+  ],
+  "markdown_report": "# Análise macro-setorial\n\n**Cenário.** O cenário indica Selic em queda, Inflação em queda, Atividade doméstica em melhora e Crédito em expansão, com impactos diferenciados entre setores domésticos, exportadores e regulados.\n\n**Horizonte.** No curto prazo, os setores com maior impulso positivo são Construção e incorporação (+14.0), Educação (+13.1), Shoppings (+12.4). No médio prazo, os setores com menor impulso relativo são Mineração (+2.1), Industriais exportadoras (+2.2), Seguradoras (+2.5).\n\n**Setores favorecidos.** Construção e incorporação (rel. +4.7; abs. +10.5; curto +14.0; médio +12.4), Educação (rel. +4.2; abs. +10.0; curto +13.1; médio +11.8), Varejo discricionário (rel. +3.4; abs. +9.2; curto +11.9; médio +10.9), Tecnologia (rel. +3.2; abs. +9.0; curto +12.4; médio +10.5), Shoppings (rel. +3.2; abs. +9.0; curto +12.4; médio +10.5).\n\n**Setores com menor exposição relativa.** Seguradoras (rel. -4.3; abs. +1.5; curto -0.6; médio +2.5), Industriais exportadoras (rel. -3.8; abs. +2.0; curto +3.1; médio +2.2), Mineração (rel. -3.8; abs. +2.0; curto +3.2; médio +2.1), Óleo e gás (rel. -3.0; abs. +2.8; curto +4.6; médio +2.9), Proteínas e alimentos exportadores (rel. -2.8; abs. +3.0; curto +3.8; médio +3.5).\n\n**Tickers com exposição positiva.** MRVE3 (MRV ENGENHARIA E PARTICIPACOES S.A., rel. +4.9; abs. +11.0; curto +14.3; médio +13.1), MGLU3 (MAGAZINE LUIZA S.A., rel. +4.9; abs. +11.0; curto +14.3; médio +13.1), YDUQ3 (YDUQS PARTICIPACOES S.A., rel. +3.9; abs. +10.0; curto +13.1; médio +11.8).\n\n**Tickers com menor exposição relativa.** BBSE3 (BB Seguridade, rel. -5.1; abs. +1.0; curto -1.2; médio +1.9), BRAV3 (Brava Energia, rel. -5.1; abs. +1.0; curto +2.5; médio +0.8), TAEE11 (TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A., rel. -5.1; abs. +1.0; curto +4.3; médio +0.3).\n\n**Riscos principais.** Crédito não se materializa: Mesmo com juros menores, bancos podem manter concessão seletiva se inadimplência, spreads ou apetite a risco não melhorarem. Isso reduziria o impulso esperado para varejo, construção e empresas dependentes de financiamento ao consumidor.; Reversão de inflação e juros: Uma mudança na trajetória de inflação ou no tom do Banco Central pode alterar rapidamente o custo de capital, o crédito e a atratividade relativa dos setores sensíveis a duration.; Frustração do ciclo doméstico: Se atividade e emprego não acompanharem a melhora esperada, a transmissão para renda disponível, tráfego em lojas, lançamentos imobiliários e inadimplência pode ser mais fraca que o cenário sugere.\n\n**Limitação.** Esta é uma análise qualitativa de sensibilidade macro, não uma recomendação personalizada de investimento, preço-alvo ou garantia de retorno.",
+  "limitations": [
+    "A ferramenta não fornece recomendação personalizada de investimento.",
+    "A análise é qualitativa e baseada em uma matriz curada de sensibilidade macro.",
+    "Não há cálculo de valuation, preço-alvo, múltiplos ou upside.",
+    "O universo de tickers do MVP é limitado e deve ser revisado por analista humano.",
+    "Eventos corporativos recentes podem não estar refletidos na base curada."
+  ],
+  "metadata": {
+    "generated_at": "2026-06-16T19:08:30.587718Z",
+    "engine_version": "mvp-0.1.0",
+    "model_used": "local-heuristic-parser",
+    "used_llm": false,
+    "data_source": "app/data/curated/ticker_exposures_expanded.yaml",
+    "factor_count": 4,
+    "ticker_universe_size": 63
+  }
+}

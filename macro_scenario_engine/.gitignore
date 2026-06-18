@@ -1,6 +1,51 @@
+# Local environment and secrets
 .env
-.venv/
+.env.*
+!.env.example
+
+# Python caches and test artifacts
 __pycache__/
+*.py[cod]
+*$py.class
 .pytest_cache/
-output/
-*.pyc
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.tox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build and packaging outputs
+build/
+dist/
+*.egg-info/
+
+# Generated reports
+app/output/*
+!app/output/sample_output.json
+!app/output/sample_report.md
+
+# Downloaded/generated market data
+app/ingestion/data/raw/
+app/ingestion/data/processed/
+app/data/processed/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

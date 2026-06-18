@@ -1,0 +1,172 @@
+sectors:
+  banks:
+    name: Bancos
+    description: Bancos comerciais e instituições financeiras com exposição a crédito, inadimplência, Selic, emprego e atividade doméstica.
+    internal_sectors:
+      - private_banks
+      - state_controlled_bank
+      - foreign_controlled_private_banks
+
+  insurance:
+    name: Seguradoras
+    description: Seguradoras e holdings de seguros sensíveis a juros, resultado financeiro, sinistralidade, emprego formal e risco regulatório.
+    internal_sectors:
+      - insurance
+
+  capital_markets:
+    name: Mercado de capitais
+    description: Bancos de investimento e plataformas financeiras mais sensíveis a liquidez, juros longos, valuation e apetite a risco.
+    internal_sectors:
+      - investment_banks_capital_markets
+      - market_infrastructure
+
+  oil_gas:
+    name: Óleo e gás
+    description: Produtoras e empresas integradas de petróleo, expostas a Brent, câmbio, custo de capital, regulação e risco político.
+    internal_sectors:
+      - oil_gas_integrated
+      - oil_gas_independent_e_and_p
+      - oil_gas_independent_onshore
+
+  mining:
+    name: Mineração
+    description: Mineradoras exportadoras com exposição a minério de ferro, China, dólar, frete e risco ambiental/regulatório.
+    internal_sectors:
+      - mining
+
+  steel:
+    name: Siderurgia
+    description: Produtores de aço e empresas integradas sensíveis a China, minério, atividade doméstica, câmbio e ciclo industrial.
+    internal_sectors:
+      - steel_mining_integrated
+      - steel_long
+      - steel_flat
+      - petrochemicals
+
+  pulp_paper:
+    name: Papel e celulose
+    description: Exportadoras de celulose e papel com receita dolarizada e exposição a demanda global, câmbio, custos e commodities.
+    internal_sectors:
+      - pulp_paper
+      - pulp_paper_packaging
+
+  discretionary_retail:
+    name: Varejo discricionário
+    description: Varejistas e marcas de consumo sensíveis a renda, crédito, desemprego, inflação, juros e confiança do consumidor.
+    internal_sectors:
+      - discretionary_retail
+      - ecommerce_discretionary_retail
+      - discretionary_retail_luxury_jewelry
+      - fashion_lifestyle_brands
+      - beauty_personal_care
+      - car_rental_mobility
+
+  food_retail:
+    name: Varejo alimentar
+    description: Supermercados e atacarejo com demanda mais defensiva, mas sensíveis a inflação de alimentos, renda e competição.
+    internal_sectors:
+      - cash_and_carry_food_retail
+      - regional_food_retail_cash_and_carry
+
+  beverages:
+    name: Bebidas
+    description: Empresas de bebidas e consumo recorrente sensíveis a renda, inflação de insumos, câmbio e volumes domésticos.
+    internal_sectors:
+      - beverages
+
+  real_estate:
+    name: Construção e incorporação
+    description: Incorporadoras residenciais altamente sensíveis a Selic, juros longos, crédito imobiliário, emprego e renda.
+    internal_sectors:
+      - homebuilders
+      - low_income_homebuilders
+      - high_income_homebuilders
+
+  shopping_malls:
+    name: Shoppings
+    description: Administradoras de shopping centers expostas a consumo discricionário, fluxo de lojistas, juros e atividade doméstica.
+    internal_sectors:
+      - shopping_centers
+      - premium_shopping_centers
+
+  utilities:
+    name: Utilities e infraestrutura
+    description: Energia, saneamento e infraestrutura regulada, com perfil defensivo, capex relevante, dividendos e risco regulatório.
+    internal_sectors:
+      - electric_utilities_integrated
+      - electric_generation_renewables
+      - electric_transmission
+      - electric_utilities_distribution
+      - electric_utilities_integrated_distribution
+      - water_sanitation
+      - thermal_power_natural_gas
+      - renewable_power_generation
+
+  healthcare:
+    name: Saúde
+    description: Hospitais, planos de saúde e medicina diagnóstica expostos a emprego formal, renda, inflação médica, câmbio e regulação.
+    internal_sectors:
+      - hospitals_healthcare_services
+      - managed_care_health_insurance
+      - diagnostic_medicine
+      - healthcare_retail
+      - pharmaceuticals
+
+  education:
+    name: Educação
+    description: Educação privada e plataformas educacionais sensíveis a emprego, renda, crédito, inadimplência, juros e regulação do MEC.
+    internal_sectors:
+      - private_higher_education
+      - private_education_platforms
+
+  aerospace:
+    name: Aeroespacial
+    description: Exportadoras aeroespaciais com receita dolarizada e exposição a ciclo global de aviação, juros internacionais e câmbio.
+    internal_sectors:
+      - aerospace_exporter
+
+  logistics:
+    name: Logística
+    description: Operadoras de transporte e infraestrutura logística expostas a commodities agrícolas, comércio exterior, capex, combustível e concessões.
+    internal_sectors:
+      - rail_logistics
+      - logistics_mobility_holding
+      - transport_infrastructure_concessions
+
+  airlines:
+    name: Companhias aéreas
+    description: Empresas aéreas sensíveis a preço de combustível, câmbio, demanda doméstica, turismo, endividamento e custo de capital.
+    internal_sectors:
+      - airlines
+      - airline_transport
+
+  telecom:
+    name: Telecom
+    description: Operadoras de telecomunicações com receita recorrente, capex em rede, sensibilidade a juros, câmbio de equipamentos e regulação.
+    internal_sectors:
+      - telecommunications
+      - mobile_telecommunications
+
+  technology:
+    name: Tecnologia
+    description: Software e plataformas digitais com exposição a crescimento doméstico, investimento corporativo, juros longos e apetite a risco.
+    internal_sectors:
+      - software_technology
+
+  food_proteins:
+    name: Proteínas e alimentos exportadores
+    description: Empresas de proteína animal e alimentos processados com exposição a câmbio, commodities agrícolas, demanda global, China e custos de grãos.
+    internal_sectors:
+      - proteins_food_exports
+
+  fuel_distribution:
+    name: Distribuição de combustíveis
+    description: Distribuidoras de combustíveis sensíveis a preço de petróleo, câmbio, volumes domésticos, margens de distribuição e regulação.
+    internal_sectors:
+      - fuel_distribution
+
+  industrials:
+    name: Industriais exportadoras
+    description: Empresas industriais com receita global ou dolarizada, expostas a câmbio, ciclo externo, investimento em bens de capital e custos industriais.
+    internal_sectors:
+      - industrials_exporter

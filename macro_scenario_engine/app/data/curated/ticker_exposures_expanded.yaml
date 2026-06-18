@@ -1,0 +1,4474 @@
+ITUB4:
+  company: ITAU UNIBANCO HOLDING S.A.
+  mvp_group: Bancos e Financeiros
+  internal_sector: private_banks
+  b3_sector: Financeiro
+  b3_subsector: Intermediários Financeiros
+  b3_segment: Bancos
+  business_description: Banco universal privado brasileiro, exposto principalmente a crédito doméstico, inadimplência, Selic,
+    atividade econômica e mercado de capitais.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_latam
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - domestic_growth_up
+  - credit_growth_up
+  - selic_down
+  - long_rates_down
+  - unemployment_down
+  - global_risk_on
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - domestic_growth_down
+  - credit_growth_down
+  - selic_up
+  - long_rates_up
+  - unemployment_up
+  - global_risk_off
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 1
+    iron_ore_down: -1
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - banco privado de grande porte
+  - modelo de banco universal
+  - alta exposição ao ciclo de crédito brasileiro
+  - receita majoritariamente em reais
+  - sensível à inadimplência, desemprego, Selic e atividade doméstica
+  - alguma diversificação regional na América Latina
+  rationale: O Itaú é um banco universal privado com forte exposição ao ciclo de crédito brasileiro, à renda das famílias,
+    ao emprego e ao custo de funding. Por isso, tende a se beneficiar de crescimento doméstico, expansão do crédito, queda
+    de juros e menor risco fiscal/regulatório, enquanto sofre com inadimplência, desemprego, Selic alta e retração econômica.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+BBDC4:
+  company: BCO BRADESCO S.A.
+  mvp_group: Bancos e Financeiros
+  internal_sector: private_banks
+  b3_sector: Financeiro
+  b3_subsector: Intermediários Financeiros
+  b3_segment: Bancos
+  business_description: Banco universal privado brasileiro, com forte exposição a varejo, crédito, seguros, previdência, cartões
+    e atividade econômica doméstica.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - domestic_growth_up
+  - credit_growth_up
+  - selic_down
+  - long_rates_down
+  - unemployment_down
+  - global_risk_on
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - domestic_growth_down
+  - credit_growth_down
+  - selic_up
+  - long_rates_up
+  - unemployment_up
+  - global_risk_off
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 1
+    iron_ore_down: -1
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - banco privado com grande exposição ao Brasil
+  - forte presença em crédito, varejo, cartões, seguros e previdência
+  - receita majoritariamente em reais
+  - sensível à inadimplência de pessoa física e empresas
+  - relevante exposição ao desempenho do mercado de seguros
+  - menor diversificação internacional que Itaú
+  rationale: O Bradesco combina banco de varejo, crédito, cartões, seguros e previdência, com receita majoritariamente doméstica.
+    Sua exposição macro vem principalmente da qualidade do crédito, da atividade econômica, do desemprego, dos juros e da
+    capacidade de repassar custos nos negócios financeiros e de seguros.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+BBAS3:
+  company: BCO BRASIL S.A.
+  mvp_group: Bancos e Financeiros
+  internal_sector: state_controlled_bank
+  b3_sector: Financeiro
+  b3_subsector: Intermediários Financeiros
+  b3_segment: Bancos
+  business_description: Banco estatal brasileiro com forte presença em crédito rural, varejo, empresas, setor público e agronegócio,
+    sensível ao ciclo doméstico, agro, inadimplência e risco político.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - domestic_growth_up
+  - credit_growth_up
+  - fiscal_risk_down
+  - selic_down
+  - long_rates_down
+  - unemployment_down
+  - regulatory_risk_down
+  negative_exposures:
+  - domestic_growth_down
+  - credit_growth_down
+  - fiscal_risk_up
+  - selic_up
+  - long_rates_up
+  - unemployment_up
+  - global_risk_off
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 1
+    iron_ore_down: -1
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 1
+    global_risk_off: -2
+    fiscal_risk_up: -3
+    fiscal_risk_down: 3
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - banco estatal de grande porte
+  - forte exposição ao crédito rural e ao agronegócio
+  - sensível a risco fiscal e interferência política
+  - receita majoritariamente em reais
+  - impacto relevante de inadimplência no agro
+  - maior exposição a decisões de governo e política pública que bancos privados
+  rationale: O Banco do Brasil é um banco estatal com forte presença em crédito rural, setor público e varejo bancário, o
+    que aumenta sua sensibilidade ao ciclo doméstico, ao agro e ao risco fiscal/político. Ele tende a se beneficiar de crescimento,
+    crédito saudável e menor risco fiscal, mas sofre com inadimplência no agro, interferência estatal, Selic alta e deterioração
+    fiscal.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+SANB11:
+  company: BCO SANTANDER (BRASIL) S.A.
+  mvp_group: Bancos e Financeiros
+  internal_sector: foreign_controlled_private_banks
+  b3_sector: Financeiro
+  b3_subsector: Intermediários Financeiros
+  b3_segment: Bancos
+  business_description: Banco privado brasileiro controlado pelo Santander, exposto a varejo, atacado, financiamento ao consumo,
+    veículos, cartões, crédito doméstico e inadimplência.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - domestic_growth_up
+  - credit_growth_up
+  - selic_down
+  - long_rates_down
+  - unemployment_down
+  - global_risk_on
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - domestic_growth_down
+  - credit_growth_down
+  - selic_up
+  - long_rates_up
+  - unemployment_up
+  - global_risk_off
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 1
+    iron_ore_down: -1
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - banco privado com controlador estrangeiro
+  - operação brasileira relevante, mas majoritariamente doméstica
+  - exposição a crédito ao consumidor, veículos, cartões e PMEs
+  - receita majoritariamente em reais
+  - sensível ao desemprego, inadimplência e confiança do consumidor
+  - pode se beneficiar de melhora no apetite global por risco Brasil
+  rationale: O Santander Brasil é um banco privado com exposição relevante a crédito ao consumidor, veículos, cartões, PMEs
+    e varejo bancário. Por isso, reage positivamente a crescimento doméstico, emprego forte, expansão do crédito e juros menores,
+    mas é prejudicado por desemprego, inadimplência, aperto monetário e piora da confiança do consumidor.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+BPAC11:
+  company: BCO BTG PACTUAL S.A.
+  mvp_group: Bancos e Financeiros
+  internal_sector: investment_banks_capital_markets
+  b3_sector: Financeiro
+  b3_subsector: Intermediários Financeiros
+  b3_segment: Bancos
+  business_description: Banco de investimento e plataforma financeira brasileira, com exposição a investment banking, sales
+    & trading, wealth management, asset management, corporate lending e mercado de capitais.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - global_risk_on
+  - fiscal_risk_down
+  - inflation_down
+  - brl_appreciation
+  - domestic_growth_up
+  - credit_growth_up
+  - regulatory_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - global_risk_off
+  - fiscal_risk_up
+  - inflation_up
+  - brl_depreciation
+  - domestic_growth_down
+  - credit_growth_down
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 2
+    brl_depreciation: -2
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 3
+    global_risk_off: -3
+    fiscal_risk_up: -3
+    fiscal_risk_down: 3
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - banco de investimento e plataforma de mercado de capitais
+  - mais sensível a liquidez, valuations e apetite a risco que bancos de varejo
+  - forte exposição a wealth management, asset management e investment banking
+  - beneficiado por queda de juros e retomada de IPOs, M&A e emissões
+  - receita majoritariamente em reais, mas com presença internacional maior que bancos puramente domésticos
+  - mais exposto a global_risk_on/global_risk_off que bancos tradicionais
+  rationale: O BTG Pactual é mais exposto a mercado de capitais, wealth management, asset management, investment banking e
+    trading do que a bancos de varejo tradicionais. Assim, tende a se beneficiar de queda de juros, global risk-on, captação
+    de recursos, M&A e emissões, enquanto sofre com aversão a risco, juros longos altos e fechamento do mercado de capitais.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+PETR4:
+  company: PETROLEO BRASILEIRO S.A. PETROBRAS
+  mvp_group: Óleo e Gás
+  internal_sector: oil_gas_integrated
+  b3_sector: Petróleo. Gás e Biocombustíveis
+  b3_subsector: Petróleo. Gás e Biocombustíveis
+  b3_segment: Exploração. Refino e Distribuição
+  business_description: Companhia integrada de petróleo, gás natural e energia, com forte exposição à produção offshore no
+    Brasil, preço internacional do petróleo, câmbio, refino, política de combustíveis, dividendos e risco fiscal/político.
+  revenue_profile:
+    currency: mostly_usd_linked
+    geography: brazil_global
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - oil_price_up
+  - fiscal_risk_down
+  - brl_depreciation
+  - china_growth_up
+  - global_risk_on
+  - regulatory_risk_down
+  negative_exposures:
+  - oil_price_down
+  - fiscal_risk_up
+  - brl_appreciation
+  - china_growth_down
+  - global_risk_off
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: -1
+    long_rates_down: 1
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -2
+    brl_depreciation: 2
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 3
+    oil_price_down: -3
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 2
+    china_growth_down: -2
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -3
+    fiscal_risk_down: 3
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - empresa integrada de óleo e gás
+  - atuação em exploração, produção, refino, gás natural e energia
+  - forte exposição ao pré-sal e à produção offshore brasileira
+  - receita altamente correlacionada ao preço internacional do petróleo
+  - beneficiada por depreciação do real, pois parte relevante da receita é dolarizada ou dolarizada indiretamente
+  - negativamente sensível a apreciação do real, que reduz a receita em reais de barris referenciados em dólar
+  - sensível a risco fiscal e interferência política por ser estatal
+  - risco regulatório relevante por atuar em setor regulado, intensivo em licenças, royalties e política energética
+  - dividendos e política de preços de combustíveis são variáveis-chave para o investment case
+  rationale: A Petrobras é uma empresa integrada de óleo e gás com receita fortemente ligada ao preço internacional do petróleo,
+    ao câmbio e à política de combustíveis. Por ser estatal e estratégica, também reage de forma relevante a risco fiscal,
+    interferência política e regulação.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+PRIO3:
+  company: PRIO S.A.
+  mvp_group: Óleo e Gás
+  internal_sector: oil_gas_independent_e_and_p
+  b3_sector: Petróleo. Gás e Biocombustíveis
+  b3_subsector: Petróleo. Gás e Biocombustíveis
+  b3_segment: Exploração. Refino e Distribuição
+  business_description: Companhia independente de óleo e gás focada em aquisição, operação e revitalização de campos maduros
+    offshore no Brasil, com forte exposição ao preço do petróleo, câmbio, eficiência operacional, produção e risco regulatório/licenciamento.
+  revenue_profile:
+    currency: mostly_usd_linked
+    geography: brazil
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - oil_price_up
+  - selic_down
+  - long_rates_down
+  - brl_depreciation
+  - china_growth_up
+  - global_risk_on
+  - regulatory_risk_down
+  negative_exposures:
+  - oil_price_down
+  - selic_up
+  - long_rates_up
+  - brl_appreciation
+  - china_growth_down
+  - global_risk_off
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -2
+    brl_depreciation: 2
+    domestic_growth_up: 0
+    domestic_growth_down: 0
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 3
+    oil_price_down: -3
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 2
+    china_growth_down: -2
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 1
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - companhia independente de exploração e produção de óleo e gás
+  - foco em aquisição e revitalização de campos maduros
+  - operação concentrada em ativos offshore no Brasil
+  - receita altamente ligada ao preço internacional do petróleo
+  - forte alavancagem operacional ao preço do Brent
+  - beneficiada por depreciação do real, dado que a receita é dolarizada ou referenciada em dólar
+  - menos exposta ao ciclo doméstico de crédito e consumo do que Petrobras
+  - mais sensível a execução operacional, lifting cost, produção por campo e aquisições
+  - risco regulatório relevante por depender de licenciamento, autorizações, royalties e regras da ANP
+  - menor risco de interferência estatal direta que Petrobras, mas ainda exposta ao risco Brasil
+  rationale: A PRIO é uma produtora independente de petróleo com foco em ativos offshore, tornando seu resultado muito sensível
+    ao preço do Brent, ao câmbio e à eficiência operacional dos campos. Como tem menor interferência estatal direta que Petrobras,
+    sua exposição macro é mais concentrada em petróleo, dólar, juros, custo de capital e apetite global por risco.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+VALE3:
+  company: VALE S.A.
+  mvp_group: Mineração e Siderurgia
+  internal_sector: mining
+  b3_sector: Materiais Básicos
+  b3_subsector: Mineração
+  b3_segment: Minerais Metálicos
+  business_description: Mineradora global brasileira, com forte exposição a minério de ferro, China, câmbio, metais básicos,
+    frete, custos operacionais e risco regulatório/ambiental.
+  revenue_profile:
+    currency: mostly_usd
+    geography: global
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - iron_ore_up
+  - china_growth_up
+  - regulatory_risk_down
+  - long_rates_down
+  - brl_depreciation
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - iron_ore_down
+  - china_growth_down
+  - regulatory_risk_up
+  - long_rates_up
+  - brl_appreciation
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -2
+    brl_depreciation: 2
+    domestic_growth_up: 0
+    domestic_growth_down: 0
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 3
+    iron_ore_down: -3
+    china_growth_up: 3
+    china_growth_down: -3
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - exportadora global de minério de ferro
+  - receita majoritariamente dolarizada
+  - alta dependência da demanda chinesa
+  - forte sensibilidade ao preço do minério de ferro
+  - beneficiada por depreciação do real
+  - negativamente impactada por apreciação do real
+  - relevante risco ambiental, de barragens, licenciamento e mineração
+  - exposição menor ao ciclo doméstico brasileiro do que siderúrgicas locais
+  rationale: A Vale é uma exportadora global de minério de ferro com receita majoritariamente dolarizada e fortemente dependente
+    da demanda chinesa. Por isso, tende a se beneficiar de minério em alta, China mais forte e real depreciado, mas é prejudicada
+    por desaceleração chinesa, queda do minério, custos logísticos maiores e risco regulatório/ambiental.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+CSNA3:
+  company: CIA SIDERURGICA NACIONAL
+  mvp_group: Mineração e Siderurgia
+  internal_sector: steel_mining_integrated
+  b3_sector: Materiais Básicos
+  b3_subsector: Siderurgia e Metalurgia
+  b3_segment: Siderurgia
+  business_description: Companhia integrada com atuação em siderurgia, mineração, cimento, logística e energia, combinando
+    exposição ao minério de ferro, aço doméstico, construção civil, infraestrutura, câmbio e ciclo industrial.
+  revenue_profile:
+    currency: mixed_brl_usd
+    geography: brazil_global
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - domestic_growth_up
+  - iron_ore_up
+  - selic_down
+  - long_rates_down
+  - credit_growth_up
+  - china_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - domestic_growth_down
+  - iron_ore_down
+  - selic_up
+  - long_rates_up
+  - credit_growth_down
+  - china_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -1
+    brl_depreciation: 1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 3
+    iron_ore_down: -3
+    china_growth_up: 2
+    china_growth_down: -2
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - companhia integrada de aço, mineração, cimento, logística e energia
+  - exposição relevante ao minério de ferro por meio da CSN Mineração
+  - também exposta ao ciclo doméstico de aço, construção e infraestrutura
+  - receita parcialmente dolarizada pela mineração
+  - parte importante da demanda vem do Brasil
+  - beneficiada por minério de ferro alto e real depreciado
+  - negativamente impactada por juros altos, queda da construção e desaceleração industrial
+  - maior exposição doméstica que Vale
+  rationale: A CSN combina mineração, siderurgia, cimento, logística e energia, misturando exposição global ao minério de
+    ferro com exposição doméstica ao aço, construção e infraestrutura. Assim, se beneficia de minério alto, China mais forte,
+    real depreciado e crescimento doméstico, mas sofre com juros altos, queda da construção, desaceleração industrial e minério
+    em queda.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+GGBR4:
+  company: GERDAU S.A.
+  mvp_group: Mineração e Siderurgia
+  internal_sector: steel_long
+  b3_sector: Materiais Básicos
+  b3_subsector: Siderurgia e Metalurgia
+  b3_segment: Siderurgia
+  business_description: Produtora de aço brasileira com presença internacional, forte atuação em aços longos, construção,
+    indústria, infraestrutura e reciclagem de sucata, exposta ao ciclo econômico nas Américas, juros, construção civil e apetite
+    global por risco.
+  revenue_profile:
+    currency: mixed_brl_usd
+    geography: americas_global
+    commodity_linked: true
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - credit_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - credit_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -1
+    brl_depreciation: 1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - produtora de aço com presença relevante no Brasil, América do Norte e América Latina
+  - forte exposição a aços longos, construção civil e infraestrutura
+  - operação menos puramente doméstica que Usiminas
+  - relevante uso de sucata metálica como matéria-prima
+  - menor exposição direta ao minério de ferro do que Vale e CSN
+  - beneficiada por ciclo de construção forte e queda de juros
+  - sensível a custos de energia, frete e atividade industrial
+  - exposição relevante a global risk-on por ser cíclica e internacionalizada
+  rationale: A Gerdau é uma produtora de aço com forte exposição a aços longos, construção civil, infraestrutura e atividade
+    industrial nas Américas. Por isso, reage positivamente a crescimento doméstico/global, crédito, juros menores e maior
+    apetite a risco, enquanto sofre com desaceleração econômica, custo de energia/logística e retração da construção.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+USIM5:
+  company: USINAS SID DE MINAS GERAIS S.A.-USIMINAS
+  mvp_group: Mineração e Siderurgia
+  internal_sector: steel_flat
+  b3_sector: Materiais Básicos
+  b3_subsector: Siderurgia e Metalurgia
+  b3_segment: Siderurgia
+  business_description: Siderúrgica brasileira focada em aços planos, com exposição relevante aos setores automotivo, bens
+    de capital, construção, indústria doméstica e, em menor escala, mineração de ferro.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: true
+    regulated: false
+  positive_exposures:
+  - domestic_growth_up
+  - selic_down
+  - long_rates_down
+  - credit_growth_up
+  - fiscal_risk_down
+  negative_exposures:
+  - domestic_growth_down
+  - selic_up
+  - long_rates_up
+  - credit_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -1
+    brl_depreciation: 1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 1
+    iron_ore_down: -1
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - siderúrgica focada em aços planos
+  - alta exposição ao mercado doméstico brasileiro
+  - clientes relevantes em automóveis, máquinas, equipamentos, construção e indústria
+  - exposição positiva ao crescimento doméstico e ao crédito
+  - sensível a juros altos, desaceleração industrial e importações de aço
+  - possui exposição menor a minério de ferro por meio da Mineração Usiminas
+  - menos dolarizada que Vale e CSN
+  - mais sensível ao ciclo industrial brasileiro que ao ciclo global puro de commodities
+  rationale: A Usiminas é mais exposta ao mercado doméstico de aços planos, especialmente indústria, automóveis, máquinas
+    e construção. Sua exposição macro vem principalmente do crescimento brasileiro, crédito, juros, inflação de custos e demanda
+    industrial, com menor dolarização que mineradoras exportadoras.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+RECV3:
+  company: PETRORECÔNCAVO S.A.
+  mvp_group: Mineração e Siderurgia
+  internal_sector: oil_gas_independent_onshore
+  b3_sector: Petróleo. Gás e Biocombustíveis
+  b3_subsector: Petróleo. Gás e Biocombustíveis
+  b3_segment: Exploração. Refino e Distribuição
+  business_description: Operadora independente de óleo e gás focada em campos maduros terrestres no Brasil, com exposição
+    relevante ao preço do petróleo, gás natural, câmbio, eficiência operacional, produção, custos de extração e regulação
+    da ANP.
+  revenue_profile:
+    currency: mostly_usd_linked
+    geography: brazil
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - oil_price_up
+  - selic_down
+  - long_rates_down
+  - brl_depreciation
+  - global_risk_on
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - oil_price_down
+  - selic_up
+  - long_rates_up
+  - brl_appreciation
+  - global_risk_off
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -2
+    brl_depreciation: 2
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 3
+    oil_price_down: -3
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - operadora independente de petróleo e gás
+  - foco em campos maduros terrestres no Brasil
+  - exposição relevante a óleo, gás natural e eficiência operacional
+  - beneficiada por alta do petróleo e depreciação do real
+  - menos exposta ao risco político direto que Petrobras
+  - mais exposta a execução operacional, declínio de campos, revitalização e lifting cost
+  - risco regulatório relevante por depender de concessões, licenças e regras da ANP
+  - maior sensibilidade a juros que Petrobras por ser empresa menor e de menor diversificação
+  rationale: A PetroReconcavo é uma operadora independente de óleo e gás focada em campos maduros onshore no Brasil, com receita
+    ligada ao petróleo, gás natural e câmbio. Por isso, tende a se beneficiar de petróleo alto e real depreciado, mas sofre
+    com queda do petróleo, juros altos, risco regulatório e desafios de execução operacional.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+SUZB3:
+  company: SUZANO S.A.
+  mvp_group: Papel e Celulose
+  internal_sector: pulp_paper
+  b3_sector: Materiais Básicos
+  b3_subsector: Madeira e Papel
+  b3_segment: Papel e Celulose
+  business_description: Produtora global de celulose e papel, com forte exposição ao preço internacional da celulose, demanda
+    chinesa/global, câmbio, custos logísticos, energia, projetos de expansão e ciclo de commodities florestais.
+  revenue_profile:
+    currency: mostly_usd
+    geography: global
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - brl_depreciation
+  - china_growth_up
+  - selic_down
+  - long_rates_down
+  - global_risk_on
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - brl_appreciation
+  - china_growth_down
+  - selic_up
+  - long_rates_up
+  - global_risk_off
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -3
+    brl_depreciation: 3
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 3
+    china_growth_down: -3
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - maior produtora mundial de celulose
+  - uma das maiores produtoras de papel da América Latina
+  - receita majoritariamente dolarizada ou referenciada em dólar
+  - forte exposição ao preço internacional da celulose
+  - alta sensibilidade à demanda chinesa por celulose
+  - beneficiada por depreciação do real
+  - negativamente impactada por apreciação do real
+  - empresa intensiva em capital, portanto sensível a juros longos e custo de dívida
+  - exposição relevante a custos de energia, químicos, frete e logística
+  - risco regulatório ligado a licenciamento ambiental, uso de terra, florestas plantadas e sustentabilidade
+  rationale: A Suzano é uma produtora global de celulose com receita fortemente dolarizada e dependente do ciclo internacional
+    de celulose, especialmente da demanda asiática/chinesa. Ela tende a se beneficiar de real depreciado, China mais forte
+    e preços de celulose elevados, mas é prejudicada por real apreciado, queda da demanda global e juros altos por ser intensiva
+    em capital.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+KLBN11:
+  company: KLABIN S.A.
+  mvp_group: Papel e Celulose
+  internal_sector: pulp_paper_packaging
+  b3_sector: Materiais Básicos
+  b3_subsector: Madeira e Papel
+  b3_segment: Papel e Celulose
+  business_description: Companhia integrada de papel, celulose e embalagens, com exposição a celulose de mercado, papéis para
+    embalagem, demanda doméstica, exportações, câmbio, China, consumo, indústria e custos logísticos/energéticos.
+  revenue_profile:
+    currency: mixed_brl_usd
+    geography: brazil_global
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - brl_depreciation
+  - domestic_growth_up
+  - china_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - brl_appreciation
+  - domestic_growth_down
+  - china_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -2
+    brl_depreciation: 2
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 2
+    china_growth_down: -2
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - maior produtora e exportadora de papéis do Brasil
+  - líder brasileira em embalagens de papel
+  - modelo integrado com florestas, celulose, papéis e embalagens
+  - exposição relevante à celulose, mas menor pure play que Suzano
+  - maior exposição ao mercado doméstico que Suzano por causa de embalagens
+  - beneficiada por crescimento doméstico, consumo, e-commerce, alimentos e indústria
+  - receita mista entre reais e dólar
+  - beneficiada por depreciação do real, mas com efeito menos puro que Suzano
+  - sensível a juros, por ser intensiva em capital e ter projetos industriais relevantes
+  - risco regulatório ligado a licenciamento ambiental, florestas plantadas, uso de terra e padrões de sustentabilidade
+  rationale: A Klabin combina celulose, papéis e embalagens, com exposição tanto ao mercado global de celulose quanto ao consumo
+    e indústria domésticos via embalagens. Por isso, reage positivamente a real depreciado, China forte e crescimento brasileiro,
+    mas sofre com juros altos, desaceleração doméstica, custos de energia/logística e queda do ciclo de celulose.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+LREN3:
+  company: LOJAS RENNER S.A.
+  mvp_group: Varejo e Consumo
+  internal_sector: discretionary_retail
+  b3_sector: Consumo Cíclico
+  b3_subsector: Comércio
+  b3_segment: Tecidos. Vestuário e Calçados
+  business_description: Varejista de moda e lifestyle com operação omnichannel, exposta ao consumo discricionário brasileiro,
+    renda disponível, crédito ao consumidor, inflação, câmbio e custo de mercadorias.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_latam
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - domestic_growth_up
+  - unemployment_down
+  - long_rates_down
+  - inflation_down
+  - brl_appreciation
+  - credit_growth_up
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - domestic_growth_down
+  - unemployment_up
+  - long_rates_up
+  - inflation_up
+  - brl_depreciation
+  - credit_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 2
+    brl_depreciation: -2
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -3
+    unemployment_down: 3
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - varejo de moda e lifestyle
+  - forte exposição ao consumo discricionário
+  - receita majoritariamente em reais
+  - operação omnichannel com lojas físicas e canais digitais
+  - sensível a renda disponível, desemprego, crédito e inflação
+  - beneficiada por juros menores e melhora do consumo
+  - beneficiada por apreciação do real por reduzir pressão de custos importados
+  - negativamente impactada por real depreciado, que pressiona custo de produtos e margens
+  rationale: A Renner é uma varejista de moda e lifestyle altamente ligada ao consumo discricionário, renda disponível, emprego
+    e crédito ao consumidor. Ela tende a se beneficiar de juros menores, inflação controlada, desemprego em queda e real apreciado,
+    enquanto sofre com aperto monetário, perda de renda e pressão cambial nos custos.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+MGLU3:
+  company: MAGAZINE LUIZA S.A.
+  mvp_group: Varejo e Consumo
+  internal_sector: ecommerce_discretionary_retail
+  b3_sector: Consumo Cíclico
+  b3_subsector: Comércio
+  b3_segment: Eletrodomésticos
+  business_description: Varejista omnichannel e plataforma digital brasileira, com exposição a bens duráveis, e-commerce,
+    marketplace, crédito ao consumidor, eletrônicos, móveis, eletrodomésticos, competição digital e juros.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - unemployment_down
+  - credit_growth_up
+  - inflation_down
+  - brl_appreciation
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - unemployment_up
+  - credit_growth_down
+  - inflation_up
+  - brl_depreciation
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 2
+    brl_depreciation: -2
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -3
+    unemployment_down: 3
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - varejista omnichannel de bens duráveis
+  - forte presença em e-commerce, marketplace e lojas físicas
+  - alta sensibilidade a juros e crédito ao consumidor
+  - maior exposição a bens financiáveis, como eletrodomésticos, eletrônicos e móveis
+  - beneficiada por queda de juros, expansão de crédito e melhora da renda
+  - negativamente impactada por inflação, desemprego e restrição de crédito
+  - real apreciado tende a ajudar via produtos importados e eletrônicos
+  - ação com beta elevado e sensível a global_risk_on/global_risk_off
+  rationale: O Magazine Luiza é um varejista omnichannel com forte exposição a bens duráveis, e-commerce, marketplace e crédito
+    ao consumidor. Por vender produtos frequentemente financiados, tende a se beneficiar muito de queda de juros e expansão
+    do crédito, mas sofre com Selic alta, consumo fraco, desemprego e aversão a risco.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+VIVA3:
+  company: VIVARA PARTICIPAÇOES S.A
+  mvp_group: Varejo e Consumo
+  internal_sector: discretionary_retail_luxury_jewelry
+  b3_sector: Consumo Cíclico
+  b3_subsector: Tecidos. Vestuário e Calçados
+  b3_segment: Acessórios
+  business_description: Varejista de joias, relógios e acessórios, com forte exposição ao consumo discricionário premium,
+    renda disponível, crédito, fluxo em shopping centers, câmbio e custo de metais preciosos.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - domestic_growth_up
+  - selic_down
+  - long_rates_down
+  - inflation_down
+  - unemployment_down
+  - credit_growth_up
+  - fiscal_risk_down
+  negative_exposures:
+  - domestic_growth_down
+  - selic_up
+  - long_rates_up
+  - inflation_up
+  - unemployment_up
+  - credit_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - maior rede de joalherias da América Latina
+  - exposição a consumo discricionário e presentes
+  - atuação relevante em shopping centers
+  - receita majoritariamente em reais
+  - sensível à renda disponível e confiança do consumidor
+  - beneficiada por juros menores e inflação controlada
+  - câmbio apreciado ajuda custos de insumos importados e itens precificados globalmente
+  - menor dependência de crédito que MGLU3, mas ainda sensível ao ciclo de consumo
+  rationale: A Vivara atua em joias, relógios e acessórios, segmentos de consumo discricionário e de maior ticket, dependentes
+    de renda, confiança e fluxo em shoppings. Por isso, tende a se beneficiar de emprego forte, inflação menor, juros baixos
+    e consumo aquecido, enquanto é prejudicada por desaceleração econômica e pressão cambial sobre insumos.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+AZZA3:
+  company: AZZAS 2154 S.A.
+  mvp_group: Varejo e Consumo
+  internal_sector: fashion_lifestyle_brands
+  b3_sector: Consumo Cíclico
+  b3_subsector: Comércio
+  b3_segment: Tecidos. Vestuário e Calçados
+  business_description: Plataforma brasileira de marcas de moda, calçados, bolsas, vestuário e lifestyle, com exposição a
+    consumo discricionário, renda, câmbio, shopping centers, e-commerce, franquias e marcas premium.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_global
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - domestic_growth_up
+  - long_rates_down
+  - inflation_down
+  - brl_appreciation
+  - unemployment_down
+  - credit_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - domestic_growth_down
+  - long_rates_up
+  - inflation_up
+  - brl_depreciation
+  - unemployment_up
+  - credit_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 2
+    brl_depreciation: -2
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - plataforma de marcas de moda e lifestyle
+  - atuação em calçados, bolsas, vestuário e acessórios
+  - exposição a marcas premium e consumo discricionário
+  - receita principalmente em reais, com alguma exposição internacional
+  - sensível a juros, renda disponível e fluxo em shoppings
+  - beneficiada por real apreciado por reduzir custo de insumos e produtos importados
+  - negativamente impactada por inflação alta e desaceleração do consumo
+  - mais sensível a percepção de risco e valuation que varejistas defensivos
+  rationale: A Azzas 2154 é uma plataforma de marcas de moda, calçados, bolsas e lifestyle, com exposição relevante a consumo
+    discricionário, público de maior renda e canais físicos/digitais. Sua performance tende a melhorar com juros menores,
+    crescimento doméstico e real apreciado, mas sofre com inflação, câmbio depreciado e enfraquecimento do consumo.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+ASAI3:
+  company: SENDAS DISTRIBUIDORA S.A.
+  mvp_group: Varejo e Consumo
+  internal_sector: cash_and_carry_food_retail
+  b3_sector: Consumo não Cíclico
+  b3_subsector: Comércio e Distribuição
+  b3_segment: Alimentos
+  business_description: Atacadista alimentar no modelo cash & carry, exposto ao consumo básico, inflação de alimentos, renda
+    das famílias, pequenos comerciantes, abertura de lojas, alavancagem financeira e custos logísticos.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 0
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - varejo alimentar no formato atacarejo/cash and carry
+  - consumo mais defensivo que varejo discricionário
+  - exposição a famílias, pequenos comerciantes e food service
+  - receita majoritariamente em reais
+  - inflação de alimentos pode elevar venda nominal, mas pressionar volumes e mix
+  - altamente sensível a juros por alavancagem e plano de expansão
+  - beneficiada por queda de juros longos e redução de despesa financeira
+  - menos sensível ao desemprego que varejistas discricionários
+  rationale: O Assaí atua no atacarejo alimentar, um segmento mais defensivo, mas ainda sensível à renda das famílias, inflação
+    de alimentos, custo de dívida e expansão de lojas. Por isso, se beneficia de juros menores e melhora da renda, enquanto
+    sofre com Selic alta, alavancagem, perda de poder de compra e custos logísticos maiores.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+GMAT3:
+  company: GRUPO MATEUS S.A.
+  mvp_group: Varejo e Consumo
+  internal_sector: regional_food_retail_cash_and_carry
+  b3_sector: Consumo não Cíclico
+  b3_subsector: Comércio e Distribuição
+  b3_segment: Alimentos
+  business_description: Grupo regional de varejo alimentar, atacarejo, eletro, móveis e e-commerce, com forte presença no
+    Norte e Nordeste, exposto a renda regional, inflação de alimentos, expansão de lojas, consumo básico e crédito.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_regional
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: 0
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - varejo alimentar regional com forte presença no Norte e Nordeste
+  - atuação em supermercados, atacarejo, eletro, móveis e e-commerce
+  - consumo mais defensivo por alimentos, mas com alguma exposição discricionária em eletro e móveis
+  - receita majoritariamente em reais
+  - sensível à renda regional, emprego e programas de transferência de renda
+  - inflação de alimentos pode aumentar venda nominal, mas pressionar volumes
+  - menor sensibilidade a global risk que varejistas digitais
+  - beneficiada por queda de juros e melhora da renda disponível
+  rationale: O Grupo Mateus é um varejista regional com forte presença em alimentos, atacarejo, eletro, móveis e e-commerce,
+    especialmente no Norte e Nordeste. Sua exposição macro vem da renda regional, emprego, inflação de alimentos, crédito
+    e consumo básico, sendo menos cíclico que varejo discricionário puro, mas ainda sensível a juros e renda disponível.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+ABEV3:
+  company: AMBEV S.A.
+  mvp_group: Varejo e Consumo
+  internal_sector: beverages
+  b3_sector: Consumo não Cíclico
+  b3_subsector: Bebidas
+  b3_segment: Cervejas e Refrigerantes
+  business_description: Companhia de bebidas com forte presença em cervejas, refrigerantes e bebidas não alcoólicas nas Américas,
+    exposta a consumo, renda, inflação, câmbio, custos de commodities agrícolas, alumínio, energia, impostos e regulação de
+    bebidas alcoólicas.
+  revenue_profile:
+    currency: mixed_brl_latam
+    geography: americas
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - brl_appreciation
+  - domestic_growth_up
+  - unemployment_down
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - brl_depreciation
+  - domestic_growth_down
+  - unemployment_up
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: -1
+    long_rates_down: 1
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 2
+    brl_depreciation: -2
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - maior cervejaria da América Latina em volume
+  - atuação em cerveja, refrigerantes e bebidas não alcoólicas
+  - operação internacional nas Américas
+  - consumo mais defensivo que varejo discricionário, mas ainda sensível à renda
+  - beneficiada por real apreciado, pois parte dos custos é dolarizada ou ligada a commodities globais
+  - negativamente impactada por real depreciado, energia cara e custos de alumínio/cevada/açúcar
+  - sensível a inflação por pressão de custo e elasticidade de preço
+  - regulada por tributação, restrições e regras associadas a bebidas alcoólicas
+  rationale: A Ambev é uma empresa de bebidas com demanda relativamente defensiva, mas ainda dependente de renda, emprego,
+    clima de consumo e capacidade de repasse de preços. Ela tende a se beneficiar de real apreciado e inflação controlada,
+    pois parte dos custos é ligada a commodities e insumos dolarizados, mas sofre com pressão tributária, regulação e queda
+    da renda real.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+CYRE3:
+  company: CYRELA BRAZIL REALTY S.A.EMPREEND E PART
+  mvp_group: Construção, Imóveis e Shoppings
+  internal_sector: homebuilders
+  b3_sector: Consumo Cíclico
+  b3_subsector: Construção Civil
+  b3_segment: Incorporações
+  business_description: Incorporadora residencial brasileira com foco em médio e alto padrão, exposta a juros, crédito imobiliário,
+    renda, confiança do consumidor, lançamentos, velocidade de vendas e custo de construção.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - unemployment_down
+  - credit_growth_up
+  - inflation_down
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - unemployment_up
+  - credit_growth_down
+  - inflation_up
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -3
+    unemployment_down: 3
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: -1
+    iron_ore_down: 1
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - incorporadora residencial de médio e alto padrão
+  - forte exposição a juros e crédito imobiliário
+  - receita majoritariamente em reais
+  - sensível a lançamentos, vendas líquidas, distratos e margem bruta
+  - beneficiada por queda da Selic e dos juros longos
+  - beneficiada por expansão do crédito imobiliário
+  - negativamente impactada por inflação de construção e commodities de materiais
+  - exposição relevante a São Paulo e grandes centros urbanos
+  - risco regulatório ligado a licenciamento, zoneamento e aprovações urbanísticas
+  rationale: A Cyrela é uma incorporadora residencial de médio e alto padrão, muito sensível a juros, crédito imobiliário,
+    confiança do consumidor e velocidade de vendas. Por isso, se beneficia de Selic e juros longos menores, crescimento doméstico
+    e crédito forte, enquanto sofre com juros altos, inflação de construção e retração do mercado imobiliário.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+MRVE3:
+  company: MRV ENGENHARIA E PARTICIPACOES S.A.
+  mvp_group: Construção, Imóveis e Shoppings
+  internal_sector: low_income_homebuilders
+  b3_sector: Consumo Cíclico
+  b3_subsector: Construção Civil
+  b3_segment: Incorporações
+  business_description: Incorporadora e construtora residencial brasileira com foco em baixa e média renda, forte exposição
+    ao crédito habitacional, Minha Casa Minha Vida, juros, renda das famílias, emprego, subsídios habitacionais e custo de
+    construção.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_us
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - unemployment_down
+  - credit_growth_up
+  - fiscal_risk_down
+  - regulatory_risk_down
+  - inflation_down
+  - global_risk_on
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - unemployment_up
+  - credit_growth_down
+  - fiscal_risk_up
+  - regulatory_risk_up
+  - inflation_up
+  - global_risk_off
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -3
+    unemployment_down: 3
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: -1
+    iron_ore_down: 1
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -3
+    fiscal_risk_down: 3
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - incorporadora/construtora focada em baixa e média renda
+  - alta exposição ao programa Minha Casa Minha Vida e financiamento habitacional
+  - receita majoritariamente em reais
+  - mais sensível a emprego e renda das famílias do que incorporadoras de alta renda
+  - forte dependência de crédito habitacional, funding e subsídios
+  - beneficiada por queda de juros, expansão de crédito e melhora fiscal
+  - negativamente impactada por risco fiscal, mudanças em subsídios e alterações em programas habitacionais
+  - possui exposição internacional residual via Resia nos Estados Unidos
+  - sensível a custos de construção, materiais, mão de obra e inflação
+  rationale: A MRV é uma incorporadora focada em baixa e média renda, com alta exposição a financiamento habitacional, emprego,
+    renda e programas como Minha Casa Minha Vida. Por isso, reage fortemente a juros, crédito, subsídios, risco fiscal e regulação
+    habitacional, além de sofrer com inflação de materiais e perda de renda das famílias.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+EZTC3:
+  company: EZ TEC EMPREEND. E PARTICIPACOES S.A.
+  mvp_group: Construção, Imóveis e Shoppings
+  internal_sector: high_income_homebuilders
+  b3_sector: Consumo Cíclico
+  b3_subsector: Construção Civil
+  b3_segment: Incorporações
+  business_description: Incorporadora residencial brasileira com foco em médio e alto padrão, especialmente em São Paulo,
+    exposta a juros, renda, crédito imobiliário, lançamentos, vendas, estoque, margem e ciclo imobiliário urbano.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_sao_paulo
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - credit_growth_up
+  - inflation_down
+  - unemployment_down
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - credit_growth_down
+  - inflation_up
+  - unemployment_up
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: -1
+    iron_ore_down: 1
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - incorporadora residencial com foco em São Paulo
+  - maior exposição a médio e alto padrão
+  - receita majoritariamente em reais
+  - sensível a juros, crédito imobiliário e confiança do consumidor
+  - beneficiada por queda da Selic e dos juros longos
+  - beneficiada por melhora do crescimento doméstico e do crédito
+  - menos dependente de subsídios habitacionais que MRVE3
+  - negativamente impactada por inflação de construção e desaceleração imobiliária
+  - risco regulatório ligado a licenciamento, zoneamento e aprovações municipais
+  rationale: A EZTEC é uma incorporadora residencial concentrada em São Paulo e em segmentos de médio/alto padrão, com demanda
+    dependente de crédito imobiliário, renda e confiança. Ela tende a se beneficiar de juros menores e crescimento doméstico,
+    mas é prejudicada por juros longos altos, estoques elevados, inflação de construção e menor velocidade de vendas.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+MULT3:
+  company: MULTIPLAN - EMPREEND IMOBILIARIOS S.A.
+  mvp_group: Construção, Imóveis e Shoppings
+  internal_sector: shopping_centers
+  b3_sector: Financeiro
+  b3_subsector: Exploração de Imóveis
+  b3_segment: Exploração de Imóveis
+  business_description: Empresa brasileira de shopping centers e propriedades comerciais, exposta a vendas dos lojistas, fluxo
+    de consumidores, renda, ocupação, aluguel, juros, cap rates, crédito, consumo discricionário e desenvolvimento imobiliário.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - unemployment_down
+  - credit_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - unemployment_up
+  - credit_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 0
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -3
+    unemployment_down: 3
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - operadora e desenvolvedora de shopping centers
+  - modelo baseado em aluguel, estacionamento, serviços e participação em vendas
+  - receita majoritariamente em reais
+  - forte exposição a consumo, fluxo em shoppings e vendas dos lojistas
+  - sensível a juros longos por valuation imobiliário e cap rates
+  - beneficiada por queda de juros, melhora de emprego e crescimento do consumo
+  - inflação pode proteger receita via reajuste de aluguel, mas pode pressionar consumo e custos
+  - menos exposta a crédito imobiliário que incorporadoras residenciais
+  - risco regulatório menor, mas existe via zoneamento, licenças, funcionamento comercial e tributação
+  rationale: A Multiplan opera shopping centers e propriedades comerciais, com receita ligada a aluguel, vendas dos lojistas,
+    ocupação e fluxo de consumidores. Por isso, se beneficia de crescimento doméstico, emprego forte e juros menores, enquanto
+    sofre com retração do consumo, juros longos altos e aumento de cap rates imobiliários.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+IGTI11:
+  company: IGUATEMI S.A.
+  mvp_group: Construção, Imóveis e Shoppings
+  internal_sector: premium_shopping_centers
+  b3_sector: Financeiro
+  b3_subsector: Exploração de Imóveis
+  b3_segment: Exploração de Imóveis
+  business_description: Empresa brasileira de shopping centers premium, outlets e propriedades comerciais, exposta a vendas
+    dos lojistas, fluxo de consumidores de maior renda, aluguel, ocupação, cap rates, juros, consumo discricionário e reciclagem
+    de portfólio.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - unemployment_down
+  - credit_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - unemployment_up
+  - credit_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 0
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - operadora de shopping centers premium
+  - exposição relevante a consumidores de maior renda
+  - modelo baseado em aluguel, ocupação, vendas dos lojistas e desenvolvimento imobiliário
+  - receita majoritariamente em reais
+  - sensível a juros longos, cap rates e valuation imobiliário
+  - beneficiada por crescimento doméstico, queda de juros e melhora do consumo
+  - menos sensível ao desemprego que varejo popular, por ter público de renda mais alta
+  - inflação pode ajudar reajustes de aluguel, mas prejudicar consumo se reduzir renda real
+  - risco regulatório menor, ligado a licenciamento, zoneamento, funcionamento comercial e tributação
+  rationale: A Iguatemi é uma operadora de shoppings premium, mais exposta ao consumo de renda média-alta e alta, vendas dos
+    lojistas e valorização imobiliária. Sua exposição macro vem de juros longos, cap rates, emprego, confiança do consumidor
+    e crescimento doméstico, com menor sensibilidade ao consumo popular do que shoppings mais massificados.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+CMIG4:
+  company: CIA ENERGETICA DE MINAS GERAIS - CEMIG
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: electric_utilities_integrated
+  b3_sector: Utilidade Pública
+  b3_subsector: Energia Elétrica
+  b3_segment: Energia Elétrica
+  business_description: Companhia elétrica integrada com atuação principalmente em distribuição, geração, transmissão e comercialização
+    de energia, com forte exposição a regulação tarifária, concessões, juros, risco fiscal/estatal, demanda de energia e investimentos
+    em rede.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_minas_gerais
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - long_rates_down
+  - fiscal_risk_down
+  - regulatory_risk_down
+  - selic_down
+  - domestic_growth_up
+  negative_exposures:
+  - long_rates_up
+  - fiscal_risk_up
+  - regulatory_risk_up
+  - selic_up
+  - domestic_growth_down
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 0
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 1
+    iron_ore_down: -1
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -3
+    fiscal_risk_down: 3
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - companhia elétrica integrada
+  - atuação relevante em distribuição, geração, transmissão e comercialização
+  - forte presença em Minas Gerais
+  - receita majoritariamente em reais
+  - negócio defensivo, mas altamente regulado
+  - sensível a revisões tarifárias, qualidade de serviço, perdas e inadimplência
+  - sensível a juros longos por valuation, dividend yield e capex
+  - exposição relevante a risco fiscal e político por histórico de controle estatal
+  - beneficiada por crescimento industrial em Minas Gerais, incluindo mineração e siderurgia
+  rationale: A Cemig é uma companhia elétrica integrada com distribuição, geração e transmissão, combinando fluxo regulado
+    com demanda de energia em Minas Gerais. Por isso, reage a juros longos, revisões tarifárias, risco regulatório e fiscal,
+    além de se beneficiar de crescimento industrial e menor risco político/regulatório.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+EGIE3:
+  company: ENGIE BRASIL ENERGIA S.A.
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: electric_generation_renewables
+  b3_sector: Utilidade Pública
+  b3_subsector: Energia Elétrica
+  b3_segment: Energia Elétrica
+  business_description: Geradora e comercializadora de energia elétrica com portfólio majoritariamente renovável e contratado,
+    exposta a preços de energia, hidrologia, inflação contratual, juros, risco regulatório, expansão em transmissão e demanda
+    do mercado livre.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - long_rates_down
+  - selic_down
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - long_rates_up
+  - selic_up
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 1
+    inflation_down: 0
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - geradora de energia com portfólio majoritariamente renovável
+  - atuação relevante em geração hidrelétrica, eólica, solar e biomassa
+  - receita majoritariamente em reais
+  - grande parte da receita tende a ser contratada no longo prazo
+  - menos exposta ao consumo doméstico direto que distribuidoras
+  - sensível a juros longos por duration elevada dos fluxos de caixa
+  - exposição a risco hidrológico, preços de energia e mercado livre
+  - expansão recente também envolve ativos de transmissão
+  - perfil mais defensivo que empresas cíclicas industriais
+  rationale: A Engie Brasil é uma geradora de energia com portfólio majoritariamente renovável e contratos de longo prazo,
+    o que reduz a ciclicidade direta do consumo. Sua exposição macro está mais ligada a juros longos, inflação contratual,
+    preços de energia, risco hidrológico e regulação do setor elétrico.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+TAEE11:
+  company: TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: electric_transmission
+  b3_sector: Utilidade Pública
+  b3_subsector: Energia Elétrica
+  b3_segment: Energia Elétrica
+  business_description: Companhia de transmissão de energia elétrica, com receita regulada e altamente previsível via RAP,
+    exposta principalmente a inflação contratual, juros longos, risco regulatório, execução de projetos e disponibilidade
+    operacional.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - long_rates_down
+  - regulatory_risk_down
+  - selic_down
+  - inflation_up
+  - fiscal_risk_down
+  negative_exposures:
+  - long_rates_up
+  - regulatory_risk_up
+  - selic_up
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 2
+    inflation_down: -1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 0
+    domestic_growth_down: 0
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - transmissora de energia elétrica
+  - receita regulada, previsível e baseada em disponibilidade
+  - baixa exposição direta ao volume de consumo de energia
+  - alta exposição a juros longos por duration elevada
+  - beneficiada por inflação quando a RAP é reajustada por índices inflacionários
+  - perfil defensivo e de dividendos
+  - principal risco macro é aumento de taxa de desconto
+  - principal risco setorial é revisão regulatória, penalidades de disponibilidade e execução de novos projetos
+  - menor sensibilidade a crescimento doméstico que distribuidoras e geradoras
+  rationale: A Taesa é uma transmissora de energia com receita regulada e previsível, baseada principalmente na disponibilidade
+    dos ativos e reajustada por índices contratuais. Por isso, sua principal exposição macro está em juros longos, inflação
+    e risco regulatório, com baixa sensibilidade ao crescimento econômico e ao volume de energia consumido.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+CPFE3:
+  company: CPFL ENERGIA S.A.
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: electric_utilities_integrated_distribution
+  b3_sector: Utilidade Pública
+  b3_subsector: Energia Elétrica
+  b3_segment: Energia Elétrica
+  business_description: Holding de energia elétrica com atuação em distribuição, geração, comercialização e serviços, exposta
+    a tarifas reguladas, demanda de energia, inadimplência, perdas, juros, capex, qualidade de serviço e risco regulatório.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_southeast_south
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - long_rates_down
+  - regulatory_risk_down
+  - selic_down
+  - domestic_growth_up
+  - fiscal_risk_down
+  negative_exposures:
+  - long_rates_up
+  - regulatory_risk_up
+  - selic_up
+  - domestic_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 0
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - holding de energia com distribuição, geração, comercialização e serviços
+  - forte exposição a distribuição de energia
+  - receita majoritariamente em reais
+  - atuação relevante em mercados industriais e residenciais no Sudeste e Sul
+  - negócio defensivo, mas regulado
+  - sensível a revisão tarifária, perdas, inadimplência e qualidade de serviço
+  - beneficiada por crescimento doméstico e maior consumo de energia
+  - sensível a juros longos por valuation e investimentos em rede
+  - menor exposição a risco político direto que estatais, mas alta exposição regulatória
+  rationale: A CPFL é uma holding de energia com forte presença em distribuição, geração e comercialização, tornando seu resultado
+    sensível a tarifas, perdas, inadimplência e consumo de energia. Por isso, se beneficia de crescimento doméstico, juros
+    menores e ambiente regulatório estável, enquanto sofre com risco regulatório, juros longos altos e desaceleração econômica.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+SBSP3:
+  company: CIA SANEAMENTO BASICO EST SAO PAULO
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: water_sanitation
+  b3_sector: Utilidade Pública
+  b3_subsector: Água e Saneamento
+  b3_segment: Água e Saneamento
+  business_description: Companhia de saneamento básico com atuação em abastecimento de água, coleta e tratamento de esgoto,
+    exposta a regulação tarifária, universalização, capex, juros longos, risco regulatório, eficiência operacional e crescimento
+    populacional/econômico.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_sao_paulo
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - regulatory_risk_down
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - regulatory_risk_up
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 0
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - maior companhia de saneamento do Brasil
+  - atuação em água, coleta e tratamento de esgoto
+  - receita majoritariamente em reais
+  - negócio defensivo e essencial
+  - forte exposição a regulação tarifária e metas de universalização
+  - empresa intensiva em capital, sensível a juros longos e custo de dívida
+  - beneficiada por queda de juros e melhora do ambiente regulatório
+  - sensível a risco de execução de capex, perdas de água e eficiência operacional
+  - menor sensibilidade ao ciclo econômico que consumo discricionário
+  rationale: A Sabesp é uma companhia de saneamento com receita regulada, demanda essencial e necessidade elevada de capex
+    para universalização. Sua exposição macro vem principalmente de juros longos, custo de capital, regulação tarifária, risco
+    fiscal e execução de investimentos, com menor sensibilidade ao ciclo econômico do que empresas de consumo.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+ENEV3:
+  company: ENEVA S.A
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: thermal_power_natural_gas
+  b3_sector: Utilidade Pública
+  b3_subsector: Energia Elétrica
+  b3_segment: Energia Elétrica
+  business_description: Companhia integrada de energia com atuação em exploração e produção de gás natural, geração termelétrica,
+    comercialização e soluções energéticas, exposta a despacho térmico, gás natural, demanda de energia, risco regulatório,
+    juros, capex e ciclo de energia.
+  revenue_profile:
+    currency: mostly_brl_usd_linked
+    geography: brazil
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - regulatory_risk_down
+  - domestic_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - regulatory_risk_up
+  - domestic_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: 1
+    oil_price_down: -1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - empresa integrada de energia e gás natural
+  - atuação relevante em geração termelétrica
+  - exposição a exploração, produção e comercialização de gás natural
+  - receita majoritariamente em reais, mas com componentes ligados a energia, gás e equipamentos dolarizados
+  - mais sensível a crescimento, capex e juros do que transmissoras puras
+  - beneficiada por maior demanda de energia e necessidade de segurança energética
+  - exposição relevante a despacho térmico, disponibilidade de usinas e contratos de energia
+  - risco regulatório elevado por atuar em geração, gás natural, licenciamento e leilões de energia
+  - mais cíclica e alavancada que elétricas defensivas tradicionais
+  rationale: A Eneva combina geração termelétrica, gás natural e soluções de energia, com exposição a demanda energética,
+    despacho térmico, contratos, capex e regulação. Por ser intensiva em capital e mais ligada a segurança energética, reage
+    fortemente a juros longos, risco regulatório, crescimento doméstico e condições do mercado de energia.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+RDOR3:
+  company: REDE DOR SÃO LUIZ S.A.
+  mvp_group: Saúde e Educação
+  internal_sector: hospitals_healthcare_services
+  b3_sector: Saúde
+  b3_subsector: Serv.Méd.Hospit..Análises e Diagnósticos
+  b3_segment: Serv.Méd.Hospit..Análises e Diagnósticos
+  business_description: Rede integrada de hospitais, oncologia e serviços de saúde, com exposição a saúde suplementar, emprego
+    formal, renda, inflação médica, sinistralidade, reajustes de planos, aquisições, capex e regulação do setor de saúde.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - regulatory_risk_down
+  - inflation_down
+  - domestic_growth_up
+  - unemployment_down
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - regulatory_risk_up
+  - inflation_up
+  - domestic_growth_down
+  - unemployment_up
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - maior rede integrada de saúde da América Latina
+  - atuação em hospitais, oncologia, medicina diagnóstica e saúde suplementar via SulAmérica
+  - receita majoritariamente em reais
+  - demanda relativamente defensiva, mas ligada ao emprego formal e planos corporativos
+  - empresa intensiva em capital, sensível a juros e custo da dívida
+  - inflação médica é variável crítica para margens e reajustes
+  - câmbio depreciado pressiona custos de equipamentos, medicamentos e insumos importados
+  - risco regulatório relevante por atuar em saúde suplementar, hospitais e serviços médicos
+  rationale: A Rede D’Or é uma rede integrada de hospitais e serviços de saúde, com demanda relativamente resiliente, mas
+    dependente de planos de saúde, emprego formal e capacidade de pagamento. Sua exposição macro vem de juros, inflação médica,
+    câmbio em insumos/equipamentos, regulação de saúde e crescimento do mercado de saúde suplementar.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+HAPV3:
+  company: HAPVIDA PARTICIPACOES E INVESTIMENTOS SA
+  mvp_group: Saúde e Educação
+  internal_sector: managed_care_health_insurance
+  b3_sector: Saúde
+  b3_subsector: Serv.Méd.Hospit..Análises e Diagnósticos
+  b3_segment: Serv.Méd.Hospit..Análises e Diagnósticos
+  business_description: Operadora verticalizada de saúde suplementar e odontologia, com rede própria de hospitais, clínicas
+    e laboratórios, exposta a emprego formal, renda, inflação médica, sinistralidade, reajustes de planos, escala operacional
+    e regulação da ANS.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - inflation_down
+  - unemployment_down
+  - regulatory_risk_down
+  - domestic_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - inflation_up
+  - unemployment_up
+  - regulatory_risk_up
+  - domestic_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -3
+    inflation_down: 3
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -3
+    unemployment_down: 3
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - operadora de saúde suplementar com modelo verticalizado
+  - atuação em planos de saúde, planos odontológicos, hospitais, clínicas e laboratórios
+  - foco em controle de custo médico por meio de rede própria
+  - receita majoritariamente em reais
+  - sensível a inflação médica e sinistralidade
+  - alta exposição ao emprego formal, pois planos corporativos dependem do mercado de trabalho
+  - sensível a reajustes autorizados, judicialização e regulação da ANS
+  - ação com beta elevado e sensível a juros, desalavancagem e percepção de execução operacional
+  rationale: A Hapvida é uma operadora verticalizada de saúde suplementar, com resultado muito ligado a sinistralidade, inflação
+    médica, reajustes de planos e emprego formal. Por isso, se beneficia de desemprego menor, inflação médica controlada e
+    regulação favorável, mas sofre com custos médicos elevados, juros altos e pressão regulatória da ANS.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+FLRY3:
+  company: FLEURY S.A.
+  mvp_group: Saúde e Educação
+  internal_sector: diagnostic_medicine
+  b3_sector: Saúde
+  b3_subsector: Serv.Méd.Hospit..Análises e Diagnósticos
+  b3_segment: Serv.Méd.Hospit..Análises e Diagnósticos
+  business_description: Grupo de medicina diagnóstica e serviços de saúde, exposto a exames, consultas, marcas premium, parcerias
+    com hospitais, planos de saúde, renda, emprego formal, inflação de custos médicos e regulação sanitária.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - inflation_down
+  - domestic_growth_up
+  - unemployment_down
+  - fiscal_risk_down
+  - regulatory_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - inflation_up
+  - domestic_growth_down
+  - unemployment_up
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - empresa de medicina diagnóstica e serviços de saúde
+  - exposição a exames laboratoriais, imagem, consultas e serviços médicos especializados
+  - receita majoritariamente em reais
+  - demanda mais resiliente que varejo discricionário
+  - exposição relevante a planos de saúde e pacientes particulares
+  - sensível ao emprego formal por causa da cobertura de planos corporativos
+  - câmbio depreciado pressiona equipamentos, reagentes e insumos importados
+  - menos sensível a juros que hospitais muito alavancados, mas ainda afetada por valuation e aquisições
+  - risco regulatório ligado a vigilância sanitária, saúde suplementar e regras de prestação de serviços médicos
+  rationale: O Fleury atua em medicina diagnóstica e serviços de saúde, com demanda ligada a planos de saúde, pacientes particulares
+    e emprego formal. Ele tende a se beneficiar de renda e emprego mais fortes, inflação controlada e câmbio apreciado, enquanto
+    sofre com pressão de custos médicos, insumos importados e regulação sanitária/saúde suplementar.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+YDUQ3:
+  company: YDUQS PARTICIPACOES S.A.
+  mvp_group: Saúde e Educação
+  internal_sector: private_higher_education
+  b3_sector: Consumo Cíclico
+  b3_subsector: Diversos
+  b3_segment: Serviços Educacionais
+  business_description: Grupo privado de educação superior, com atuação presencial, digital e híbrida, exposto a renda, emprego,
+    financiamento estudantil, evasão, captação de alunos, ticket médio, juros, regulação do MEC e competição no ensino superior.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - regulatory_risk_down
+  - inflation_down
+  - unemployment_down
+  - credit_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - regulatory_risk_up
+  - inflation_up
+  - unemployment_up
+  - credit_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 0
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - grupo privado de ensino superior
+  - atuação em cursos presenciais, digitais e híbridos
+  - receita majoritariamente em reais
+  - forte exposição a renda das famílias, emprego e capacidade de pagamento de mensalidades
+  - sensível a evasão, captação de alunos, ticket médio e inadimplência
+  - queda de juros ajuda valuation, custo de dívida e financiamento estudantil
+  - crescimento doméstico e melhora do emprego favorecem demanda por educação
+  - risco regulatório elevado por depender de regras do MEC, autorizações de cursos e políticas educacionais
+  - fiscal_risk_down pode ser positivo se melhorar ambiente para programas públicos, financiamento estudantil e renda disponível
+  rationale: A Yduqs é um grupo de educação superior com receita ligada a mensalidades, captação de alunos, evasão, renda
+    e financiamento estudantil. Por isso, tende a se beneficiar de crescimento doméstico, emprego, crédito e juros menores,
+    mas é prejudicada por inadimplência, desemprego, restrição de crédito e risco regulatório educacional.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+COGN3:
+  company: COGNA EDUCAÇÃO S.A.
+  mvp_group: Saúde e Educação
+  internal_sector: private_education_platforms
+  b3_sector: Consumo Cíclico
+  b3_subsector: Diversos
+  b3_segment: Serviços Educacionais
+  business_description: Grupo de educação com atuação em ensino superior, educação básica, sistemas de ensino, plataformas
+    educacionais e soluções B2B/B2G, exposto a renda, emprego, financiamento estudantil, matrículas, evasão, orçamento público/privado
+    e regulação educacional.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - regulatory_risk_down
+  - inflation_down
+  - unemployment_down
+  - credit_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - regulatory_risk_up
+  - inflation_up
+  - unemployment_up
+  - credit_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -2
+    inflation_down: 2
+    brl_appreciation: 0
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - grupo de educação com atuação em ensino superior e educação básica
+  - presença em plataformas, sistemas de ensino, conteúdo e serviços educacionais
+  - receita majoritariamente em reais
+  - exposição relevante a alunos de menor renda no ensino superior privado
+  - sensível a emprego, renda, inadimplência e financiamento estudantil
+  - maior diversificação que uma empresa pura de ensino superior por ter exposição a educação básica e plataformas B2B
+  - queda de juros ajuda custo de capital, valuation e capacidade de financiamento dos alunos
+  - risco regulatório elevado por depender de regras do MEC, políticas educacionais e contratos públicos/privados
+  - fiscal_risk_up pode prejudicar orçamento público, programas educacionais e renda disponível das famílias
+  rationale: A Cogna atua em educação superior, educação básica, sistemas de ensino e plataformas educacionais, combinando
+    exposição a mensalidades, orçamento educacional e soluções B2B/B2G. Sua exposição macro vem de renda, emprego, crédito,
+    orçamento público/privado e regulação educacional, com sensibilidade elevada a juros e percepção de risco.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+EMBJ3:
+  company: EMBRAER S.A.
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: aerospace_exporter
+  b3_sector: Bens Industriais
+  b3_subsector: Material de Transporte
+  b3_segment: Material Aeronáutico e de Defesa
+  business_description: Empresa aeroespacial global brasileira, com atuação em aviação comercial, jatos executivos, defesa,
+    segurança e serviços, exposta a demanda global por aeronaves, câmbio, cadeia de suprimentos, juros internacionais, aviação
+    comercial e orçamento de defesa.
+  revenue_profile:
+    currency: mostly_usd
+    geography: global
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - global_risk_on
+  - long_rates_down
+  - brl_depreciation
+  - regulatory_risk_down
+  negative_exposures:
+  - global_risk_off
+  - long_rates_up
+  - brl_appreciation
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -2
+    brl_depreciation: 2
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 3
+    global_risk_off: -3
+    fiscal_risk_up: -1
+    fiscal_risk_down: 1
+    regulatory_risk_up: -2
+    regulatory_risk_down: 2
+  company_characteristics:
+  - empresa aeroespacial global
+  - atuação em aviação comercial, jatos executivos, defesa e serviços
+  - receita majoritariamente dolarizada
+  - beneficiada por real depreciado, pois parte relevante da receita é em dólar
+  - negativamente impactada por real apreciado, que reduz competitividade e receita convertida em reais
+  - altamente sensível ao ciclo global de aviação e apetite a risco
+  - sensível a juros longos, pois aeronaves são bens de capital financiados
+  - petróleo alto pode reduzir rentabilidade de companhias aéreas e afetar demanda por aeronaves
+  - risco regulatório ligado a certificações, defesa, comércio exterior e restrições geopolíticas
+  rationale: A Embraer é uma exportadora aeroespacial global, com receita dolarizada e demanda ligada ao ciclo global de aviação,
+    defesa e bens de capital. Por isso, tende a se beneficiar de real depreciado, global risk-on e demanda global forte, mas
+    sofre com juros longos altos, petróleo elevado, restrições na cadeia de suprimentos e aversão a risco.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+RAIL3:
+  company: RUMO S.A.
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: rail_logistics
+  b3_sector: Bens Industriais
+  b3_subsector: Transporte
+  b3_segment: Transporte Ferroviário
+  business_description: Operadora ferroviária e logística brasileira, com concessões ferroviárias, terminais e acesso a portos,
+    fortemente exposta ao escoamento de grãos, exportações, infraestrutura, juros longos, capex, regulação de concessões e
+    demanda logística.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - regulatory_risk_down
+  - domestic_growth_up
+  - china_growth_up
+  - global_risk_on
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - regulatory_risk_up
+  - domestic_growth_down
+  - china_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -1
+    brl_depreciation: 1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 2
+    china_growth_down: -2
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - maior operadora ferroviária do Brasil
+  - operação baseada em concessões ferroviárias, terminais e acesso a portos
+  - forte exposição ao escoamento de grãos e commodities agrícolas
+  - receita majoritariamente em reais, mas demanda final ligada a exportações
+  - beneficiada por real depreciado quando isso favorece exportadores agrícolas
+  - negativamente impactada por juros altos devido a capex elevado e duration longa dos projetos
+  - sensível a demanda chinesa por commodities agrícolas brasileiras
+  - petróleo alto pressiona custo de combustível e logística
+  - risco regulatório elevado por depender de concessões, renovações, tarifas e regras de infraestrutura
+  rationale: A Rumo é uma operadora ferroviária e logística baseada em concessões, com demanda ligada ao escoamento de commodities
+    agrícolas e ao comércio exterior brasileiro. Por isso, se beneficia de produção/exportação agrícola forte, China demandante,
+    real depreciado e juros menores, mas sofre com capex elevado, risco regulatório, petróleo alto e desaceleração do comércio.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+VIVT3:
+  company: TELEFÔNICA BRASIL S.A
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: telecommunications
+  b3_sector: Comunicações
+  b3_subsector: Telecomunicações
+  b3_segment: Telecomunicações
+  business_description: Operadora integrada de telecomunicações no Brasil, dona da marca Vivo, com atuação em móvel, fibra,
+    banda larga, serviços digitais e B2B, exposta a regulação, competição, capex em rede, inflação, juros e crescimento moderado
+    do consumo de dados.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - regulatory_risk_down
+  - selic_down
+  - long_rates_down
+  - fiscal_risk_down
+  negative_exposures:
+  - regulatory_risk_up
+  - selic_up
+  - long_rates_up
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - maior empresa de telecomunicações do Brasil
+  - atuação em telefonia móvel, fibra, banda larga, serviços digitais e soluções corporativas
+  - receita majoritariamente em reais
+  - perfil defensivo, com demanda recorrente por conectividade
+  - sensível a juros por valuation, dividend yield e capex de rede
+  - câmbio depreciado pressiona equipamentos, aparelhos, tecnologia e parte do capex
+  - crescimento doméstico ajuda mix, pós-pago, fibra e serviços digitais
+  - risco regulatório elevado por concessões, espectro, Anatel, qualidade de serviço e obrigações setoriais
+  - menor sensibilidade a crédito e desemprego que varejo discricionário
+  rationale: A Vivo é uma operadora integrada de telecomunicações com receita recorrente em móvel, fibra, banda larga e serviços
+    digitais. Por ser defensiva e regulada, sua exposição macro se concentra em juros longos, inflação, câmbio sobre capex/equipamentos
+    e risco regulatório, com menor sensibilidade ao ciclo econômico que empresas de consumo discricionário.
+  confidence: low
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+TIMS3:
+  company: TIM S.A.
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: mobile_telecommunications
+  b3_sector: Comunicações
+  b3_subsector: Telecomunicações
+  b3_segment: Telecomunicações
+  business_description: Operadora de telecomunicações brasileira com foco em telefonia móvel, dados, 4G/5G, fibra e serviços
+    digitais, exposta a regulação da Anatel, competição, capex de rede, espectro, inflação, juros e crescimento do consumo
+    de dados.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - regulatory_risk_down
+  - selic_down
+  - long_rates_down
+  - fiscal_risk_down
+  negative_exposures:
+  - regulatory_risk_up
+  - selic_up
+  - long_rates_up
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -3
+    regulatory_risk_down: 3
+  company_characteristics:
+  - operadora de telecomunicações com foco relevante em móvel
+  - forte exposição a 4G, 5G, fibra e serviços digitais
+  - receita majoritariamente em reais
+  - perfil defensivo, com receita recorrente e baixa ciclicidade relativa
+  - sensível a juros por valuation, dividendos e investimentos em rede
+  - câmbio depreciado pressiona equipamentos de rede e aparelhos
+  - crescimento doméstico ajuda migração para planos pós-pagos e maior consumo de dados
+  - risco regulatório elevado por espectro, Anatel, obrigações de cobertura e qualidade de serviço
+  - menor exposição direta a crédito, China e commodities
+  rationale: A TIM é uma operadora de telecomunicações com forte exposição a serviços móveis, dados, 5G, fibra e receita recorrente.
+    Seu modelo é defensivo, mas depende de capex em rede e regulação setorial, tornando a empresa sensível a juros, câmbio,
+    inflação de custos e decisões da Anatel.
+  confidence: low
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+TOTS3:
+  company: TOTVS S.A.
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: software_technology
+  b3_sector: Tecnologia da Informação
+  b3_subsector: Programas e Serviços
+  b3_segment: Programas e Serviços
+  business_description: Empresa brasileira de tecnologia e software B2B, com atuação em sistemas de gestão, plataformas, soluções
+    de produtividade, business performance e serviços financeiros, exposta a digitalização, crescimento de empresas, juros,
+    valuation de tecnologia e investimento corporativo.
+  revenue_profile:
+    currency: mostly_brl
+    geography: brazil_latam
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - global_risk_on
+  - credit_growth_up
+  - fiscal_risk_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - global_risk_off
+  - credit_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 3
+    global_risk_off: -3
+    fiscal_risk_up: -2
+    fiscal_risk_down: 2
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - maior empresa brasileira de tecnologia
+  - foco em software de gestão, soluções B2B, produtividade e plataformas digitais
+  - receita majoritariamente em reais
+  - alta recorrência de receita em software e serviços
+  - beneficiada por digitalização de empresas e crescimento doméstico
+  - muito sensível a juros longos por valuation de tecnologia
+  - global_risk_on favorece múltiplos de empresas de crescimento
+  - crédito mais forte favorece PMEs, empresas clientes e soluções financeiras
+  - câmbio depreciado pode pressionar custos de tecnologia, nuvem, equipamentos e inflação geral
+  rationale: A TOTVS é uma empresa de software B2B com receita recorrente e exposição à digitalização de empresas brasileiras.
+    Por ser uma companhia de tecnologia e crescimento, tende a se beneficiar de juros menores, global risk-on, crédito e atividade
+    econômica fortes, enquanto sofre com juros longos altos, menor investimento corporativo e aversão a risco.
+  confidence: low
+  curation_status: reviewed
+  sources:
+  - B3 classification
+  - B3 liquidity ranking
+  - CVM companies
+B3SA3:
+  company: B3
+  mvp_group: Bancos e Financeiros
+  internal_sector: market_infrastructure
+  b3_sector: Financeiro
+  b3_subsector: Serviços Financeiros Diversos
+  b3_segment: Serviços Financeiros Diversos
+  business_description: Operadora da bolsa brasileira e infraestrutura de mercado, com receitas ligadas a negociação, pós-negociação, registro, depositária e serviços de dados.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - global_risk_on
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  negative_exposures:
+  - global_risk_off
+  - long_rates_up
+  - domestic_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: 0
+    inflation_down: 0
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 3
+    global_risk_off: -3
+    fiscal_risk_up: -2
+    fiscal_risk_down: 1
+    regulatory_risk_up: -1
+    regulatory_risk_down: 1
+  company_characteristics:
+  - infraestrutura de mercado
+  - sensível a volume negociado
+  - exposição a mercado de capitais
+  - beneficiada por maior apetite a risco
+  rationale: A B3 é sensível ao apetite por risco, volume negociado, emissões e atividade de mercado de capitais. Cenários de queda de juros, risk-on e melhora de fluxo para bolsa tendem a favorecer receitas de negociação e pós-negociação, enquanto aversão a risco e fechamento do mercado de capitais reduzem volumes.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+BBSE3:
+  company: BB Seguridade
+  mvp_group: Bancos e Financeiros
+  internal_sector: insurance
+  b3_sector: Financeiro
+  b3_subsector: Previdência e Seguros
+  b3_segment: Seguradoras
+  business_description: Holding de seguros, previdência, capitalização e corretagem ligada ao ecossistema Banco do Brasil.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_up
+  negative_exposures:
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: 2
+    selic_down: -1
+    long_rates_up: 1
+    long_rates_down: -1
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 0
+    global_risk_off: -1
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -2
+    regulatory_risk_down: 1
+  company_characteristics:
+  - seguradora
+  - resultado financeiro relevante
+  - exposição a juros
+  - perfil relativamente defensivo
+  rationale: BB Seguridade combina exposição a seguros, previdência e resultado financeiro, sendo impactada por juros, inflação,sinistralidade e renda doméstica. A relação com juros é relevante, mas não totalmente linear, pois juros altos podem favorecer resultado financeiro enquanto atividade fraca pode afetar crescimento de prêmios.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+PSSA3:
+  company: Porto Seguro
+  mvp_group: Bancos e Financeiros
+  internal_sector: insurance
+  b3_sector: Financeiro
+  b3_subsector: Previdência e Seguros
+  b3_segment: Seguradoras
+  business_description: Seguradora privada com atuação em seguros auto, residência, saúde, serviços financeiros e negócios adjacentes.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_up
+  negative_exposures:
+  - inflation_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: 2
+    selic_down: -1
+    long_rates_up: 0
+    long_rates_down: 0
+    inflation_up: -2
+    inflation_down: 1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 0
+    global_risk_off: 0
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -2
+    regulatory_risk_down: 0
+  company_characteristics:
+  - seguradora privada
+  - exposição a resultado financeiro
+  - sensível a sinistralidade
+  - exposição a renda doméstica
+  rationale: Porto Seguro é afetada por juros, resultado financeiro, sinistralidade e atividade doméstica. Juros mais altos podem favorecer receitas financeiras, mas atividade fraca e inflação de custos podem pressionar crescimento e margens.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+RENT3:
+  company: Localiza
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: car_rental_mobility
+  b3_sector: Consumo Cíclico
+  b3_subsector: Diversos
+  b3_segment: Aluguel de carros
+  business_description: Empresa de aluguel de veículos, gestão de frotas e venda de seminovos, com exposição ao ciclo doméstico, juros e preços de veículos.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - domestic_growth_up
+  - long_rates_down
+  - credit_growth_up
+  negative_exposures:
+  - selic_up
+  - domestic_growth_down
+  - long_rates_up
+  - credit_growth_down
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 2
+    credit_growth_down: -2
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: 0
+    regulatory_risk_down: 0
+  company_characteristics:
+  - locação de veículos
+  - capital intensivo
+  - sensível a juros
+  - exposição a preço de seminovos
+  rationale: Localiza é sensível a juros, custo de capital, demanda corporativa e preço de seminovos. Queda de juros e melhora da atividade tendem a favorecer expansão de frota e demanda, enquanto juros altos pressionam custo financeiro e valuation.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+RADL3:
+  company: Raia Drogasil
+  mvp_group: Saúde e Educação
+  internal_sector: healthcare_retail
+  b3_sector: Saúde
+  b3_subsector: Comércio e Distribuição
+  b3_segment: Medicamentos e Outros Produtos
+  business_description: Rede de farmácias com exposição a consumo defensivo, saúde, renda doméstica e inflação de medicamentos.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - domestic_growth_up
+  negative_exposures:
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: -1
+    long_rates_down: 1
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 2
+    domestic_growth_down: -1
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 0
+    global_risk_off: -1
+    fiscal_risk_up: 0
+    fiscal_risk_down: 0
+    regulatory_risk_up: -2
+    regulatory_risk_down: 0
+  company_characteristics:
+  - varejo farmacêutico
+  - consumo defensivo
+  - exposição a renda doméstica
+  - menor ciclicidade que varejo discricionário
+  rationale: Raia Drogasil possui perfil mais defensivo por atuar em medicamentos e produtos de saúde, mas ainda é sensível
+    à renda doméstica, inflação regulada de medicamentos e custo de expansão. Em cenários de desaceleração, tende a ser mais
+    resiliente que varejo discricionário.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+WEGE3:
+  company: WEG
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: industrials_exporter
+  b3_sector: Bens Industriais
+  b3_subsector: Máquinas e Equipamentos
+  b3_segment: Motores, Compressores e Outros
+  business_description: Empresa industrial global com atuação em motores, automação, energia e equipamentos elétricos, com
+    exposição a ciclo global, câmbio e capex.
+  revenue_profile:
+    currency: mixed
+    geography: global
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - long_rates_down
+  - brl_depreciation
+  - global_risk_on
+  negative_exposures:
+  - long_rates_up
+  - global_risk_off
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: 0
+    inflation_down: 0
+    brl_appreciation: -1
+    brl_depreciation: 2
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: 0
+    regulatory_risk_down: 0
+  company_characteristics:
+  - industrial exportadora
+  - receita global
+  - exposição a capex
+  - sensível a câmbio e ciclo global
+  rationale: WEG combina exposição ao ciclo industrial global, investimentos em energia, automação e câmbio. Real depreciado
+    e capex global forte tendem a favorecer receitas, enquanto juros longos altos e risk-off podem pressionar valuation de
+    empresas de crescimento.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+VBBR3:
+  company: Vibra Energia
+  mvp_group: Óleo e Gás
+  internal_sector: fuel_distribution
+  b3_sector: Petróleo, Gás e Biocombustíveis
+  b3_subsector: Petróleo, Gás e Biocombustíveis
+  b3_segment: Exploração, Refino e Distribuição
+  business_description: Distribuidora de combustíveis com exposição a volumes domésticos, margens de distribuição, atividade
+    econômica e preços de combustíveis.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - domestic_growth_up
+  negative_exposures:
+  - domestic_growth_down
+  - fiscal_risk_up
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: 0
+    long_rates_down: 0
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 0
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 0
+    regulatory_risk_up: -2
+    regulatory_risk_down: 1
+  company_characteristics:
+  - distribuição de combustíveis
+  - exposição a volumes domésticos
+  - sensível a atividade econômica
+  - margens influenciadas por dinâmica de combustíveis
+  rationale: Vibra é mais exposta a volumes, margens de distribuição e atividade doméstica do que ao preço do petróleo em
+    si. Crescimento econômico tende a favorecer demanda por combustíveis, enquanto volatilidade de preços, regulação e compressão
+    de margens podem prejudicar resultados.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+EQTL3:
+  company: Equatorial Energia
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: electric_utilities_distribution
+  b3_sector: Utilidade Pública
+  b3_subsector: Energia Elétrica
+  b3_segment: Energia Elétrica
+  business_description: Grupo de utilities com forte atuação em distribuição de energia, transmissão, saneamento e infraestrutura
+    regulada.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - regulatory_risk_down
+  negative_exposures:
+  - regulatory_risk_up
+  - selic_up
+  - long_rates_up
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: 1
+    inflation_down: -1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 0
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 1
+    regulatory_risk_up: -3
+    regulatory_risk_down: 2
+  company_characteristics:
+  - utility regulada
+  - distribuição de energia
+  - exposição a regulação
+  - sensível a juros e inflação regulatória
+  rationale: Equatorial possui exposição relevante a ativos regulados de energia e infraestrutura, com receitas influenciadas
+    por revisões tarifárias, inflação e custo de capital. Queda de juros tende a beneficiar utilities reguladas, enquanto
+    risco regulatório e fiscal podem pressionar valuation.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+AURE3:
+  company: Auren Energia
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: renewable_power_generation
+  b3_sector: Utilidade Pública
+  b3_subsector: Energia Elétrica
+  b3_segment: Energia Elétrica
+  business_description: Geradora e comercializadora de energia com portfólio relevante em fontes renováveis e exposição a
+    preços de energia, hidrologia, contratos e custo de capital.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - regulatory_risk_down
+  negative_exposures:
+  - regulatory_risk_up
+  - selic_up
+  - long_rates_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: 1
+    inflation_down: -1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 0
+    global_risk_off: -1
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -3
+    regulatory_risk_down: 2
+  company_characteristics:
+  - geração renovável
+  - exposição a preços de energia
+  - sensível a juros
+  - perfil de duration longa
+  rationale: Auren é sensível a preços de energia, hidrologia, contratos e custo de capital. Juros menores tendem a favorecer
+    ativos de energia de duration longa, enquanto risco regulatório, preços baixos de energia e juros altos pressionam a tese.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+CSMG3:
+  company: Copasa
+  mvp_group: Utilities e Infraestrutura
+  internal_sector: water_sanitation
+  b3_sector: Utilidade Pública
+  b3_subsector: Água e Saneamento
+  b3_segment: Água e Saneamento
+  business_description: Empresa de saneamento com atuação regional, exposição a tarifas, regulação, investimentos e custo
+    de capital.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - regulatory_risk_down
+  negative_exposures:
+  - regulatory_risk_up
+  - selic_up
+  - long_rates_up
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: 1
+    inflation_down: -1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 0
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 1
+    regulatory_risk_up: -3
+    regulatory_risk_down: 2
+  company_characteristics:
+  - saneamento
+  - receita regulada
+  - sensível a juros
+  - exposição a regulação e investimentos
+  rationale: Copasa é uma utility de saneamento com receitas reguladas e necessidade relevante de investimento. Juros menores
+    favorecem ativos de duration longa e reduzem custo de capital, enquanto risco regulatório, fiscal ou atraso tarifário
+    podem prejudicar a tese.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+BRFS3:
+  company: BRF
+  mvp_group: Varejo e Consumo
+  internal_sector: proteins_food_exports
+  b3_sector: Consumo não Cíclico
+  b3_subsector: Alimentos Processados
+  b3_segment: Carnes e Derivados
+  business_description: Empresa de alimentos e proteínas com exposição a exportações, câmbio, grãos, demanda doméstica e demanda
+    global por alimentos.
+  revenue_profile:
+    currency: mixed
+    geography: brazil_and_exports
+    commodity_linked: true
+    regulated: false
+  positive_exposures:
+  - brl_depreciation
+  negative_exposures:
+  - inflation_up
+  - domestic_growth_down
+  - global_risk_off
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: 0
+    long_rates_down: 0
+    inflation_up: -2
+    inflation_down: 1
+    brl_appreciation: -1
+    brl_depreciation: 2
+    domestic_growth_up: 1
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 1
+    china_growth_down: -1
+    global_risk_on: 1
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -1
+    regulatory_risk_down: 0
+  company_characteristics:
+  - proteínas e alimentos processados
+  - exposição a exportações
+  - custos ligados a grãos
+  - sensível a câmbio e demanda global
+  rationale: BRF possui exposição a proteínas, câmbio, demanda doméstica e exportações, mas também é impactada por custos
+    de grãos e ciclo operacional. Real depreciado pode favorecer exportações, enquanto alta de insumos e desaceleração de
+    consumo podem pressionar margens.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+BRKM5:
+  company: Braskem
+  mvp_group: Mineração e Siderurgia
+  internal_sector: petrochemicals
+  b3_sector: Materiais Básicos
+  b3_subsector: Químicos
+  b3_segment: Petroquímicos
+  business_description: Petroquímica com exposição a spreads internacionais, petróleo/nafta, câmbio, ciclo industrial e riscos
+    idiossincráticos.
+  revenue_profile:
+    currency: mixed
+    geography: brazil_and_exports
+    commodity_linked: true
+    regulated: false
+  positive_exposures:
+  - china_growth_up
+  - global_risk_on
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - domestic_growth_down
+  - china_growth_down
+  - global_risk_off
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 1
+    long_rates_up: -2
+    long_rates_down: 1
+    inflation_up: 0
+    inflation_down: 0
+    brl_appreciation: -1
+    brl_depreciation: 1
+    domestic_growth_up: 1
+    domestic_growth_down: -2
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: -1
+    oil_price_down: 1
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 2
+    china_growth_down: -2
+    global_risk_on: 2
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -2
+    regulatory_risk_down: 0
+  company_characteristics:
+  - petroquímica
+  - exposição a spreads internacionais
+  - sensível ao ciclo industrial
+  - risco idiossincrático relevante
+  rationale: Braskem é sensível a spreads petroquímicos, petróleo/nafta, câmbio e ciclo industrial global. A relação macro
+    é relevante, mas tem baixa previsibilidade por causa de fatores específicos da empresa, alavancagem e riscos extraordinários.
+  confidence: low
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+BRAV3:
+  company: Brava Energia
+  mvp_group: Óleo e Gás
+  internal_sector: oil_gas_independent_e_and_p
+  b3_sector: Petróleo, Gás e Biocombustíveis
+  b3_subsector: Petróleo, Gás e Biocombustíveis
+  b3_segment: Exploração, Refino e Distribuição
+  business_description: Companhia independente de exploração e produção de óleo e gás, com exposição direta ao Brent, câmbio
+    e execução operacional.
+  revenue_profile:
+    currency: mostly_usd
+    geography: brazil
+    commodity_linked: true
+    regulated: true
+  positive_exposures:
+  - oil_price_up
+  - brl_depreciation
+  negative_exposures:
+  - oil_price_down
+  - global_risk_off
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: -1
+    long_rates_down: 1
+    inflation_up: 0
+    inflation_down: 0
+    brl_appreciation: -1
+    brl_depreciation: 2
+    domestic_growth_up: 0
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 3
+    oil_price_down: -3
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -2
+    regulatory_risk_down: 1
+  company_characteristics:
+  - exploração e produção de petróleo
+  - exposição ao Brent
+  - receita ligada a commodity
+  - sensível a execução operacional
+  rationale: Brava Energia possui exposição direta a preço do petróleo, câmbio e produção. Petróleo em alta e real depreciado
+    tendem a favorecer receitas, enquanto queda do Brent, risco regulatório e aversão a risco prejudicam a tese.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+CURY3:
+  company: Cury
+  mvp_group: Construção, Imóveis e Shoppings
+  internal_sector: low_income_homebuilders
+  b3_sector: Consumo Cíclico
+  b3_subsector: Construção Civil
+  b3_segment: Incorporações
+  business_description: Incorporadora residencial com foco em baixa renda, exposta a crédito habitacional, renda das famílias,
+    juros e programas habitacionais.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - credit_growth_up
+  - domestic_growth_up
+  - unemployment_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - credit_growth_down
+  - domestic_growth_down
+  - unemployment_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 3
+    credit_growth_down: -3
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: 0
+    regulatory_risk_down: 0
+  company_characteristics:
+  - incorporadora de baixa renda
+  - sensível a crédito habitacional
+  - exposição a programas habitacionais
+  - dependente de renda e emprego
+  rationale: Cury é sensível ao ciclo imobiliário de baixa renda, crédito habitacional, subsídios e renda das famílias. Juros
+    menores e expansão do crédito tendem a favorecer vendas e lançamentos, enquanto juros altos e desemprego pressionam demanda.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+NTCO3:
+  company: Natura
+  mvp_group: Varejo e Consumo
+  internal_sector: beauty_personal_care
+  b3_sector: Consumo não Cíclico
+  b3_subsector: Produtos de Uso Pessoal e de Limpeza
+  b3_segment: Produtos de Uso Pessoal
+  business_description: Empresa de cosméticos e produtos de beleza, com exposição a consumo, renda doméstica, câmbio, canais
+    de venda e mercados internacionais.
+  revenue_profile:
+    currency: mixed
+    geography: brazil_and_international
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - unemployment_down
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - inflation_up
+  - domestic_growth_down
+  - unemployment_up
+  - global_risk_off
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -2
+    inflation_down: 1
+    brl_appreciation: 1
+    brl_depreciation: -1
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: 0
+    regulatory_risk_down: 0
+  company_characteristics:
+  - cosméticos e beleza
+  - exposição a consumo
+  - operação internacional
+  - sensível a câmbio e renda
+  rationale: Natura é sensível a consumo, renda disponível, câmbio e execução em mercados internacionais. Melhora de atividade
+    e renda tende a favorecer vendas, enquanto inflação, câmbio adverso, juros altos e desaceleração do consumo pressionam
+    margens e valuation.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+JBSS3:
+  company: JBS
+  mvp_group: Varejo e Consumo
+  internal_sector: proteins_food_exports
+  b3_sector: Consumo não Cíclico
+  b3_subsector: Alimentos Processados
+  b3_segment: Carnes e Derivados
+  business_description: Empresa global de proteínas com exposição a exportações, câmbio, ciclo global de carnes, grãos, demanda
+    doméstica e mercados internacionais.
+  revenue_profile:
+    currency: mostly_usd
+    geography: global
+    commodity_linked: true
+    regulated: false
+  positive_exposures:
+  - brl_depreciation
+  - china_growth_up
+  negative_exposures:
+  - brl_appreciation
+  - china_growth_down
+  - global_risk_off
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: 0
+    long_rates_down: 0
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -2
+    brl_depreciation: 3
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 2
+    china_growth_down: -2
+    global_risk_on: 1
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -1
+    regulatory_risk_down: 0
+  company_characteristics:
+  - proteínas globais
+  - receita internacional
+  - exposição a câmbio
+  - custos ligados a grãos e gado
+  rationale: JBS tem forte exposição global e receita dolarizada, sendo beneficiada por real depreciado e demanda externa
+    por proteínas. A tese pode ser prejudicada por alta de insumos, restrições sanitárias, desaceleração global ou aversão
+    a risco.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+BEEF3:
+  company: Minerva
+  mvp_group: Varejo e Consumo
+  internal_sector: proteins_food_exports
+  b3_sector: Consumo não Cíclico
+  b3_subsector: Alimentos Processados
+  b3_segment: Carnes e Derivados
+  business_description: Empresa de carne bovina com forte exposição a exportações, câmbio, ciclo do boi, demanda internacional
+    e custos agropecuários.
+  revenue_profile:
+    currency: mostly_usd
+    geography: brazil_and_exports
+    commodity_linked: true
+    regulated: false
+  positive_exposures:
+  - brl_depreciation
+  - china_growth_up
+  negative_exposures:
+  - brl_appreciation
+  - china_growth_down
+  - global_risk_off
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: 0
+    long_rates_down: 0
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: -2
+    brl_depreciation: 3
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: 0
+    unemployment_down: 0
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 2
+    china_growth_down: -2
+    global_risk_on: 1
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -1
+    regulatory_risk_down: 0
+  company_characteristics:
+  - proteína bovina
+  - exportadora
+  - sensível ao câmbio
+  - exposição a ciclo do boi
+  rationale: Minerva é beneficiada por real depreciado e demanda externa por carne bovina, mas sofre com alta do boi, barreiras
+    sanitárias, desaceleração global e aversão a risco. A exposição macro é clara, mas margens dependem muito de spreads operacionais.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+HYPE3:
+  company: Hypera
+  mvp_group: Saúde e Educação
+  internal_sector: pharmaceuticals
+  b3_sector: Saúde
+  b3_subsector: Medicamentos e Outros Produtos
+  b3_segment: Medicamentos e Outros Produtos
+  business_description: Empresa farmacêutica com portfólio de medicamentos e produtos de saúde, exposta a consumo defensivo,
+    inflação, renda e regulação.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - inflation_down
+  negative_exposures:
+  - regulatory_risk_up
+  exposure_scores:
+    selic_up: -1
+    selic_down: 1
+    long_rates_up: -1
+    long_rates_down: 1
+    inflation_up: -1
+    inflation_down: 2
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 1
+    domestic_growth_down: -1
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 0
+    global_risk_off: -1
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -2
+    regulatory_risk_down: 1
+  company_characteristics:
+  - farmacêutica
+  - consumo defensivo
+  - exposição a regulação de medicamentos
+  - sensível a juros via alavancagem/valuation
+  rationale: Hypera tem perfil relativamente defensivo por atuar em medicamentos, mas é afetada por inflação, regulação de
+    preços, renda doméstica e custo de capital. Em cenários de desaceleração, tende a ser mais resiliente que consumo discricionário.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+SIMH3:
+  company: Simpar
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: logistics_mobility_holding
+  b3_sector: Bens Industriais
+  b3_subsector: Transporte
+  b3_segment: Transporte Rodoviário
+  business_description: Holding de logística, locação, mobilidade e serviços, com exposição a juros, alavancagem, atividade
+    doméstica e demanda corporativa.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: false
+  positive_exposures:
+  - selic_down
+  - long_rates_down
+  - domestic_growth_up
+  - credit_growth_up
+  negative_exposures:
+  - selic_up
+  - long_rates_up
+  - credit_growth_down
+  - domestic_growth_down
+  - global_risk_off
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -3
+    selic_down: 3
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: -1
+    inflation_down: 1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 2
+    credit_growth_down: -3
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -2
+    fiscal_risk_up: -2
+    fiscal_risk_down: 0
+    regulatory_risk_up: 0
+    regulatory_risk_down: 0
+  company_characteristics:
+  - holding de mobilidade e logística
+  - empresa alavancada
+  - sensível a juros
+  - exposição a atividade doméstica
+  rationale: Simpar é altamente sensível a juros, custo de dívida, atividade doméstica e demanda por logística/mobilidade.
+    Queda de juros e melhora da economia tendem a favorecer a tese, enquanto juros altos e crédito apertado pressionam alavancagem
+    e valuation.
+  confidence: medium
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+CCRO3:
+  company: CCR
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: transport_infrastructure_concessions
+  b3_sector: Bens Industriais
+  b3_subsector: Transporte
+  b3_segment: Exploração de Rodovias
+  business_description: Operadora de concessões de infraestrutura de transporte, incluindo rodovias, mobilidade urbana e aeroportos.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - long_rates_down
+  - selic_down
+  - domestic_growth_up
+  - regulatory_risk_down
+  negative_exposures:
+  - long_rates_up
+  - regulatory_risk_up
+  - selic_up
+  - domestic_growth_down
+  - fiscal_risk_up
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -3
+    long_rates_down: 3
+    inflation_up: 1
+    inflation_down: -1
+    brl_appreciation: 0
+    brl_depreciation: 0
+    domestic_growth_up: 2
+    domestic_growth_down: -2
+    unemployment_up: -1
+    unemployment_down: 1
+    credit_growth_up: 0
+    credit_growth_down: 0
+    oil_price_up: 0
+    oil_price_down: 0
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -1
+    fiscal_risk_up: -2
+    fiscal_risk_down: 1
+    regulatory_risk_up: -3
+    regulatory_risk_down: 2
+  company_characteristics:
+  - concessões de infraestrutura
+  - receita regulada/contratada
+  - sensível a juros
+  - exposição a tráfego e atividade econômica
+  rationale: CCR combina exposição a tráfego, atividade econômica, contratos de concessão, inflação tarifária e custo de capital.
+    Juros menores favorecem ativos de infraestrutura de duration longa, enquanto risco regulatório, fiscal e desaceleração
+    reduzem atratividade da tese.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify
+AZUL3:
+  company: Azul
+  mvp_group: Transporte, Telecom e Tecnologia
+  internal_sector: airlines
+  b3_sector: Bens Industriais
+  b3_subsector: Transporte
+  b3_segment: Transporte Aéreo
+  business_description: Companhia aérea brasileira com exposição a demanda doméstica, câmbio, combustível, leasing, turismo
+    e atividade econômica.
+  revenue_profile:
+    currency: brl
+    geography: brazil
+    commodity_linked: false
+    regulated: true
+  positive_exposures:
+  - brl_appreciation
+  - domestic_growth_up
+  - oil_price_down
+  - selic_down
+  - long_rates_down
+  - unemployment_down
+  negative_exposures:
+  - brl_depreciation
+  - domestic_growth_down
+  - oil_price_up
+  - selic_up
+  - long_rates_up
+  - inflation_up
+  - unemployment_up
+  - global_risk_off
+  exposure_scores:
+    selic_up: -2
+    selic_down: 2
+    long_rates_up: -2
+    long_rates_down: 2
+    inflation_up: -2
+    inflation_down: 1
+    brl_appreciation: 3
+    brl_depreciation: -3
+    domestic_growth_up: 3
+    domestic_growth_down: -3
+    unemployment_up: -2
+    unemployment_down: 2
+    credit_growth_up: 1
+    credit_growth_down: -1
+    oil_price_up: -3
+    oil_price_down: 3
+    iron_ore_up: 0
+    iron_ore_down: 0
+    china_growth_up: 0
+    china_growth_down: 0
+    global_risk_on: 1
+    global_risk_off: -2
+    fiscal_risk_up: -1
+    fiscal_risk_down: 0
+    regulatory_risk_up: -1
+    regulatory_risk_down: 0
+  company_characteristics:
+  - companhia aérea
+  - custos relevantes dolarizados
+  - sensível a petróleo/combustível
+  - exposição a demanda doméstica
+  rationale: Azul é sensível a atividade doméstica, demanda por viagens, câmbio e combustível. Real depreciado e petróleo
+    em alta prejudicam custos, enquanto crescimento doméstico, real forte e petróleo em queda tendem a favorecer margens e
+    demanda.
+  confidence: high
+  curation_status: reviewed
+  sources:
+  - manual addition
+  - B3 classification to verify
+  - CVM companies to verify

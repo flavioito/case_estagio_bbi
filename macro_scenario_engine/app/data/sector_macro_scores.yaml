@@ -1,0 +1,8 @@
+metadata:
+  source: app/data/curated/ticker_exposures_expanded.yaml
+  method: >
+    No MVP, a matriz macro-setorial é derivada em tempo de execução pela média
+    dos exposure_scores dos tickers de cada setor definido em sector_taxonomy.yaml.
+    Essa escolha evita manter duas fontes de verdade e preserva a rastreabilidade
+    entre base curada, scoring setorial e seleção de tickers.
+  generated_by: app.scoring.derive_sector_macro_scores
