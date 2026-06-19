@@ -18,6 +18,7 @@ case_estagio_bbi/
     output/
     tests/
     README.md
+    requirements.txt
   macro_scenario_engine/
     app/
     tests/
