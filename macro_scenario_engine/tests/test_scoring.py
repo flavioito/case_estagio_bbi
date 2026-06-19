@@ -3,7 +3,7 @@ from __future__ import annotations
 import pytest
 
 from app.config import load_settings
-from app.scoring import calculate_sector_scores, calculate_ticker_scores, load_catalog, select_top_tickers
+from app.scoring import calculate_sector_scores, calculate_ticker_scores, load_catalog, select_top_sectors, select_top_tickers
 
 
 @pytest.fixture(scope="module")
@@ -50,6 +50,30 @@ def test_ticker_selection_stays_inside_curated_universe(catalog) -> None:
     assert len(negative) == 3
     assert {item.ticker for item in positive + negative} <= catalog.allowed_tickers
     assert not ({item.ticker for item in positive} & {item.ticker for item in negative})
+
+
+def test_sector_selection_prioritizes_absolute_positive_and_negative_impacts(catalog) -> None:
+    scored = calculate_sector_scores(
+        ["selic_down", "credit_growth_up", "oil_price_down", "brl_appreciation", "china_growth_down"],
+        catalog,
+    )
+    benefited, harmed = select_top_sectors(scored)
+
+    assert all(item.raw_score > 0 for item in benefited)
+    assert all(item.raw_score < 0 for item in harmed)
+    assert benefited == sorted(benefited, key=lambda item: (item.raw_score, item.relative_score, item.sector_name), reverse=True)
+    assert harmed == sorted(harmed, key=lambda item: (item.raw_score, item.relative_score, item.sector_name))
+
+
+def test_ticker_selection_prioritizes_absolute_positive_and_negative_impacts(catalog) -> None:
+    scored = calculate_ticker_scores(
+        ["selic_down", "credit_growth_up", "oil_price_down", "brl_appreciation", "china_growth_down"],
+        catalog,
+    )
+    positive, negative = select_top_tickers(scored)
+
+    assert all(item.raw_score > 0 for item in positive)
+    assert all(item.raw_score < 0 for item in negative)
 
 
 def test_positive_ticker_selection_diversifies_close_scores(catalog) -> None:

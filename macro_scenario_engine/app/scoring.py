@@ -452,13 +452,22 @@ def select_top_sectors(scored: list[ScoredSector], limit: int = 5) -> tuple[list
     if scored and all(item.raw_score < 0 for item in scored):
         benefited = sorted(scored, key=lambda item: (defensive_adjusted_score(item), item.score, item.sector_name), reverse=True)[:limit]
     else:
-        benefited = sorted(scored, key=lambda item: (item.score, item.sector_name), reverse=True)[:limit]
+        benefited = sorted(scored, key=lambda item: (item.raw_score, item.relative_score, item.sector_name), reverse=True)[:limit]
     benefited_ids = {item.sector_id for item in benefited}
 
-    harmed_candidates = [item for item in sorted(scored, key=lambda item: (item.score, item.sector_name)) if item.sector_id not in benefited_ids]
+    harmed_candidates = [
+        item
+        for item in sorted(scored, key=lambda item: (item.raw_score, item.relative_score, item.sector_name))
+        if item.sector_id not in benefited_ids and item.raw_score < 0
+    ]
     harmed = harmed_candidates[:limit]
     if len(harmed) < limit:
-        harmed = sorted(scored, key=lambda item: (item.score, item.sector_name))[:limit]
+        fallback = [
+            item
+            for item in sorted(scored, key=lambda item: (item.raw_score, item.relative_score, item.sector_name))
+            if item.sector_id not in benefited_ids and item not in harmed
+        ]
+        harmed.extend(fallback[: limit - len(harmed)])
     return benefited, harmed
 
 
@@ -529,15 +538,15 @@ def select_diversified_tickers(
     limit: int = 3,
     score_tolerance: float = 1.5,
 ) -> list[ScoredTicker]:
-    ranked = sorted(candidates, key=lambda item: (item.score, item.raw_score, item.ticker), reverse=True)
+    ranked = sorted(candidates, key=lambda item: (item.raw_score, item.relative_score, item.ticker), reverse=True)
     if len(ranked) <= limit:
         return ranked
 
     selected: list[ScoredTicker] = []
     selected_tickers: set[str] = set()
     selected_sectors: set[str] = set()
-    best_score = ranked[0].score
-    diversified_pool = [item for item in ranked if best_score - item.score <= score_tolerance]
+    best_score = ranked[0].raw_score
+    diversified_pool = [item for item in ranked if best_score - item.raw_score <= score_tolerance]
 
     for item in diversified_pool:
         if item.sector_id in selected_sectors:
@@ -568,7 +577,7 @@ def select_bottom_tickers_diversified(
 ) -> list[ScoredTicker]:
     ranked = [
         item
-        for item in sorted(candidates, key=lambda item: (item.score, item.raw_score, item.ticker))
+        for item in sorted(candidates, key=lambda item: (item.raw_score, item.relative_score, item.ticker))
         if item.ticker not in excluded_tickers
     ]
     if len(ranked) <= limit:
@@ -577,8 +586,8 @@ def select_bottom_tickers_diversified(
     selected: list[ScoredTicker] = []
     selected_tickers: set[str] = set()
     selected_sectors: set[str] = set()
-    worst_score = ranked[0].score
-    diversified_pool = [item for item in ranked if item.score - worst_score <= score_tolerance]
+    worst_score = ranked[0].raw_score
+    diversified_pool = [item for item in ranked if item.raw_score - worst_score <= score_tolerance]
 
     for item in diversified_pool:
         if item.sector_id in selected_sectors:
@@ -601,26 +610,30 @@ def select_bottom_tickers_diversified(
 
 
 def select_top_tickers(scored: list[ScoredTicker], limit: int = 3) -> tuple[list[ScoredTicker], list[ScoredTicker]]:
-    positive = [item for item in sorted(scored, key=lambda item: (item.score, item.ticker), reverse=True) if item.score > 0]
+    positive = [
+        item
+        for item in sorted(scored, key=lambda item: (item.raw_score, item.relative_score, item.ticker), reverse=True)
+        if item.raw_score > 0
+    ]
     if len(positive) < limit:
-        positive = sorted(scored, key=lambda item: (item.score, item.ticker), reverse=True)
+        positive = sorted(scored, key=lambda item: (item.raw_score, item.relative_score, item.ticker), reverse=True)
     positive = select_diversified_tickers(positive, limit=limit)
 
-    top_relative_ticker_ids = {item.ticker for item in positive}
+    positive_ticker_ids = {item.ticker for item in positive}
     negative_candidates = [
         item
-        for item in sorted(scored, key=lambda item: (item.score, item.ticker))
-        if item.ticker not in top_relative_ticker_ids and item.score < 0
+        for item in sorted(scored, key=lambda item: (item.raw_score, item.relative_score, item.ticker))
+        if item.ticker not in positive_ticker_ids and item.raw_score < 0
     ]
     if len(negative_candidates) < limit:
         negative_candidates = [
             item
-            for item in sorted(scored, key=lambda item: (item.score, item.ticker))
-            if item.ticker not in top_relative_ticker_ids
+            for item in sorted(scored, key=lambda item: (item.raw_score, item.relative_score, item.ticker))
+            if item.ticker not in positive_ticker_ids
         ]
     negative = select_bottom_tickers_diversified(
         negative_candidates,
-        excluded_tickers=top_relative_ticker_ids,
+        excluded_tickers=positive_ticker_ids,
         limit=limit,
     )
     return positive, negative

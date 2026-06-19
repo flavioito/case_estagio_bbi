@@ -16,16 +16,17 @@ def test_output_has_required_exact_counts() -> None:
     assert len(output.short_term_benefited_sectors) == 5
     assert len(output.medium_term_harmed_sectors) == 5
     assert len(output.net_resilient_sectors) == 5
-    assert len(output.top_relative_tickers) == 3
+    assert len(output.positive_tickers) == 3
     assert len(output.negative_tickers) == 3
     assert len(output.risks) == 3
     assert count_words(output.markdown_report) <= 500
+    assert "limitations" not in output.as_json_dict()
 
 
 def test_confidence_values_are_valid() -> None:
     output = run_analysis("China desacelerando, minério em queda e aversão a risco em emergentes.", use_llm=False)
     values = [item.confidence for item in output.benefited_sectors + output.harmed_sectors]
-    values += [item.confidence for item in output.top_relative_tickers + output.negative_tickers]
+    values += [item.confidence for item in output.positive_tickers + output.negative_tickers]
 
     assert set(values) <= {"low", "medium", "high"}
 

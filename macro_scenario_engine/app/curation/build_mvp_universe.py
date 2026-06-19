@@ -1,28 +1,3 @@
-#!/usr/bin/env python3
-"""
-build_mvp_universe.py
-
-Cria o universo operacional do MVP a partir de uma lista fixa de tickers definida
-para o projeto, cruzando com os arquivos processados de B3, COTAHIST e CVM.
-
-Entradas esperadas:
-- data/processed/b3_classificacao_setorial_YYYYMMDD.csv
-- data/processed/b3_liquidity_ranking_YYYY.csv
-- data/processed/cvm_companies.csv
-
-Saídas:
-- data/curated/mvp_universe.csv
-- data/curated/ticker_exposures_template.yaml
-- data/curated/missing_tickers.csv, se algum ticker definido não for encontrado
-
-Uso:
-python app/curation/build_mvp_universe.py --processed-dir data/processed --curated-dir data/curated
-
-Observação:
-O campo internal_sector é criado como "TODO" para ser preenchido manualmente.
-O campo mvp_group preserva o grupo definido manualmente pelo projeto.
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -33,14 +8,6 @@ from typing import Any
 import pandas as pd
 import yaml
 
-
-# =============================================================================
-# Universo fixo do MVP
-# =============================================================================
-# Este universo reduzido substitui a seleção automática por liquidez.
-# A liquidez ainda é usada como dado de apoio, mas não decide sozinha a seleção.
-# O grupo abaixo é apenas a categoria definida para o MVP; o campo internal_sector
-# será criado como TODO para curadoria manual posterior.
 
 MVP_TICKER_GROUPS: dict[str, list[str]] = {
     "Bancos e Financeiros": [
@@ -136,10 +103,6 @@ MACRO_FACTORS = [
 ]
 
 
-# =============================================================================
-# Utilidades gerais
-# =============================================================================
-
 def latest_file(directory: Path, pattern: str) -> Path:
     files = sorted(directory.glob(pattern), key=lambda p: p.stat().st_mtime, reverse=True)
 
@@ -215,10 +178,6 @@ def build_fixed_universe_dataframe() -> pd.DataFrame:
 
     return df
 
-
-# =============================================================================
-# Leitura e preparação das fontes
-# =============================================================================
 
 def load_inputs(processed_dir: Path) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     b3_path = latest_file(processed_dir, "b3_classificacao_setorial_20260615.csv")
@@ -354,10 +313,6 @@ def prepare_cvm(cvm: pd.DataFrame) -> pd.DataFrame:
     return cvm[keep_cols].drop_duplicates(subset=["cvm_code_norm"])
 
 
-# =============================================================================
-# Merge e geração do universo
-# =============================================================================
-
 def merge_fixed_universe(
     fixed_universe: pd.DataFrame,
     b3: pd.DataFrame,
@@ -376,7 +331,6 @@ def merge_fixed_universe(
             suffixes=("", "_cvm"),
         )
 
-    # Campos de controle para facilitar revisão.
     df["found_in_b3"] = df["b3_sector"].notna() if "b3_sector" in df.columns else False
     df["found_in_liquidity"] = (
         df["avg_daily_volume_brl"].notna()
@@ -389,10 +343,7 @@ def merge_fixed_universe(
         else False
     )
 
-    # Campo pedido: criado para preenchimento manual.
     df["internal_sector"] = "TODO"
-
-    # Campo de status para controlar a curadoria.
     df["curation_status"] = "pending"
 
     return df.sort_values("mvp_order")
@@ -456,10 +407,6 @@ def finalize_universe_columns(universe: pd.DataFrame) -> pd.DataFrame:
 
     return universe[final_cols]
 
-
-# =============================================================================
-# Template YAML para curadoria macro
-# =============================================================================
 
 def build_ticker_template(universe: pd.DataFrame) -> dict[str, dict[str, Any]]:
     template = {}
@@ -538,10 +485,6 @@ def save_outputs(
 
     return universe_path, template_path, None
 
-
-# =============================================================================
-# CLI
-# =============================================================================
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()

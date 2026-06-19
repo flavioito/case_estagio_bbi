@@ -105,11 +105,10 @@ class AnalysisOutput(BaseModel):
     short_term_benefited_sectors: list[SectorImpact]
     medium_term_harmed_sectors: list[SectorImpact]
     net_resilient_sectors: list[SectorImpact]
-    top_relative_tickers: list[TickerImpact]
+    positive_tickers: list[TickerImpact]
     negative_tickers: list[TickerImpact]
     risks: list[RiskItem]
     markdown_report: str
-    limitations: list[str]
     metadata: AnalysisMetadata
 
     @field_validator(
@@ -127,7 +126,7 @@ class AnalysisOutput(BaseModel):
             raise ValueError("setores duplicados na mesma lista")
         return value
 
-    @field_validator("top_relative_tickers", "negative_tickers")
+    @field_validator("positive_tickers", "negative_tickers")
     @classmethod
     def _exactly_three_tickers(cls, value: list[TickerImpact]) -> list[TickerImpact]:
         if len(value) != 3:

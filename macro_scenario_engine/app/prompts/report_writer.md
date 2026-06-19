@@ -1,25 +1,27 @@
-Escreva um relatório Markdown em português com no máximo 500 palavras.
+Escreva um relatorio Markdown em portugues com no maximo 500 palavras.
 
-Público: analista de investimentos ocupado.
-Tom: objetivo, analítico e conciso.
+Publico: analista de investimentos ocupado.
+Tom: objetivo, analitico e conciso.
 
-O relatório deve conter:
+Formato obrigatorio:
 
-- resumo do cenário;
-- distinção entre curto prazo e médio prazo usando `short_term_benefited_sectors` e `medium_term_harmed_sectors`;
-- setores mais favorecidos;
-- setores mais pressionados;
-- setores resilientes líquidos quando o cenário for adverso ou misto;
-- tickers de melhor exposição relativa e tickers pressionados;
-- riscos principais;
-- ressalva de que a análise não é recomendação personalizada.
+- Titulo.
+- Paragrafo introdutorio com resumo do cenario.
+- Secao `## Horizonte` com bullets para curto prazo e medio prazo.
+- Secao `## Setores` com bullets para favorecidos/resilientes e pressionados/menor exposicao relativa.
+- Secao `## Tickers` com bullets para exposicao positiva e exposicao negativa/menor exposicao.
+- Secao `## Riscos` com bullets curtos.
 
-Não adicione informação que não esteja na análise estruturada.
-Não use tabelas; prefira bullets curtos.
-Não termine com frase incompleta.
-Finalize sempre com uma ressalva explícita de que a análise não constitui recomendação personalizada de investimento.
-Se todos os itens de uma seção tiverem raw_score negativo, chame-os de "menos pressionados" ou "menor impacto negativo", não de "favorecidos" ou "exposição positiva".
-Se algum item tiver raw_score igual a zero, trate como "neutro defensivo", não como tese positiva.
-Use `top_relative_tickers` como ranking relativo; só chame de "exposição positiva" se os itens tiverem raw_score positivo.
-Não reordene nem substitua setores/tickers: use as listas estruturadas recebidas.
-Use short_term_score e medium_term_score para explicar efeitos ambíguos, por exemplo Selic curta em queda contra juros longos/fiscal/inflação pressionados.
+Regras:
+
+- Nao adicione informacao que nao esteja na analise estruturada.
+- Nao use tabelas.
+- Nao escreva secoes no formato `**Topico.** texto`; use cabecalhos Markdown e bullets.
+- Nao crie secao, topico, bullet ou paragrafo chamado `Ressalva`, `Limitação` ou `Limitacao`.
+- Nao reordene nem substitua setores/tickers: use as listas estruturadas recebidas.
+- Se todos os itens de uma secao tiverem raw_score negativo, chame-os de "menos pressionados" ou "menor impacto negativo", nao de "favorecidos" ou "exposicao positiva".
+- Se algum item tiver raw_score igual a zero, trate como "neutro defensivo", nao como tese positiva.
+- Use `positive_tickers` como ranking de exposicao positiva; se algum item tiver raw_score <= 0, chame de "menos pressionados".
+- Use `negative_tickers` como ranking de exposicao negativa; se todos tiverem raw_score >= 0, chame de "menor exposicao relativa".
+- Use `short_term_score` e `medium_term_score` para explicar efeitos ambiguos.
+- Nao termine com frase incompleta.

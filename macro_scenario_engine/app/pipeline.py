@@ -137,7 +137,7 @@ def run_analysis(
         sector_scores,
         settings.top_sectors,
     )
-    top_relative_tickers, negative_tickers = select_top_tickers(ticker_scores, settings.top_tickers)
+    positive_tickers, negative_tickers = select_top_tickers(ticker_scores, settings.top_tickers)
     risks = build_risks(factors, catalog, settings.risk_count)
     scenario_summary = build_scenario_summary(factors, catalog)
     markdown_report = build_markdown_report(
@@ -147,7 +147,7 @@ def run_analysis(
         short_term_benefited_sectors=short_term_benefited_sectors,
         medium_term_harmed_sectors=medium_term_harmed_sectors,
         net_resilient_sectors=net_resilient_sectors,
-        top_relative_tickers=top_relative_tickers,
+        positive_tickers=positive_tickers,
         negative_tickers=negative_tickers,
         risks=risks,
     )
@@ -160,7 +160,7 @@ def run_analysis(
             short_term_benefited_sectors=short_term_benefited_sectors,
             medium_term_harmed_sectors=medium_term_harmed_sectors,
             net_resilient_sectors=net_resilient_sectors,
-            top_relative_tickers=top_relative_tickers,
+            positive_tickers=positive_tickers,
             negative_tickers=negative_tickers,
             risks=risks,
             settings=settings,
@@ -176,11 +176,10 @@ def run_analysis(
             short_term_benefited_sectors=[sector_to_schema(item) for item in short_term_benefited_sectors],
             medium_term_harmed_sectors=[sector_to_schema(item) for item in medium_term_harmed_sectors],
             net_resilient_sectors=[sector_to_schema(item) for item in net_resilient_sectors],
-            top_relative_tickers=[ticker_to_schema(item) for item in top_relative_tickers],
+            positive_tickers=[ticker_to_schema(item) for item in positive_tickers],
             negative_tickers=[ticker_to_schema(item) for item in negative_tickers],
             risks=risks,
             markdown_report=markdown_report,
-            limitations=default_limitations(),
             metadata=AnalysisMetadata(
                 generated_at=datetime.now(UTC),
                 model_used=settings.anthropic_model if used_llm else "local-heuristic-parser",
@@ -417,37 +416,33 @@ def build_markdown_report(
     short_term_benefited_sectors: list[ScoredSector],
     medium_term_harmed_sectors: list[ScoredSector],
     net_resilient_sectors: list[ScoredSector],
-    top_relative_tickers: list[ScoredTicker],
+    positive_tickers: list[ScoredTicker],
     negative_tickers: list[ScoredTicker],
     risks: list[RiskItem],
 ) -> str:
     benefited_heading = positive_or_resilient_heading(benefited_sectors, "Setores")
     harmed_heading = relative_or_negative_heading(harmed_sectors, "Setores")
-    top_relative_ticker_heading = positive_or_resilient_heading(top_relative_tickers, "Tickers")
+    positive_ticker_heading = positive_or_resilient_heading(positive_tickers, "Tickers")
     negative_ticker_heading = relative_or_negative_heading(negative_tickers, "Tickers")
-    benefited = ", ".join(score_label(item) for item in benefited_sectors)
-    harmed = ", ".join(score_label(item) for item in harmed_sectors)
-    top_relative = ", ".join(ticker_score_label(item) for item in top_relative_tickers)
-    negative = ", ".join(ticker_score_label(item) for item in negative_tickers)
-    horizon = build_horizon_summary(short_term_benefited_sectors, medium_term_harmed_sectors)
-    risk_text = "; ".join(f"{item.risk}: {item.rationale}" for item in risks)
+    benefited = compact_sector_list(benefited_sectors)
+    harmed = compact_sector_list(harmed_sectors)
+    positive = compact_ticker_list(positive_tickers)
+    negative = compact_ticker_list(negative_tickers)
+    short_horizon, medium_horizon = build_horizon_bullets(short_term_benefited_sectors, medium_term_harmed_sectors)
+    risk_text = "\n".join(f"- **{item.risk}:** {report_sentence(item.rationale)}" for item in risks)
 
-    return "\n\n".join(
-        [
-            "# Análise macro-setorial",
-            f"**Cenário.** {scenario_summary}",
-            f"**Horizonte.** {horizon}",
-            f"**{benefited_heading}.** {benefited}.",
-            f"**{harmed_heading}.** {harmed}.",
-            f"**{top_relative_ticker_heading}.** {top_relative}.",
-            f"**{negative_ticker_heading}.** {negative}.",
-            f"**Riscos principais.** {risk_text}",
-            (
-                "**Limitação.** Esta é uma análise qualitativa de sensibilidade macro, não uma recomendação "
-                "personalizada de investimento, preço-alvo ou garantia de retorno."
-            ),
-        ]
-    )
+    sections = [
+        "# Análise macro-setorial",
+        (
+            f"{scenario_summary} A leitura abaixo resume os principais vetores de sensibilidade para setores "
+            "e tickers da base curada, combinando impacto absoluto, leitura relativa e horizonte temporal."
+        ),
+        f"## Horizonte\n- **Curto prazo:** {short_horizon}\n- **Médio prazo:** {medium_horizon}",
+        f"## Setores\n- **{benefited_heading}:** {benefited}.\n- **{harmed_heading}:** {harmed}.",
+        f"## Tickers\n- **{positive_ticker_heading}:** {positive}.\n- **{negative_ticker_heading}:** {negative}.",
+        f"## Riscos\n{risk_text}",
+    ]
+    return "\n\n".join(sections)
 
 
 def positive_or_resilient_heading(items: list[ScoredSector] | list[ScoredTicker], noun: str) -> str:
@@ -465,6 +460,8 @@ def positive_or_resilient_heading(items: list[ScoredSector] | list[ScoredTicker]
 def relative_or_negative_heading(items: list[ScoredSector] | list[ScoredTicker], noun: str) -> str:
     if all(item.raw_score >= 0 for item in items):
         return f"{noun} com menor exposição relativa"
+    if any(item.raw_score >= 0 for item in items):
+        return f"{noun} pressionados ou com menor exposição relativa"
     return f"{noun} pressionados"
 
 
@@ -475,11 +472,52 @@ def score_label(item: ScoredSector) -> str:
     )
 
 
+def compact_sector_list(items: list[ScoredSector]) -> str:
+    return "; ".join(
+        f"{item.sector_name} (rel. {item.relative_score:+.1f}, abs. {item.raw_score:+.1f})" for item in items
+    )
+
+
 def ticker_score_label(item: ScoredTicker) -> str:
     return (
         f"{item.ticker} ({item.company}, rel. {item.relative_score:+.1f}; abs. {item.raw_score:+.1f}; "
         f"curto {item.short_term_score:+.1f}; médio {item.medium_term_score:+.1f})"
     )
+
+
+def compact_ticker_list(items: list[ScoredTicker]) -> str:
+    return "; ".join(
+        f"{item.ticker} ({item.company}, rel. {item.relative_score:+.1f}, abs. {item.raw_score:+.1f})"
+        for item in items
+    )
+
+
+def build_horizon_bullets(
+    short_term_benefited_sectors: list[ScoredSector],
+    medium_term_harmed_sectors: list[ScoredSector],
+) -> tuple[str, str]:
+    short_leaders = short_term_benefited_sectors[:3]
+    medium_laggards = medium_term_harmed_sectors[:3]
+    short_text = ", ".join(f"{item.sector_name} ({item.short_term_score:+.1f})" for item in short_leaders)
+    medium_text = ", ".join(f"{item.sector_name} ({item.medium_term_score:+.1f})" for item in medium_laggards)
+    if all(item.short_term_score > 0 for item in short_leaders):
+        short_label = "setores com maior impulso positivo"
+    elif any(item.short_term_score > 0 for item in short_leaders):
+        short_label = "setores com melhor leitura relativa"
+    else:
+        short_label = "setores com menor pressão imediata"
+    medium_label = "maiores pontos de pressão" if any(item.medium_term_score < 0 for item in medium_laggards) else "menor impulso relativo"
+    return f"{short_label}: {short_text}.", f"{medium_label}: {medium_text}."
+
+
+def report_sentence(text: str) -> str:
+    cleaned = " ".join(text.split())
+    if not cleaned:
+        return ""
+    sentence = cleaned.split(". ")[0].strip()
+    if not sentence.endswith("."):
+        sentence += "."
+    return sentence
 
 
 def build_horizon_summary(
@@ -512,7 +550,7 @@ def rewrite_report_with_llm(
     short_term_benefited_sectors: list[ScoredSector],
     medium_term_harmed_sectors: list[ScoredSector],
     net_resilient_sectors: list[ScoredSector],
-    top_relative_tickers: list[ScoredTicker],
+    positive_tickers: list[ScoredTicker],
     negative_tickers: list[ScoredTicker],
     risks: list[RiskItem],
     settings: Settings,
@@ -540,8 +578,8 @@ def rewrite_report_with_llm(
                             sector_report_dict(item) for item in medium_term_harmed_sectors
                         ],
                         "net_resilient_sectors": [sector_report_dict(item) for item in net_resilient_sectors],
-                        "top_relative_tickers": [ticker_report_dict(item) for item in top_relative_tickers],
-                        "lower_relative_or_negative_tickers": [ticker_report_dict(item) for item in negative_tickers],
+                        "positive_tickers": [ticker_report_dict(item) for item in positive_tickers],
+                        "negative_tickers": [ticker_report_dict(item) for item in negative_tickers],
                         "risks": [risk.model_dump(mode="json") for risk in risks],
                     },
                     ensure_ascii=False,
@@ -549,7 +587,8 @@ def rewrite_report_with_llm(
                 ),
                 (
                     "Escreva apenas o Markdown final. Se todos os itens da lista negativa tiverem raw_score positivo, "
-                    "chame a seção de 'menor exposição relativa', não de exposição negativa."
+                    "chame a seção de 'menor exposição relativa', não de exposição negativa. "
+                    "Não crie seções ou tópicos chamados 'Ressalva' ou 'Limitação'."
                 ),
             ]
         )
@@ -575,12 +614,21 @@ def is_complete_markdown_report(markdown_report: str, max_words: int) -> bool:
         return False
 
     lowered = normalize_for_matching(text)
-    has_disclaimer = (
-        "nao constitui recomendacao" in lowered
-        or "nao e uma recomendacao" in lowered
-        or "nao uma recomendacao" in lowered
+    forbidden_topics = (
+        "## ressalva",
+        "## ressalvas",
+        "## limitacao",
+        "## limitacoes",
+        "**ressalva.**",
+        "**ressalvas.**",
+        "**limitacao.**",
+        "**limitacoes.**",
+        "ressalva:",
+        "ressalvas:",
+        "limitacao:",
+        "limitacoes:",
     )
-    if not has_disclaimer:
+    if any(topic in lowered for topic in forbidden_topics):
         return False
 
     last_line = text.splitlines()[-1].strip()
@@ -613,16 +661,6 @@ def ticker_report_dict(item: ScoredTicker) -> dict:
         "impact_label": item.impact_label,
         "rationale": item.rationale,
     }
-
-
-def default_limitations() -> list[str]:
-    return [
-        "A ferramenta não fornece recomendação personalizada de investimento.",
-        "A análise é qualitativa e baseada em uma matriz curada de sensibilidade macro.",
-        "Não há cálculo de valuation, preço-alvo, múltiplos ou upside.",
-        "O universo de tickers do MVP é limitado e deve ser revisado por analista humano.",
-        "Eventos corporativos recentes podem não estar refletidos na base curada.",
-    ]
 
 
 def save_outputs(output: AnalysisOutput, output_dir: Path) -> tuple[Path, Path]:

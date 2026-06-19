@@ -83,7 +83,7 @@ def validate_universe(
     if unknown_sectors:
         raise OutputValidationError(f"Setores fora da taxonomia: {', '.join(unknown_sectors)}")
 
-    tickers = {item.ticker for item in output.top_relative_tickers + output.negative_tickers}
+    tickers = {item.ticker for item in output.positive_tickers + output.negative_tickers}
     unknown_tickers = sorted(tickers - allowed_tickers)
     if unknown_tickers:
         raise OutputValidationError(f"Tickers fora da base curada: {', '.join(unknown_tickers)}")
@@ -91,7 +91,7 @@ def validate_universe(
     used_factors = set(output.macro_factors)
     for sector in all_sector_lists:
         used_factors.update(sector.matched_factors)
-    for ticker in output.top_relative_tickers + output.negative_tickers:
+    for ticker in output.positive_tickers + output.negative_tickers:
         used_factors.update(ticker.matched_positive_factors)
         used_factors.update(ticker.matched_negative_factors)
     for risk in output.risks:

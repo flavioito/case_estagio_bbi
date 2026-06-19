@@ -29,16 +29,23 @@ def test_pipeline_returns_valid_schema_and_markdown(catalog) -> None:
     assert len(output.short_term_benefited_sectors) == 5
     assert len(output.medium_term_harmed_sectors) == 5
     assert len(output.net_resilient_sectors) == 5
-    assert len(output.top_relative_tickers) == 3
+    assert len(output.positive_tickers) == 3
     assert len(output.negative_tickers) == 3
     assert len(output.risks) == 3
     assert output.markdown_report.startswith("# Análise macro-setorial")
-    assert "**Horizonte.**" in output.markdown_report
+    assert "## Horizonte" in output.markdown_report
+    assert "## Setores" in output.markdown_report
+    assert "## Tickers" in output.markdown_report
+    assert "## Riscos" in output.markdown_report
+    assert "## Ressalva" not in output.markdown_report
+    assert "## Limitação" not in output.markdown_report
+    assert "**Limitação.**" not in output.markdown_report
+    assert "- **Curto prazo:**" in output.markdown_report
     assert "Setores com menor exposição relativa" in output.markdown_report
     assert "Tickers com menor exposição relativa" in output.markdown_report
     assert "rel." in output.markdown_report
     assert "abs." in output.markdown_report
-    assert {item.ticker for item in output.top_relative_tickers + output.negative_tickers} <= catalog.allowed_tickers
+    assert {item.ticker for item in output.positive_tickers + output.negative_tickers} <= catalog.allowed_tickers
     assert {item.sector_id for item in output.benefited_sectors + output.harmed_sectors} <= catalog.allowed_sector_ids
     assert all(item.raw_score >= 0 for item in output.negative_tickers)
     assert all(item.relative_score < 0 for item in output.negative_tickers)
@@ -145,7 +152,8 @@ def test_truncated_llm_report_is_rejected() -> None:
         "## Riscos\n1. Aversão global a risco pode afetar",
         max_words=500,
     )
-    assert is_complete_markdown_report(
-        "## Ressalva\nEsta análise não constitui recomendação personalizada de investimento.",
-        max_words=500,
-    )
+    assert not is_complete_markdown_report("## Ressalva\nTexto final completo.", max_words=500)
+    assert not is_complete_markdown_report("## Limitação\nTexto final completo.", max_words=500)
+    assert not is_complete_markdown_report("## Ressalvas\nTexto final completo.", max_words=500)
+    assert not is_complete_markdown_report("## Limitações\nTexto final completo.", max_words=500)
+    assert is_complete_markdown_report("## Riscos\n- Risco principal explicado de forma completa.", max_words=500)
